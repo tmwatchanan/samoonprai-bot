@@ -1,4 +1,5 @@
 # samoonprai-bot
+A Bot application connected to (Facebook) Messenger Platform 
 
 ## Steps to Reproduce the Project
 1. pip install https://github.com/Jirayut558/spacymodel/raw/master/spacy-2.1.0.dev1.tar.gz
