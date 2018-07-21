@@ -18,10 +18,10 @@ if [ ! -d $VIRTUALENV ]; then
 fi
 
 # Upgrade pip version
-$VIRTUALENV/bin/pip install --upgrade pip
+$VIRTUALENV/bin/pip3 install --upgrade pip
 
 # Install the requirements
-$VIRTUALENV/bin/pip install -r requirements.txt
+$VIRTUALENV/bin/pip3 install -r requirements.txt
 
 # Run a Python 3 server
 $VIRTUALENV/bin/python3 app.py
