@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Flask server
 from flask import Flask, request, jsonify
+# Rasa NLU
 from rasa_core.interpreter import RasaNLUInterpreter
+from rasa_core.agent import Agent
+# Messenger Platform
 from messenger_send_api import verify_webhook, respond
+# Utilities
 import random
 
 # Flask
@@ -11,6 +16,7 @@ app = Flask(__name__)
 
 # NLU
 interpreter = RasaNLUInterpreter("rasa/models/nlu/default/current")
+agent = Agent.load("models/dialogue", interpreter=interpreter)
 
 
 @app.route('/')
