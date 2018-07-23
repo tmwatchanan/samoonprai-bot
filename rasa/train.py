@@ -96,7 +96,6 @@ def run(serve_forever=True):
 def run_nlu(serve_forever=True):
     interpreter = RasaNLUInterpreter("models/nlu/default/current")
 
-
     while(True):
             text = input("Input text: ")
             print(interpreter.parse(text))
