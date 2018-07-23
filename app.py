@@ -6,7 +6,12 @@ from rasa_core.interpreter import RasaNLUInterpreter
 from messenger_send_api import verify_webhook, respond
 import random
 
+# Flask
 app = Flask(__name__)
+
+# NLU
+interpreter = RasaNLUInterpreter("rasa/models/nlu/default/current")
+
 
 @app.route('/')
 def index():
@@ -48,7 +53,6 @@ def listen():
 @app.route('/bot')
 def bot():
     message = request.args.get('message')
-    interpreter = RasaNLUInterpreter("rasa/models/nlu/default/current")
     return jsonify(interpreter.parse(message))
 
 

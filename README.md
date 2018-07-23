@@ -17,3 +17,9 @@ A Bot application connected to (Facebook) Messenger Platform
 1. Edit subscription of the Page's webhook like this:
     + **Callback URL**: \<URL\>/webhook
     + **Verify Token**: a plain text you set which must be matched with the environment variable in step 1
+
+## Grilling Problems
++ **Unable to run dialogue**, It will show error message like:
+    + ```pykwalify.errors.CoreError: <CoreError: error code 3: Unable to load any data from source yaml file: Path: '/'>```
+    + Firstly, go checking your yaml file (might be `domain.yml`). This file must not contain any tab indent. If it does, then replace all of them this 2 or 4 spaces instead.
+    + Secondly, if you are a Windows user, go to `...\venv\Lib\site-packages\pykwalify\core.py` and add `, encoding='utf-8'` to `with open(source_file, "r") as stream:` which is the code for opening yaml file.
