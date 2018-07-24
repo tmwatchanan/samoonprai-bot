@@ -1,5 +1,6 @@
 action_factory: null
 action_names:
+- bot.utter.default
 - bot.ask.photo
 - bot.action.photo_to_name
 - bot.utter.herb_name
@@ -15,6 +16,7 @@ action_names:
 - bot.action.name_to_detail
 - bot.utter.detail
 actions:
+- bot.utter.default
 - bot.ask.photo
 - bot.action.photo_to_name
 - bot.utter.herb_name
@@ -63,6 +65,8 @@ templates:
   - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
   bot.utter.benefit:
   - text: สรรพคุณของมะนาวมีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
+  bot.utter.default:
+  - text: ไม่เข้าใจ พิมพ์ใหม่ได้ไหมครับ
   bot.utter.detail:
   - text: มะนาว มีชื่อวิทยาศาสตร์คือ limeee
   bot.utter.herb_name:

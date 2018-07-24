@@ -5,13 +5,13 @@
         "herb"
       ]
     },
-    "bot.utter.detail": {
+    "bot.utter.thankyou": {
       "slots": []
     },
     "bot.validation.get_data.herb_name": {
       "slots": []
     },
-    "bot.utter.thankyou": {
+    "bot.utter.detail": {
       "slots": []
     },
     "bot.validation.get_data.herb_photo": {

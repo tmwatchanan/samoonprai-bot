@@ -50,8 +50,10 @@ templates:
     - สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูลมะนาวให้นะครับ
   bot.utter.detail:
     - มะนาว มีชื่อวิทยาศาสตร์คือ limeee
-
+  bot.utter.default:
+    - ไม่เข้าใจ พิมพ์ใหม่ได้ไหมครับ
 actions:
+- bot.utter.default
 - bot.ask.photo
 - bot.action.photo_to_name
 - bot.utter.herb_name
