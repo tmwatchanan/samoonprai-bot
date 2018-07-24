@@ -7,6 +7,7 @@ import argparse
 import logging
 import warnings
 
+from rasa_core.policies.fallback import FallbackPolicy
 from policy import RestaurantPolicy
 from rasa_core import utils
 from rasa_core.actions import Action
@@ -53,8 +54,11 @@ class ActionSuggest(Action):
 def train_dialogue(domain_file="domain.yml",
                    model_path="models/dialogue",
                    training_data_file="data/stories.md"):
+    fallback = FallbackPolicy(fallback_action_name="bot.utter.default",
+                              core_threshold=0.3,
+                              nlu_threshold=0.3)
     agent = Agent(domain_file,
-                  policies=[MemoizationPolicy(max_history=3),KerasPolicy()])
+                  policies=[MemoizationPolicy(max_history=3),KerasPolicy(),fallback])
 
     training_data = agent.load_data(training_data_file)
     agent.train(

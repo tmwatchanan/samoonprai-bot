@@ -1,20 +1,36 @@
 {
   "action_fingerprints": {
     "action_listen": {
+      "slots": [
+        "herb"
+      ]
+    },
+    "bot.utter.detail": {
       "slots": []
     },
-    "bot.utter.data": {
+    "bot.validation.get_data.herb_name": {
+      "slots": []
+    },
+    "bot.utter.thankyou": {
+      "slots": []
+    },
+    "bot.validation.get_data.herb_photo": {
+      "slots": []
+    },
+    "bot.utter.benefit": {
       "slots": []
     }
   },
   "rasa_core": "0.9.3",
   "max_histories": [
     3,
-    5
+    5,
+    null
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
   ]
 }

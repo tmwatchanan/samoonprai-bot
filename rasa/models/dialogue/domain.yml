@@ -1,39 +1,82 @@
 action_factory: null
 action_names:
-- bot.utter_thankyou
-- bot.utter_greeting
-- bot.ask.get_photo
-- bot.action.search_photo_to_data
-- bot.utter.data
+- bot.ask.photo
+- bot.action.photo_to_name
+- bot.utter.herb_name
+- bot.validation.herb_name
+- bot.validation.get_data.herb_name
+- bot.utter.thankyou
+- bot.action.name_to_photo
+- bot.utter.herb_photo
+- bot.validation.herb_photo
+- bot.validation.get_data.herb_photo
+- bot.action.name_to_benefit
+- bot.utter.benefit
+- bot.action.name_to_detail
+- bot.utter.detail
 actions:
-- bot.utter_thankyou
-- bot.utter_greeting
-- bot.ask.get_photo
-- bot.action.search_photo_to_data
-- bot.utter.data
+- bot.ask.photo
+- bot.action.photo_to_name
+- bot.utter.herb_name
+- bot.validation.herb_name
+- bot.validation.get_data.herb_name
+- bot.utter.thankyou
+- bot.action.name_to_photo
+- bot.utter.herb_photo
+- bot.validation.herb_photo
+- bot.validation.get_data.herb_photo
+- bot.action.name_to_benefit
+- bot.utter.benefit
+- bot.action.name_to_detail
+- bot.utter.detail
 config:
   store_entities_as_slots: true
 entities:
 - herb
 intents:
-- ดูรูปสมุนไพร
-- สรรพคุณสมุนไพร
-- ดูข้อมูลทั่วไปของสมุนไพร
-- ค้นหาสมุนไพรจากรูป
-- ส่งรูปภาพ
+- user.ใช่
+- user.ไม่ใช่
+- user.ทักทาย
+- user.ขอบคุณ
+- user.ค้นหาสมุนไพรจากรูป
+- user.สมุนไพรคืออะไร
+- user.หน้าที่ของบอท
+- user.เกี่ยวกับบอท
+- user.ดูรูปสมุนไพร
+- user.สรรพคุณสมุนไพร
+- user.ดูข้อมูลทั่วไปของสมุนไพร
+- user.ส่งรูปภาพ
 slots:
   herb:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
-  bot.action.search_photo_to_data:
+  bot.action.name_to_benefit:
+  - text: สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของมะนาวให้นะครับ
+  bot.action.name_to_detail:
+  - text: สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูลมะนาวให้นะครับ
+  bot.action.name_to_photo:
+  - text: สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
+  bot.action.photo_to_name:
   - text: เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
-  bot.ask.get_photo:
-  - text: ช่วยส่งรูปให้หน่อยได้ไหมครับ ผมจะได้ช่วยดูให้ว่าคืออะไร
-  bot.utter.data:
-  - text: ส่งข้อมูลว่าสมุนไพรคืออะไร สมุนไพรตัวนี้ชื่อว่า ว่านหางจระเข้ ครับ
-  bot.utter_greeting:
-  - text: สวัสดีครับ
-  bot.utter_thankyou:
+  bot.ask.photo:
+  - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
+  bot.utter.benefit:
+  - text: สรรพคุณของมะนาวมีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
+  bot.utter.detail:
+  - text: มะนาว มีชื่อวิทยาศาสตร์คือ limeee
+  bot.utter.herb_name:
+  - text: สมุนไพรตัวนี้ชื่อว่า ว่านหางจระเข้ ครับ
+  bot.utter.herb_photo:
+  - text: Picture นี่คือรูปของ ขมิ้นชันครับ
+  bot.utter.thankyou:
   - text: ขอบคุณครับ
+  bot.validation.get_data.herb_name:
+  - text: ขอบคุณมากครับ สำหรับข้อมูลเพื่อเพิ่มการเรียนรู้ในเรื่องสมุนไพรครับ
+  bot.validation.get_data.herb_photo:
+  - text: ขอบคุณสำหรับข้อมูลครับ
+  bot.validation.herb_name:
+  - text: ไม่รู้ว่าถูกต้องไหมครับ ถ้าไม่ถูกต้องสมุนไพรตัวนี้ชื่ออะไรพอจะช่วยหาข้อมูลและสอนผมได้ไหมครับ
+  bot.validation.herb_photo:
+  - text: ไม่รู้ว่ารูปนี้คือขมิ้นชันใช่ไหมครับช่วยยืนยันให้ผมหน่อย
 topics: []
