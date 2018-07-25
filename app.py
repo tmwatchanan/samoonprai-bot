@@ -6,25 +6,33 @@ from flask import Flask, request, jsonify
 # Rasa NLU
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
+from keras import backend as K
 # Messenger Platform
-from messenger_send_api import verify_webhook, respond
+from messenger_send_api import verify_webhook, respond, send_image
 # Utilities
 import random
+import os
+import json
+
+K.clear_session()
 
 # Flask
 app = Flask(__name__)
 
 # NLU
-interpreter = RasaNLUInterpreter("rasa/models/nlu/default/current")
-agent = Agent.load("models/dialogue", interpreter=interpreter)
+
+# Load herb data
+herb_json_array = None
+with open(os.path.join('herb_data', 'herb_data_labeled.json'), encoding="utf-8") as f:
+    herb_json_array = json.load(f)
 
 
 @app.route('/')
 def index():
-    return '<h1>Hello World<h1/>'
+    return '<h1>Samoonprai<h1/>'
 
 
-def get_message():
+def get_random_message():
     sample_responses = ["อู้หยังนิ", "บ่ฮู้เรื่อง", "อู้ไปเรื่อย", "สวัสดีเจ้า", "ต่อนยอน"]
     # return selected item to the user
     return random.choice(sample_responses)
@@ -48,18 +56,58 @@ def listen():
                     recipient_id = message['sender']['id']
                     text = message['message'].get('text')
                     if text:
-                        response_sent_text = get_message()
-                        respond(recipient_id, response_sent_text)
+                        # Get Next action from input user message
+                        print(text)
+                        rasa_nlu_interpreter_path = os.path.join(os.getcwd(), "models", "nlu", "default", "current")
+                        interpreter = RasaNLUInterpreter(rasa_nlu_interpreter_path)
+                        rasa_nlu_dialogue_path = os.path.join(os.getcwd(), "models", "dialogue")
+                        agent = Agent.load(rasa_nlu_dialogue_path, interpreter=interpreter)
+                        next_action = agent.start_message_handling(text, sender_id=recipient_id)
+                        # next_action = get_action(text, recipient_id)
+                        # next_action = run()
+                        print(next_action)
+                        herb_name = ''
+                        image_path = ''
+                        while (next_action['next_action'] != "action_listen"):
+                            if next_action['next_action'] == 'bot.action.name_to_photo':
+                                print("bot.action.name_to_photo")
+                                herb_name = next_action['tracker']['slots']['herb']
+                                print(herb_name)
+                                matched_herb_list = [x for x in herb_json_array if herb_name in set(x['thaiNameList'])]
+                                matched_herb = matched_herb_list[0]
+                                # print(matched_herb)
+                                image_directory_path = os.path.join('herb_data', 'herb_images', str(matched_herb['herbId']))
+                                herb_file_list = os.listdir(image_directory_path)
+                                randomed_file_number = random.randint(1, len(
+                                    [name for name in os.listdir(image_directory_path) if
+                                     os.path.isfile(os.path.join(image_directory_path, name))]) + 1)
+                                selected_herb_file = herb_file_list[randomed_file_number]
+                                image_path = os.path.join(image_directory_path, selected_herb_file)
+                                image_path = os.path.abspath(image_path)
+                            elif next_action['next_action'] == 'bot.utter.herb_photo':
+                                print("bot.utter.herb_photo")
+                                send_image(recipient_id, image_path)
+                            elif next_action['next_action'] == 'bot.validation.herb_photo':
+                                print("bot.validation.herb_photo")
+                                respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ")
+                            next_action = agent.continue_message_handling(
+                                executed_action=next_action['next_action'],
+                                sender_id=next_action['tracker']['sender_id'],
+                                events=[])
+                            print(next_action)
+                        # respond(recipient_id, "อยากถามอะไรอีกมั้ยฮะ")
                     # if user sends us a GIF, photo,video, or any other non-text item
                     if message['message'].get('attachments'):
-                        response_sent_nontext = get_message()
+                        response_sent_nontext = get_random_message()
                         respond(recipient_id, response_sent_nontext)
         return "ok"
+
 
 @app.route('/bot')
 def bot():
     message = request.args.get('message')
-    return jsonify(interpreter.parse(message))
+    return message
+    # return jsonify(interpreter.parse(message))
 
 
 if __name__ == '__main__':
