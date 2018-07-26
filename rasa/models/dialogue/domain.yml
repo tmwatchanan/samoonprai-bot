@@ -8,6 +8,7 @@ action_names:
 - bot.validation.herb_name
 - bot.validation.get_data.herb_name
 - bot.utter.thankyou
+- bot.ask.get_data
 - bot.action.name_to_photo
 - bot.utter.herb_photo
 - bot.validation.herb_photo
@@ -25,6 +26,7 @@ actions:
 - bot.validation.herb_name
 - bot.validation.get_data.herb_name
 - bot.utter.thankyou
+- bot.ask.get_data
 - bot.action.name_to_photo
 - bot.utter.herb_photo
 - bot.validation.herb_photo
@@ -63,6 +65,8 @@ templates:
   - text: สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.action.photo_to_name:
   - text: เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
+  bot.ask.get_data:
+  - text: ช่วยบอกน้องลูกไพรได้ไหมครับ ว่าจริงๆแล้วมันคือสมุนไพรอะไร เช่น "มันคือ มะนาว"
   bot.ask.photo:
   - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
   bot.utter.benefit:

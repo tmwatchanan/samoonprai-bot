@@ -13,6 +13,8 @@
  - bot.action.photo_to_name
  - bot.utter.herb_name
  - bot.validation.herb_name
+* user.ไม่
+ - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร {"herb":"มะนาว"}
  - bot.validation.get_data.herb_name
 
@@ -31,6 +33,8 @@
  - bot.action.name_to_photo
  - bot.utter.herb_photo
  - bot.validation.herb_photo
+* user.ไม่
+ - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร {"herb":"มะนาว"}
  - bot.validation.get_data.herb_photo
   

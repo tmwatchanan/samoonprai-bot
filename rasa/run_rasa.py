@@ -8,7 +8,8 @@ agent = Agent.load(os.path.join(os.getcwd(), "models", "dialogue"), interpreter=
 
 def run():
     # while(True):
-    user_message = "ขอดูรูปขมิ้นชันหน่อย"
+    user_message = "สวัสดีครับ"
+    print(user_message)
     next_action = agent.start_message_handling(user_message) #Get Next action from input user message
     print(next_action)
     if next_action['next_action'] == 'bot.action.name_to_photo':

@@ -24,6 +24,7 @@
     "prev_bot.validation.herb_name",
     "prev_bot.validation.get_data.herb_name",
     "prev_bot.utter.thankyou",
+    "prev_bot.ask.get_data",
     "prev_bot.action.name_to_photo",
     "prev_bot.utter.herb_photo",
     "prev_bot.validation.herb_photo",
