@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Messenger Platform
-from messenger_send_api import debug_respond, respond, send_image
+import messenger_send_api
 # Rasa NLU
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
@@ -10,6 +10,7 @@ from rasa_core.agent import Agent
 import random
 import os
 import json
+import logging
 
 # Disable warning messages
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -18,6 +19,9 @@ def warn(*args, **kwargs):
 import warnings
 warnings.warn = warn
 warnings.filterwarnings(action='ignore', category=DeprecationWarning)
+
+# Logging
+logger = logging.getLogger('SAMOONPRAI')
 
 # Load herb data
 herb_json_array = None
@@ -37,50 +41,73 @@ def process_incoming_message(payload):
                 # Facebook Messenger ID for user so we know where to send response back to
                 recipient_id = message['sender']['id']
                 text = message['message'].get('text')
+                user_info = messenger_send_api.get_user_info(recipient_id, ['first_name', 'last_name'])
+                user_name = user_info['first_name'] if user_info else ''
+                print(user_info)
                 if text:
                     # Get Next action from input user message
-                    print(recipient_id + ': ' + text)
+                    logger.info(recipient_id + " sends " + "\"" + text + "\"")
                     agent, next_action = nlu_start(recipient_id, text)
-                    debug_respond(recipient_id, next_action['next_action'])
-                    print(next_action)
+                    messenger_send_api.debug_respond(recipient_id, next_action['next_action'])
                     herb_name = next_action['tracker']['slots']['herb']
-                    image_path = ''
+                    herb_object = None
+                    if herb_name is None:
+                        herb_name = ''
+                        herb_object = HERB_NOT_FOUND
+                    logger.debug("(" + recipient_id + ")(" + text + "): %s", next_action)
                     while (next_action['next_action'] != 'action_listen'):
                         if next_action['next_action'] == 'bot.utter.greeting':
-                            respond(recipient_id, "สวัสดีครับ มีอะไรให้ลูกสมุนไพรช่วยมั้ยฮะ")
+                            messenger_send_api.respond(recipient_id, "สวัสดีครับ " + user_name + " มีอะไรให้ลูกสมุนไพรช่วยมั้ยฮะ")
                         elif next_action['next_action'] == 'bot.action.name_to_photo':
-                            herb_object = get_herb_info_from_database(herb_name)
                             if herb_object == HERB_NOT_FOUND:
-                                respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรไม่รู้จักสมุนไพรชื่อ" + herb_name + "ครับ")
+                                messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรไม่รู้จักสมุนไพรชื่อ" + herb_name + "ครับ")
+                                break
                             else:
-                                respond(recipient_id, "รอสักครู่คร้าบ ลูกสมุนไพรกำลังหารูปของ" + herb_name + "ให้ครับ")
+                                herb_object = get_herb_info_from_database(herb_name)
+                                messenger_send_api.respond(recipient_id, "รอสักครู่คร้าบ ลูกสมุนไพรกำลังหารูปของ" + herb_name + "ให้ครับ")
                         elif next_action['next_action'] == 'bot.utter.herb_photo':
                             image_path = get_image_path_from_herb(herb_object)
-                            if image_path == HERB_NOT_FOUND:
-                                pass
-                            elif image_path == IMAGE_NOT_FOUND:
-                                respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรยังไม่มีรูป" + herb_name + "ครับ")
+                            if image_path == IMAGE_NOT_FOUND:
+                                messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรยังไม่มีรูป" + herb_name + "ครับ")
+                                break
                             else:
-                                respond(recipient_id, "นี่ครับ รูป" + herb_name)
-                                send_api_response = send_image(recipient_id, image_path)
+                                messenger_send_api.respond(recipient_id, "นี่ครับ รูป" + herb_name)
+                                send_api_response = messenger_send_api.send_image(recipient_id, image_path)
                         elif next_action['next_action'] == 'bot.validation.herb_photo':
-                            if image_path == HERB_NOT_FOUND or image_path == IMAGE_NOT_FOUND:
-                                pass
-                            else:
-                                respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า")
+                            # messenger_send_api.respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า")
+                            buttons = []
+                            button = {
+                                'type': 'postback',
+                                'title': 'ใช่',
+                                'payload': 'corrent'
+                            }
+                            buttons.append(button)
+                            button = {
+                                'type': 'postback',
+                                'title': 'ไม่ใช่',
+                                'payload': 'wrong'
+                            }
+                            buttons.append(button)
+                            text = "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า"
+                            messenger_send_api.send_button(recipient_id, text, buttons)
                         elif next_action['next_action'] == 'bot.validation.get_data.herb_photo':
                             user_label_herb_name = next_action['tracker']['slots']['herb']
                         elif next_action['next_action'] == 'bot.utter.thankyou':
-                            respond(recipient_id, "ขอบคุณครับ ถ้ามีอะไรให้ลูกสมุนไพรช่วยอีกก็บอกได้เลยนะครับ")
+                            messenger_send_api.respond(recipient_id, "ขอบคุณครับ ถ้ามีอะไรให้ลูกสมุนไพรช่วยอีกก็บอกได้เลยนะครับ")
+                        else:
+                            logger.debug("Action %s is unknown")
+                            messenger_send_api.respond(recipient_id, "ตอนนี้ลูกสมุนไพรงงไปหมดแล้วว่าต้องทำอะไร")
+                            break
                         next_action = nlu_continue(agent, next_action)
-                        debug_respond(recipient_id, next_action['next_action'])
-                        print(next_action)
-                    # respond(recipient_id, "คุณตอบว่า " + text)
-                    # respond(recipient_id, "อยากถามอะไรอีกมั้ยฮะ")
+                        messenger_send_api.debug_respond(recipient_id, next_action['next_action'])
+                        logger.debug("(" + recipient_id + ")(" + text + "): %s", next_action)
+                    # messenger_send_api.respond(recipient_id, "คุณตอบว่า " + text)
+                    # messenger_send_api.respond(recipient_id, "อยากถามอะไรอีกมั้ยฮะ")
                 # if user sends us a GIF, photo,video, or any other non-text item
                 if message['message'].get('attachments'):
-                    response_sent_nontext = get_random_message()
-                    respond(recipient_id, response_sent_nontext)
+                    logger.info(recipient_id + " sends " + "\"" + "attachment" + "\"")
+                    response_sent_nontext = "ตอนนี้ลูกสมุนไพรสนใจแต่ข้อความนะครับ"
+                    messenger_send_api.respond(recipient_id, response_sent_nontext)
 
 
 def nlu_continue(agent, next_action):
@@ -91,9 +118,9 @@ def nlu_continue(agent, next_action):
 
 
 def nlu_start(recipient_id, text):
-    rasa_nlu_interpreter_path = os.path.join(os.getcwd(), "models", "nlu", "default", "current")
+    rasa_nlu_interpreter_path = os.path.join(os.getcwd(), "rasa", "models", "nlu", "default", "current")
     interpreter = RasaNLUInterpreter(rasa_nlu_interpreter_path)
-    rasa_nlu_dialogue_path = os.path.join(os.getcwd(), "models", "dialogue")
+    rasa_nlu_dialogue_path = os.path.join(os.getcwd(), "rasa", "models", "dialogue")
     agent = Agent.load(rasa_nlu_dialogue_path, interpreter=interpreter)
     next_action = agent.start_message_handling(text, sender_id=recipient_id)
     return agent, next_action
@@ -101,7 +128,6 @@ def nlu_start(recipient_id, text):
 
 def get_random_message():
     sample_responses = ["อู้หยังนิ", "บ่ฮู้เรื่อง", "อู้ไปเรื่อย", "สวัสดีเจ้า", "ต่อนยอน"]
-    # return selected item to the user
     return random.choice(sample_responses)
 
 
@@ -112,13 +138,16 @@ def get_herb_info_from_database(herb_name):
     return matched_herb_list[0]
 
 def get_image_path_from_herb(matched_herb):
+    if not matched_herb:
+        return IMAGE_NOT_FOUND
     image_directory_path = os.path.join('herb_data', 'herb_images_png', str(matched_herb['herbId']))
+    logger.debug("(" + str(matched_herb['herbId']) + ") " + ','.join(matched_herb['thaiNameList']))
     if not os.path.isdir(image_directory_path):
         return IMAGE_NOT_FOUND
     herb_file_list = os.listdir(image_directory_path)
-    randomed_file_number = random.randint(1, len(
+    randomed_file_number = random.randint(0, len(
         [name for name in os.listdir(image_directory_path) if
-         os.path.isfile(os.path.join(image_directory_path, name))]) + 1)
+         os.path.isfile(os.path.join(image_directory_path, name))]))
     selected_herb_file = herb_file_list[randomed_file_number]
     image_path = os.path.join(image_directory_path, selected_herb_file)
     image_path = os.path.abspath(image_path)

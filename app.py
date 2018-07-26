@@ -7,6 +7,21 @@ from flask import Flask, request, jsonify
 from messenger_send_api import verify_webhook
 # Samoonprai Bot
 import controllers
+# Utilities
+import logging
+
+# Logging
+logger = logging.getLogger('SAMOONPRAI')
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('[%(asctime)s][%(name)s][%(levelname)s] %(message)s')
+file_handler = logging.FileHandler('server.log', encoding='utf-8')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+console_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 # Flask
 app = Flask(__name__)
