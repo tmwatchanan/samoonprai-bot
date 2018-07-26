@@ -1,8 +1,7 @@
 import os
 import requests
 from requests_toolbelt import MultipartEncoder
-import imghdr
-from PIL import Image
+import json
 
 FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
 VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
@@ -50,10 +49,10 @@ def send_message(recipient_id, text):
 
 def send_image(recipient_id, image_path):
     """Send a response to Facebook"""
-    print("image_path = " + image_path)
+    # print("image_path = " + image_path)
     payload = {
         'message': '{ "attachment": { "type": "image", "payload": {} } }',
-        'filedata': (os.path.basename(image_path), open(image_path, 'rb'), imghdr.what(image_path)),
+        'filedata': (os.path.basename(image_path), open(image_path, 'rb'), 'image/png'),
         'recipient': '{ "id": ' + recipient_id + ' }',
         'notification_type': 'regular'
     }
@@ -70,8 +69,9 @@ def send_image(recipient_id, image_path):
                      params=auth, headers=multipart_header).json()
 
 
-def respond(sender, message):
-    """Formulate a response to the user and
-    pass it on to a function that sends it."""
+def respond(recipient_id, message):
+    send_message(recipient_id, message)
+
+def debug_respond(recipient_id, message):
     response = get_bot_response(message)
-    send_message(sender, response)
+    send_message(recipient_id, response)
