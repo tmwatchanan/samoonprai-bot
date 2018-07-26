@@ -27,9 +27,9 @@ deepcut==0.6.1.0
 dill==0.2.8.2
 docopt==0.6.2
 docutils==0.14
-fakeredis==0.10.3
-fbmessenger==5.3.0
-Flask==1.0.2
+fakeredis==0.10.e
+fbmessenget==5.3.0
+Flask==0.12.2
 Flask-Cors==3.0.6
 ftfy==4.4.3
 future==0.16.0
@@ -86,6 +86,7 @@ rasa-nlu==0.12.0
 redis==2.10.6
 regex==2017.4.5
 requests==2.19.1
+requests-toolbelt==0.8.0
 ruamel.yaml==0.15.44
 s3transfer==0.1.13
 scikit-learn==0.19.2
