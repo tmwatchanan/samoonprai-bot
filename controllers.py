@@ -55,7 +55,6 @@ def process_incoming_message(payload):
                         herb_name = ''
                         herb_object = HERB_NOT_FOUND
                     logger.debug("(" + recipient_id + ")(" + text + "): %s", next_action)
-                    image_path = ''
                     while (next_action['next_action'] != 'action_listen'):
                         if next_action['next_action'] == 'bot.utter.greeting':
                             messenger_send_api.respond(recipient_id, "สวัสดีครับ " + user_name + " มีอะไรให้ลูกสมุนไพรช่วยมั้ยฮะ")
@@ -75,7 +74,22 @@ def process_incoming_message(payload):
                                 messenger_send_api.respond(recipient_id, "นี่ครับ รูป" + herb_name)
                                 send_api_response = messenger_send_api.send_image(recipient_id, image_path)
                         elif next_action['next_action'] == 'bot.validation.herb_photo':
-                            messenger_send_api.respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า")
+                            # messenger_send_api.respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า")
+                            buttons = []
+                            button = {
+                                'type': 'postback',
+                                'title': 'ใช่',
+                                'payload': 'corrent'
+                            }
+                            buttons.append(button)
+                            button = {
+                                'type': 'postback',
+                                'title': 'ไม่ใช่',
+                                'payload': 'wrong'
+                            }
+                            buttons.append(button)
+                            text = "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า"
+                            messenger_send_api.send_button(recipient_id, text, buttons)
                         elif next_action['next_action'] == 'bot.validation.get_data.herb_photo':
                             user_label_herb_name = next_action['tracker']['slots']['herb']
                         elif next_action['next_action'] == 'bot.utter.thankyou':
@@ -124,10 +138,10 @@ def get_herb_info_from_database(herb_name):
     return matched_herb_list[0]
 
 def get_image_path_from_herb(matched_herb):
-    print(matched_herb)
     if not matched_herb:
         return IMAGE_NOT_FOUND
     image_directory_path = os.path.join('herb_data', 'herb_images_png', str(matched_herb['herbId']))
+    logger.debug("(" + str(matched_herb['herbId']) + ") " + ','.join(matched_herb['thaiNameList']))
     if not os.path.isdir(image_directory_path):
         return IMAGE_NOT_FOUND
     herb_file_list = os.listdir(image_directory_path)

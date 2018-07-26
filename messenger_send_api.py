@@ -39,9 +39,6 @@ def get_user_info(recipient_id, fields=None):
     params.update(auth)
     request_endpoint = '{0}/{1}'.format(GRAPH_API_URL, recipient_id)
     response = requests.get(request_endpoint, params=params)
-    print(request_endpoint)
-    print(params)
-    print(response)
     if response.status_code == 200:
         return response.json()
     return None
@@ -51,17 +48,24 @@ def get_bot_response(message):
     return "ลูกสมุนไพร่: '{}'".format(message)
 
 
-def send_message(recipient_id, text):
-    """Send a response to Facebook"""
+def respond(recipient_id, message):
+    send_text(recipient_id, message)
+
+
+def debug_respond(recipient_id, message):
+    response = get_bot_response(message)
+    send_text(recipient_id, response)
+
+
+def send_response(recipient_id, notification_type='regular', add_payload=None):
     payload = {
-        'message': {
-            'text': text
-        },
         'recipient': {
             'id': recipient_id
         },
-        'notification_type': 'regular'
+        'notification_type': notification_type
     }
+    if payload is not None:
+        payload['message'] = add_payload
 
     response = requests.post(
         SEND_API_URL,
@@ -70,6 +74,14 @@ def send_message(recipient_id, text):
     )
 
     return response.json()
+
+
+def send_text(recipient_id, text):
+    """Send a response to Facebook"""
+    message = {
+        'text': text
+    }
+    return send_response(recipient_id, add_payload=message)
 
 
 def send_image(recipient_id, image_path):
@@ -93,10 +105,16 @@ def send_image(recipient_id, image_path):
                          params=auth, headers=multipart_header).json()
 
 
-def respond(recipient_id, message):
-    send_message(recipient_id, message)
-
-
-def debug_respond(recipient_id, message):
-    response = get_bot_response(message)
-    send_message(recipient_id, response)
+def send_button(recipient_id, text, buttons):
+    # https://developers.facebook.com/docs/messenger-platform/send-api-reference/button-template
+    attachment = {
+        'attachment' : {
+            'type': 'template',
+            'payload': {
+                'template_type': 'button',
+                'text': text,
+                "buttons": buttons
+            }
+        }
+    }
+    return send_response(recipient_id, add_payload=attachment)
