@@ -105,6 +105,15 @@ def send_image(recipient_id, image_path):
                          params=auth, headers=multipart_header).json()
 
 
+def send_quick_replies(recipient_id, text, quick_replies):
+    # https://developers.facebook.com/docs/messenger-platform/reference/send-api/quick-replies
+    message = {
+        'text': text,
+        'quick_replies': quick_replies
+    }
+    return send_response(recipient_id, add_payload=message)
+
+
 def send_button(recipient_id, text, buttons):
     # https://developers.facebook.com/docs/messenger-platform/send-api-reference/button-template
     attachment = {
