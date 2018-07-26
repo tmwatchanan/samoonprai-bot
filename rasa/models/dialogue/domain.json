@@ -17,6 +17,7 @@
     "prev_action_listen",
     "prev_action_restart",
     "prev_bot.utter.default",
+    "prev_bot.utter.greeting",
     "prev_bot.ask.photo",
     "prev_bot.action.photo_to_name",
     "prev_bot.utter.herb_name",

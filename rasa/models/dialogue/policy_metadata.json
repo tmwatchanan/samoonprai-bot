@@ -5,7 +5,13 @@
         "herb"
       ]
     },
+    "bot.utter.greeting": {
+      "slots": []
+    },
     "bot.utter.thankyou": {
+      "slots": []
+    },
+    "bot.utter.benefit": {
       "slots": []
     },
     "bot.validation.get_data.herb_name": {
@@ -15,9 +21,6 @@
       "slots": []
     },
     "bot.validation.get_data.herb_photo": {
-      "slots": []
-    },
-    "bot.utter.benefit": {
       "slots": []
     }
   },
