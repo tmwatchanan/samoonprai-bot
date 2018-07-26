@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Messenger Platform
-from messenger_send_api import debug_respond, respond, send_image
+import messenger_send_api
 # Rasa NLU
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
@@ -41,11 +41,14 @@ def process_incoming_message(payload):
                 # Facebook Messenger ID for user so we know where to send response back to
                 recipient_id = message['sender']['id']
                 text = message['message'].get('text')
+                user_info = messenger_send_api.get_user_info(recipient_id, ['first_name', 'last_name'])
+                user_name = user_info['first_name'] if user_info else ''
+                print(user_info)
                 if text:
                     # Get Next action from input user message
                     logger.info(recipient_id + " sends " + "\"" + text + "\"")
                     agent, next_action = nlu_start(recipient_id, text)
-                    debug_respond(recipient_id, next_action['next_action'])
+                    messenger_send_api.debug_respond(recipient_id, next_action['next_action'])
                     herb_name = next_action['tracker']['slots']['herb']
                     herb_object = None
                     if herb_name is None:
@@ -55,42 +58,42 @@ def process_incoming_message(payload):
                     image_path = ''
                     while (next_action['next_action'] != 'action_listen'):
                         if next_action['next_action'] == 'bot.utter.greeting':
-                            respond(recipient_id, "สวัสดีครับ มีอะไรให้ลูกสมุนไพรช่วยมั้ยฮะ")
+                            messenger_send_api.respond(recipient_id, "สวัสดีครับ " + user_name + " มีอะไรให้ลูกสมุนไพรช่วยมั้ยฮะ")
                         elif next_action['next_action'] == 'bot.action.name_to_photo':
                             if herb_object == HERB_NOT_FOUND:
-                                respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรไม่รู้จักสมุนไพรชื่อ" + herb_name + "ครับ")
+                                messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรไม่รู้จักสมุนไพรชื่อ" + herb_name + "ครับ")
                                 break
                             else:
                                 herb_object = get_herb_info_from_database(herb_name)
-                                respond(recipient_id, "รอสักครู่คร้าบ ลูกสมุนไพรกำลังหารูปของ" + herb_name + "ให้ครับ")
+                                messenger_send_api.respond(recipient_id, "รอสักครู่คร้าบ ลูกสมุนไพรกำลังหารูปของ" + herb_name + "ให้ครับ")
                         elif next_action['next_action'] == 'bot.utter.herb_photo':
                             image_path = get_image_path_from_herb(herb_object)
                             if image_path == IMAGE_NOT_FOUND:
-                                respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรยังไม่มีรูป" + herb_name + "ครับ")
+                                messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรยังไม่มีรูป" + herb_name + "ครับ")
                                 break
                             else:
-                                respond(recipient_id, "นี่ครับ รูป" + herb_name)
-                                send_api_response = send_image(recipient_id, image_path)
+                                messenger_send_api.respond(recipient_id, "นี่ครับ รูป" + herb_name)
+                                send_api_response = messenger_send_api.send_image(recipient_id, image_path)
                         elif next_action['next_action'] == 'bot.validation.herb_photo':
-                            respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า")
+                            messenger_send_api.respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ ช่วยลูกสมุนไพรยืนยันหน่อยน้า")
                         elif next_action['next_action'] == 'bot.validation.get_data.herb_photo':
                             user_label_herb_name = next_action['tracker']['slots']['herb']
                         elif next_action['next_action'] == 'bot.utter.thankyou':
-                            respond(recipient_id, "ขอบคุณครับ ถ้ามีอะไรให้ลูกสมุนไพรช่วยอีกก็บอกได้เลยนะครับ")
+                            messenger_send_api.respond(recipient_id, "ขอบคุณครับ ถ้ามีอะไรให้ลูกสมุนไพรช่วยอีกก็บอกได้เลยนะครับ")
                         else:
                             logger.debug("Action %s is unknown")
-                            respond(recipient_id, "ตอนนี้ลูกสมุนไพรงงไปหมดแล้วว่าต้องทำอะไร")
+                            messenger_send_api.respond(recipient_id, "ตอนนี้ลูกสมุนไพรงงไปหมดแล้วว่าต้องทำอะไร")
                             break
                         next_action = nlu_continue(agent, next_action)
-                        debug_respond(recipient_id, next_action['next_action'])
+                        messenger_send_api.debug_respond(recipient_id, next_action['next_action'])
                         logger.debug("(" + recipient_id + ")(" + text + "): %s", next_action)
-                    # respond(recipient_id, "คุณตอบว่า " + text)
-                    # respond(recipient_id, "อยากถามอะไรอีกมั้ยฮะ")
+                    # messenger_send_api.respond(recipient_id, "คุณตอบว่า " + text)
+                    # messenger_send_api.respond(recipient_id, "อยากถามอะไรอีกมั้ยฮะ")
                 # if user sends us a GIF, photo,video, or any other non-text item
                 if message['message'].get('attachments'):
                     logger.info(recipient_id + " sends " + "\"" + "attachment" + "\"")
                     response_sent_nontext = "ตอนนี้ลูกสมุนไพรสนใจแต่ข้อความนะครับ"
-                    respond(recipient_id, response_sent_nontext)
+                    messenger_send_api.respond(recipient_id, response_sent_nontext)
 
 
 def nlu_continue(agent, next_action):
