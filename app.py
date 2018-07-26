@@ -9,15 +9,17 @@ from rasa_core.agent import Agent
 from keras import backend as K
 # Messenger Platform
 from messenger_send_api import verify_webhook, respond, send_image
+# from pymessenger.bot import Bot
 # Utilities
 import random
 import os
 import json
 
-K.clear_session()
-
 # Flask
 app = Flask(__name__)
+
+# Messenger Bot
+# bot = Bot(os.environ['PAGE_ACCESS_TOKEN'])
 
 # NLU
 
@@ -54,6 +56,9 @@ def listen():
                 if message.get('message'):
                     # Facebook Messenger ID for user so we know where to send response back to
                     recipient_id = message['sender']['id']
+                    print(recipient_id)
+                    image_url = "https://dwa5x7aod66zk.cloudfront.net/assets/pack/logo-digitalocean-3d328c1d6619d314d47aab1259c1235b1339c343e12df62a688076bf6ceac866.jpg"
+                    # bot.send_image_url(recipient_id, image_url)
                     text = message['message'].get('text')
                     if text:
                         # Get Next action from input user message
@@ -86,7 +91,8 @@ def listen():
                                 image_path = os.path.abspath(image_path)
                             elif next_action['next_action'] == 'bot.utter.herb_photo':
                                 print("bot.utter.herb_photo")
-                                send_image(recipient_id, image_path)
+                                send_result = send_image(recipient_id, image_path)
+                                print(send_result)
                             elif next_action['next_action'] == 'bot.validation.herb_photo':
                                 print("bot.validation.herb_photo")
                                 respond(recipient_id, "รูปนี้ใช่" + herb_name + "มั้ยครับ")
