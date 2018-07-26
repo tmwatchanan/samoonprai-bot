@@ -1,6 +1,7 @@
 action_factory: null
 action_names:
 - bot.utter.default
+- bot.utter.greeting
 - bot.ask.photo
 - bot.action.photo_to_name
 - bot.utter.herb_name
@@ -17,6 +18,7 @@ action_names:
 - bot.utter.detail
 actions:
 - bot.utter.default
+- bot.utter.greeting
 - bot.ask.photo
 - bot.action.photo_to_name
 - bot.utter.herb_name
@@ -54,9 +56,9 @@ slots:
     type: rasa_core.slots.TextSlot
 templates:
   bot.action.name_to_benefit:
-  - text: สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของมะนาวให้นะครับ
+  - text: สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของ{herb}ให้นะครับ
   bot.action.name_to_detail:
-  - text: สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูลมะนาวให้นะครับ
+  - text: สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูล{herb}ให้นะครับ
   bot.action.name_to_photo:
   - text: สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.action.photo_to_name:
@@ -64,15 +66,17 @@ templates:
   bot.ask.photo:
   - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
   bot.utter.benefit:
-  - text: สรรพคุณของมะนาวมีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
+  - text: สรรพคุณของ {herb} มีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
   bot.utter.default:
   - text: ไม่เข้าใจ พิมพ์ใหม่ได้ไหมครับ
   bot.utter.detail:
-  - text: มะนาว มีชื่อวิทยาศาสตร์คือ limeee
+  - text: '{herb} มีชื่อวิทยาศาสตร์คือ limeee'
+  bot.utter.greeting:
+  - text: ลูกสมุนไพร สวัสดีครับ
   bot.utter.herb_name:
   - text: สมุนไพรตัวนี้ชื่อว่า ว่านหางจระเข้ ครับ
   bot.utter.herb_photo:
-  - text: Picture นี่คือรูปของ ขมิ้นชันครับ
+  - text: Picture นี่คือรูปของ {herb}ครับ
   bot.utter.thankyou:
   - text: ขอบคุณครับ
   bot.validation.get_data.herb_name:
@@ -82,5 +86,5 @@ templates:
   bot.validation.herb_name:
   - text: ไม่รู้ว่าถูกต้องไหมครับ ถ้าไม่ถูกต้องสมุนไพรตัวนี้ชื่ออะไรพอจะช่วยหาข้อมูลและสอนผมได้ไหมครับ
   bot.validation.herb_photo:
-  - text: ไม่รู้ว่ารูปนี้คือขมิ้นชันใช่ไหมครับช่วยยืนยันให้ผมหน่อย
+  - text: ไม่รู้ว่ารูปนี้คือ{herb}ใช่ไหมครับช่วยยืนยันให้ผมหน่อย
 topics: []

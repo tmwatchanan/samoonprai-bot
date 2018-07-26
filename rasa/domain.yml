@@ -20,6 +20,9 @@ intents:
 - user.ส่งรูปภาพ
 
 templates:
+  bot.utter.greeting:
+    - "ลูกสมุนไพร สวัสดีครับ"
+
   bot.ask.photo:
     - ช่วยส่งรูปสมุนไพรให้หน่อยครับ
   bot.action.photo_to_name:
@@ -36,24 +39,25 @@ templates:
   bot.action.name_to_photo:
     - สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.utter.herb_photo:
-    - Picture นี่คือรูปของ ขมิ้นชันครับ
+    - Picture นี่คือรูปของ {herb}ครับ
   bot.validation.herb_photo:
-    - ไม่รู้ว่ารูปนี้คือขมิ้นชันใช่ไหมครับช่วยยืนยันให้ผมหน่อย
+    - ไม่รู้ว่ารูปนี้คือ{herb}ใช่ไหมครับช่วยยืนยันให้ผมหน่อย
   bot.validation.get_data.herb_photo:
     - ขอบคุณสำหรับข้อมูลครับ
 
   bot.action.name_to_benefit:
-    - สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของมะนาวให้นะครับ
+    - สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของ{herb}ให้นะครับ
   bot.utter.benefit:
-    - สรรพคุณของมะนาวมีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
+    - สรรพคุณของ {herb} มีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
   bot.action.name_to_detail:
-    - สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูลมะนาวให้นะครับ
+    - สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูล{herb}ให้นะครับ
   bot.utter.detail:
-    - มะนาว มีชื่อวิทยาศาสตร์คือ limeee
+    - "{herb} มีชื่อวิทยาศาสตร์คือ limeee"
   bot.utter.default:
     - ไม่เข้าใจ พิมพ์ใหม่ได้ไหมครับ
 actions:
 - bot.utter.default
+- bot.utter.greeting
 - bot.ask.photo
 - bot.action.photo_to_name
 - bot.utter.herb_name

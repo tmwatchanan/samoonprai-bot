@@ -1,3 +1,11 @@
+## default greeting
+* user.ทักทาย
+ - bot.utter.greeting
+
+## default thankyou
+* user.ขอบคุณ
+  - bot.utter.thankyou
+
 ## ค้นหาชื่อจากรูป_ผิด
 * user.ค้นหาสมุนไพรจากรูป
  - bot.ask.photo
