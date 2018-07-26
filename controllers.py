@@ -11,6 +11,7 @@ import random
 import os
 import json
 import logging
+import requests
 
 # Disable warning messages
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -111,8 +112,38 @@ def process_incoming_message(payload):
                 # if user sends us a GIF, photo,video, or any other non-text item
                 if message['message'].get('attachments'):
                     logger.info(recipient_id + " sends " + "\"" + "attachment" + "\"")
-                    response_sent_nontext = "ตอนนี้ลูกสมุนไพรสนใจแต่ข้อความนะครับ"
-                    messenger_send_api.respond(recipient_id, response_sent_nontext)
+                    # response_sent_nontext = "ตอนนี้ลูกสมุนไพรสนใจแต่ข้อความนะครับ"
+                    data = {
+                        'url': message['message']['attachments'][0]['payload']['url']
+                    }
+                    response = requests.post(
+                        "http://localhost:5001/classify/url",
+                        json=data,
+                    )
+                    response_json = response.json()
+                    predicted_herb_tmp_name = response_json['results'][0]['label']
+                    map_herb_name = {
+                        'kokchang': 'กกช้าง',
+                        'kokrungka': 'กกลังกา',
+                        'krajeabdang': 'กระเจี๊ยบแดง',
+                        'kwawkruekaw': 'กวาวเครือขาว',
+                        'kangfang': 'แก่นฝาง',
+                        'kaminchun': 'ขมิ้นชัน',
+                        'chakeaw': 'ชาเขียว',
+                        'tungchao': 'ถั่งเช่า',
+                        'borapet': 'บอระเพ็ด',
+                        'plalhaipruek': 'ปลาไหลเผือก',
+                        'fang': 'ฝาง',
+                        'plukaow': 'พลูคาว',
+                        'yahnang': 'ย่านาง',
+                        'rangjued': 'รางจืด',
+                        'looktaibai': 'ลูกใต้ใบ',
+                        'wanhang': 'ว่านหางจระเข้',
+                        'somkorea': 'โสมเกาหลี',
+                        'obchei': 'อบเชย'
+                    }
+                    predicted_herb_name = map_herb_name[predicted_herb_tmp_name]
+                    messenger_send_api.respond(recipient_id, "ถ้า" + BOT_NAME + "เดาไม่ผิด รูปนี้น่าจะเป็น" + predicted_herb_name + "นะครับ")
 
 
 def nlu_continue(agent, next_action):
