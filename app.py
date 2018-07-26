@@ -79,9 +79,11 @@ def listen():
                                 herb_name = next_action['tracker']['slots']['herb']
                                 print(herb_name)
                                 matched_herb_list = [x for x in herb_json_array if herb_name in set(x['thaiNameList'])]
+                                if len(matched_herb_list) == 0:
+                                    break
                                 matched_herb = matched_herb_list[0]
                                 # print(matched_herb)
-                                image_directory_path = os.path.join('herb_data', 'herb_images', str(matched_herb['herbId']))
+                                image_directory_path = os.path.join('herb_data', 'herb_images_png', str(matched_herb['herbId']))
                                 herb_file_list = os.listdir(image_directory_path)
                                 randomed_file_number = random.randint(1, len(
                                     [name for name in os.listdir(image_directory_path) if
