@@ -2,10 +2,14 @@ import os
 import requests
 from requests_toolbelt import MultipartEncoder
 import json
+import logging
 
 FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
 VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 PAGE_ACCESS_TOKEN = os.environ['PAGE_ACCESS_TOKEN']
+
+# Logging
+logger = logging.getLogger('app')
 
 def verify_webhook(req):
     if req.args.get("hub.verify_token") == VERIFY_TOKEN:
@@ -65,6 +69,9 @@ def send_image(recipient_id, image_path):
     multipart_header = {
         'Content-Type': multipart_data.content_type
     }
+
+    logger.debug("Send image %s to recipient id %s", recipient_id, image_path)
+
     return requests.post(FB_API_URL, data=multipart_data,
                      params=auth, headers=multipart_header).json()
 
