@@ -114802,72 +114802,268 @@
         "text": "ชื่ออะไร"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่ใช่"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่เอา"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่สนใจ"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่ต้องการ"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่สน"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่ตกลง"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่ยอมรับ"
       },
       {
-        "intent": "user.ใช่",
+        "intent": "user.ไม่ใช่",
         "text": "ไม่"
       },
       {
         "intent": "user.ไม่ใช่",
+        "text": "ไม่ใช่"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่เอา"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่สนใจ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ต้องการ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่สน"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ตกลง"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ยอมรับ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ใช่"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่เอา"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่สนใจ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ต้องการ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่สน"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ตกลง"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ยอมรับ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ใช่"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่เอา"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่สนใจ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ต้องการ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่สน"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ตกลง"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่ยอมรับ"
+      },
+      {
+        "intent": "user.ไม่ใช่",
+        "text": "ไม่"
+      },
+      {
+        "intent": "user.ใช่",
         "text": "ใช่แล้ว"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "ใช่"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "ต้องการ"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "สนใจ"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "โอเค"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "ตกลง"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "ยอมรับ"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "เคร"
       },
       {
-        "intent": "user.ไม่ใช่",
+        "intent": "user.ใช่",
         "text": "โอเค"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ใช่แล้ว"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ใช่"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ต้องการ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "สนใจ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "โอเค"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ตกลง"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ยอมรับ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "เคร"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "โอเค"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ใช่แล้ว"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ใช่"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ต้องการ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "สนใจ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "โอเค"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ตกลง"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ยอมรับ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "เคร"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "โอเค"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ใช่แล้ว"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ใช่"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ต้องการ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "สนใจ"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "โอเค"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ตกลง"
+      },
+      {
+        "intent": "user.ใช่",
+        "text": "ยอมรับ"
       },
       {
         "intent": "user.ทักทาย",
