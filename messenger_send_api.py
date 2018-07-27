@@ -127,3 +127,21 @@ def send_button(recipient_id, text, buttons):
         }
     }
     return send_response(recipient_id, add_payload=attachment)
+
+
+def send_sender_action(recipient_id, sender_action):
+    # https://developers.facebook.com/docs/messenger-platform/send-messages/sender-actions
+    payload = {
+        'recipient': {
+            'id': recipient_id
+        },
+        'sender_action': sender_action
+    }
+
+    response = requests.post(
+        SEND_API_URL,
+        params=auth,
+        json=payload,
+    )
+
+    return response.json()

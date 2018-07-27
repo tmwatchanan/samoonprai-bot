@@ -42,7 +42,7 @@ def listen():
     if request.method == 'POST':
         payload = request.get_json()
         controllers.process_incoming_message(payload)
-        return "ok"
+        return "ok", 200
 
 
 @app.route('/bot')
