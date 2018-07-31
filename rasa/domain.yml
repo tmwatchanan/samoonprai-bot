@@ -10,6 +10,8 @@ intents:
 - user.ไม่ใช่
 - user.ทักทาย
 - user.ขอบคุณ
+- user.พบสมุนไพร
+- user.ไม่พบสมุนไพร
 - user.ค้นหาสมุนไพรจากรูป
 - user.สมุนไพรคืออะไร
 - user.หน้าที่ของบอท
@@ -29,6 +31,8 @@ templates:
     - เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
   bot.utter.herb_name:
     - สมุนไพรตัวนี้ชื่อว่า ว่านหางจระเข้ ครับ
+  bot.utter.herb_name.not_found:
+    - ลูกไพรหารูป{herb} ไม่เจอ ขอบโทษด้วยนะครับ มีอะไรให้ลูกไพรช่วยบอกลูกไพรมาได้เลยนะครับ
   bot.validation.herb_name:
     - ไม่รู้ว่าถูกต้องไหมครับ ถ้าไม่ถูกต้องสมุนไพรตัวนี้ชื่ออะไรพอจะช่วยหาข้อมูลและสอนผมได้ไหมครับ
   bot.validation.get_data.herb_name:
@@ -40,6 +44,8 @@ templates:
     - สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.utter.herb_photo:
     - Picture นี่คือรูปของ {herb}ครับ
+  bot.utter.herb_photo.not_found:
+    - ลูกไพรหา {herb} ไม่เจอ ขอโทษด้วยจริงๆครับ มีอะไรให้ลูกไพรช่วยอีกไหมครับ
   bot.validation.herb_photo:
     - ไม่รู้ว่ารูปนี้คือ{herb}ใช่ไหมครับช่วยยืนยันให้ผมหน่อย
   bot.validation.get_data.herb_photo:
@@ -65,12 +71,14 @@ actions:
 - bot.action.photo_to_name
 - bot.utter.herb_name
 - bot.validation.herb_name
+- bot.utter.herb_name.not_found
 - bot.validation.get_data.herb_name
 - bot.utter.thankyou
 - bot.ask.get_data
 
 - bot.action.name_to_photo
 - bot.utter.herb_photo
+- bot.utter.herb_photo.not_found
 - bot.validation.herb_photo
 - bot.validation.get_data.herb_photo
 

@@ -6,11 +6,13 @@ action_names:
 - bot.action.photo_to_name
 - bot.utter.herb_name
 - bot.validation.herb_name
+- bot.utter.herb_name.not_found
 - bot.validation.get_data.herb_name
 - bot.utter.thankyou
 - bot.ask.get_data
 - bot.action.name_to_photo
 - bot.utter.herb_photo
+- bot.utter.herb_photo.not_found
 - bot.validation.herb_photo
 - bot.validation.get_data.herb_photo
 - bot.action.name_to_benefit
@@ -24,11 +26,13 @@ actions:
 - bot.action.photo_to_name
 - bot.utter.herb_name
 - bot.validation.herb_name
+- bot.utter.herb_name.not_found
 - bot.validation.get_data.herb_name
 - bot.utter.thankyou
 - bot.ask.get_data
 - bot.action.name_to_photo
 - bot.utter.herb_photo
+- bot.utter.herb_photo.not_found
 - bot.validation.herb_photo
 - bot.validation.get_data.herb_photo
 - bot.action.name_to_benefit
@@ -44,6 +48,8 @@ intents:
 - user.ไม่ใช่
 - user.ทักทาย
 - user.ขอบคุณ
+- user.พบสมุนไพร
+- user.ไม่พบสมุนไพร
 - user.ค้นหาสมุนไพรจากรูป
 - user.สมุนไพรคืออะไร
 - user.หน้าที่ของบอท
@@ -79,8 +85,12 @@ templates:
   - text: ลูกสมุนไพร สวัสดีครับ
   bot.utter.herb_name:
   - text: สมุนไพรตัวนี้ชื่อว่า ว่านหางจระเข้ ครับ
+  bot.utter.herb_name.not_found:
+  - text: ลูกไพรหารูป{herb} ไม่เจอ ขอบโทษด้วยนะครับ มีอะไรให้ลูกไพรช่วยบอกลูกไพรมาได้เลยนะครับ
   bot.utter.herb_photo:
   - text: Picture นี่คือรูปของ {herb}ครับ
+  bot.utter.herb_photo.not_found:
+  - text: ลูกไพรหา {herb} ไม่เจอ ขอโทษด้วยจริงๆครับ มีอะไรให้ลูกไพรช่วยอีกไหมครับ
   bot.utter.thankyou:
   - text: ขอบคุณครับ
   bot.validation.get_data.herb_name:
