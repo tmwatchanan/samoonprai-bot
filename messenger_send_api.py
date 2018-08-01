@@ -19,9 +19,9 @@ auth = {
 
 def verify_webhook(req):
     if req.args.get("hub.verify_token") == VERIFY_TOKEN:
-        return req.args.get("hub.challenge")
+        return req.args.get("hub.challenge"), 200
     else:
-        return "Invalid Webhook Subscription's Verify Token"
+        return "Invalid Webhook Subscription's Verify Token", 403
 
 
 def is_user_message(message):

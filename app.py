@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # Flask server
-from flask import Flask, request, jsonify
+from flask import Flask, request
+# from celery import Celery  # Background tasks
 # Messenger Platform
 from messenger_send_api import verify_webhook
 # Samoonprai Bot
@@ -40,16 +41,24 @@ def listen():
         return verify_webhook(request)
 
     if request.method == 'POST':
-        payload = request.get_json()
-        controllers.process_incoming_message(payload)
         return "ok", 200
+        # return "no", 403
+
+@app.after_request
+def process(response):
+    payload = request.get_json()
+    # print(payload)
+    if payload['object'] == 'page':
+        controllers.process_incoming_message(payload)
+    return response
 
 
-@app.route('/bot')
-def bot():
-    message = request.args.get('message')
-    return message  # Echo message
-    # return jsonify(interpreter.parse(message))
+
+# @app.route('/bot')
+# def bot():
+#     message = request.args.get('message')
+#     return message  # Echo message
+#     # return jsonify(interpreter.parse(message))
 
 
 if __name__ == '__main__':
