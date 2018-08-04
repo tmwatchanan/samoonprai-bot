@@ -18,6 +18,7 @@
  - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร {"herb":"มะนาว"}
  - bot.validation.get_data.herb_name
+ 
 ## ค้นหาชื่อจากรูป_ถูก
 * user.ค้นหาสมุนไพรจากรูป
  - bot.ask.photo
