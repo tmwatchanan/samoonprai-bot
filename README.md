@@ -41,3 +41,6 @@ A Bot application connected to (Facebook) Messenger Platform
 + **Celery Issues**, these issues can be happened:
     + ```Celery Process 'Worker' exited with 'exitcode 1'```
         + The version of package `billiard` must be higher than 3.3 (which is bundled 3.1.20, more or less). So we need to upgrade the package using `pip install --upgrade billiard`
+
+## References
++ [Redis on Windows](https://github.com/ServiceStack/redis-windows)
