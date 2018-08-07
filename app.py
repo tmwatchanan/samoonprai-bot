@@ -10,6 +10,8 @@ from messenger_send_api import verify_webhook
 import controllers
 # Utilities
 import logging
+# Background Tasks
+from celery import Celery
 
 # Logging
 logger = logging.getLogger('SAMOONPRAI')
@@ -26,12 +28,38 @@ logger.addHandler(console_handler)
 
 # Flask
 app = Flask(__name__)
+app.config.update(
+    CELERY_BROKER_URL='redis://localhost:6379/0',
+    CELERY_RESULT_BACKEND='redis://localhost:6379/0'
+)
 
+def make_celery(app):
+    celery = Celery(
+        app.import_name,
+        backend=app.config['CELERY_RESULT_BACKEND'],
+        broker=app.config['CELERY_BROKER_URL']
+    )
+    celery.conf.update(app.config)
+
+    class ContextTask(celery.Task):
+        def __call__(self, *args, **kwargs):
+            with app.app_context():
+                return self.run(*args, **kwargs)
+
+    celery.Task = ContextTask
+    return celery
+
+celery = make_celery(app)
 
 # @app.route('/')
 # def index():
-#     return '<h1>Samoonprai<h1/>'
+#     return '<h1>Samoonprai</h1>'
 
+
+@celery.task(name='add_together')
+def add_together(a, b):
+    print("HELLO = " + str(a+b))
+    return a + b
 
 @app.route("/webhook", methods=['GET', 'POST'])
 def listen():
@@ -41,16 +69,21 @@ def listen():
         return verify_webhook(request)
 
     if request.method == 'POST':
+        payload = request.get_json()
+        print(payload)
+        if not payload['object'] == 'page':
+            return
+        process.apply_async([payload])
+        # result = add_together.apply_async((5, 3))
+        # print(result)
+        print(request)
         return "ok", 200
         # return "no", 403
 
-@app.after_request
-def process(response):
-    payload = request.get_json()
-    # print(payload)
-    if payload['object'] == 'page':
+@celery.task(name='process')
+def process(payload):
+    with app.app_context():
         controllers.process_incoming_message(payload)
-    return response
 
 
 
@@ -61,5 +94,5 @@ def process(response):
 #     # return jsonify(interpreter.parse(message))
 
 
-# if __name__ == '__main__':
-#     app.run(host='127.0.0.1', port=5000, debug=True)
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)
