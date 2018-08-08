@@ -35,7 +35,10 @@
     "prev_bot.validation.get_data.herb_photo",
     "prev_bot.action.name_to_benefit",
     "prev_bot.utter.benefit",
+    "prev_bot.utter.benefit.not_found",
     "prev_bot.action.name_to_detail",
-    "prev_bot.utter.detail"
+    "prev_bot.utter.detail",
+    "prev_bot.utter.detail.not_found",
+    "prev_bot.ask.name_to_photo.herb_name"
   ]
 }

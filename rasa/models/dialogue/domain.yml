@@ -17,8 +17,11 @@ action_names:
 - bot.validation.get_data.herb_photo
 - bot.action.name_to_benefit
 - bot.utter.benefit
+- bot.utter.benefit.not_found
 - bot.action.name_to_detail
 - bot.utter.detail
+- bot.utter.detail.not_found
+- bot.ask.name_to_photo.herb_name
 actions:
 - bot.utter.default
 - bot.utter.greeting
@@ -37,8 +40,11 @@ actions:
 - bot.validation.get_data.herb_photo
 - bot.action.name_to_benefit
 - bot.utter.benefit
+- bot.utter.benefit.not_found
 - bot.action.name_to_detail
 - bot.utter.detail
+- bot.utter.detail.not_found
+- bot.ask.name_to_photo.herb_name
 config:
   store_entities_as_slots: true
 entities:
@@ -73,14 +79,20 @@ templates:
   - text: เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
   bot.ask.get_data:
   - text: ช่วยบอกน้องลูกไพรได้ไหมครับ ว่าจริงๆแล้วมันคือสมุนไพรอะไร เช่น "มันคือ มะนาว"
+  bot.ask.name_to_photo.herb_name:
+  - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูรูปของสมุนไพรอะไร
   bot.ask.photo:
   - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
   bot.utter.benefit:
   - text: สรรพคุณของ {herb} มีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
+  bot.utter.benefit.not_found:
+  - text: ขอโทษด้วยนะครับ ลูกไพรหา สรรพคุณของ {herb} ไม่เจอ
   bot.utter.default:
   - text: ไม่เข้าใจ พิมพ์ใหม่ได้ไหมครับ
   bot.utter.detail:
   - text: '{herb} มีชื่อวิทยาศาสตร์คือ limeee'
+  bot.utter.detail.not_found:
+  - text: ขอโทษด้วยนะครับ ลูกไพรหา ข้อมูลของ{herb}ไม่เจอ
   bot.utter.greeting:
   - text: ลูกสมุนไพร สวัสดีครับ
   bot.utter.herb_name:

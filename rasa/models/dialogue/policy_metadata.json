@@ -5,28 +5,34 @@
         "herb"
       ]
     },
-    "bot.validation.get_data.herb_name": {
+    "bot.utter.greeting": {
       "slots": []
     },
     "bot.utter.thankyou": {
       "slots": []
     },
-    "bot.utter.detail": {
+    "bot.utter.benefit.not_found": {
       "slots": []
     },
-    "bot.utter.herb_name.not_found": {
-      "slots": []
-    },
-    "bot.utter.greeting": {
-      "slots": []
-    },
-    "bot.validation.get_data.herb_photo": {
+    "bot.utter.benefit": {
       "slots": []
     },
     "bot.utter.herb_photo.not_found": {
       "slots": []
     },
-    "bot.utter.benefit": {
+    "bot.utter.detail": {
+      "slots": []
+    },
+    "bot.validation.get_data.herb_name": {
+      "slots": []
+    },
+    "bot.validation.get_data.herb_photo": {
+      "slots": []
+    },
+    "bot.utter.herb_name.not_found": {
+      "slots": []
+    },
+    "bot.utter.detail.not_found": {
       "slots": []
     }
   },
