@@ -3,7 +3,6 @@
 
 # Flask server
 from flask import Flask, request
-# from celery import Celery  # Background tasks
 # Messenger Platform
 from messenger_send_api import verify_webhook
 # Samoonprai Bot
@@ -70,13 +69,12 @@ def listen():
 
     if request.method == 'POST':
         payload = request.get_json()
-        print(payload)
         if not payload['object'] == 'page':
             return
-        process.apply_async([payload])
+        process.apply_async(args=[payload])
+        # process(payload)
         # result = add_together.apply_async((5, 3))
         # print(result)
-        print(request)
         return "ok", 200
         # return "no", 403
 
@@ -84,7 +82,6 @@ def listen():
 def process(payload):
     with app.app_context():
         controllers.process_incoming_message(payload)
-
 
 
 # @app.route('/bot')

@@ -48,97 +48,36 @@ def process_incoming_message(payload):
                 r = messenger_send_api.send_sender_action(recipient_id, 'mark_seen')
                 user_info = messenger_send_api.get_user_info(recipient_id, ['first_name', 'last_name'])
                 user_name = user_info['first_name'] if user_info else ''
-                print(user_info)
+                # print(user_info)
                 text = message['message'].get('text')
                 # if message['message'].get('attachments')[0].get('type') == 'image':
                 image_url = None
                 if message['message'].get('attachments'):
                     image_url = message['message']['attachments'][0].get('payload').get('url')
-                agent = next_action = None
+                agent = None
+                next_action = None
                 if image_url:
                     agent, next_action = nlu_start(recipient_id, "ส่งรูปภาพ")
                     logger.info(recipient_id + " sends " + "\"" + "an image in attachment" + "\"")
                 if text:
                     agent, next_action = nlu_start(recipient_id, text)
-                    logger.info(recipient_id + " sends " + "\"" + text + "\"")
+                    # logger.info(recipient_id + " sends " + "\"" + text.encode('utf-8') + "\"")
                     # messenger_send_api.debug_respond(recipient_id, next_action['next_action'])
                 herb_name = next_action.get('tracker').get('slots').get('herb')
-                herb_object = None
-                if herb_name is None:
-                    herb_name = ''
-                    herb_object = HERB_NOT_FOUND
-                    # logger.debug("(" + recipient_id + ")(" + text + "): %s", next_action)
+                print(herb_name)
+                # logger.debug("(" + recipient_id + ")(" + text + "): %s", next_action)
                 predicted_herb_name = None
+                print(next_action)
                 while next_action['next_action'] != 'action_listen':
                     messenger_send_api.send_sender_action(recipient_id, 'typing_on')
-                    if next_action['next_action'] == 'bot.utter.greeting':
-                        greeting_text = random_greeting_text(user_name)
-                        messenger_send_api.respond(recipient_id, greeting_text)
-                    elif next_action['next_action'] == 'bot.action.name_to_photo':
-                        if herb_object == HERB_NOT_FOUND:
-                            messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรไม่รู้จักสมุนไพรชื่อ" + herb_name + "ครับ")
-                            break
-                        else:
-                            herb_object = get_herb_info_from_database(herb_name)
-                            searching_image_text = random_searching_image_text(user_name, herb_name)
-                            messenger_send_api.respond(recipient_id, searching_image_text)
-                    elif next_action['next_action'] == 'bot.utter.herb_photo':
-                        image_path = get_image_path_from_herb(herb_object)
-                        if image_path == IMAGE_NOT_FOUND:
-                            image_not_found_text =  random_image_not_found_text(user_name, herb_name)
-                            messenger_send_api.respond(recipient_id, image_not_found_text)
-                            break
-                        else:
-                            image_found_text =  random_image_found_text(user_name, herb_name)
-                            messenger_send_api.respond(recipient_id, image_found_text)
-                            send_api_response = messenger_send_api.send_image(recipient_id, image_path)
-                    elif next_action['next_action'] == 'bot.validation.herb_photo':
-                        quick_replies = []
-                        quick_reply = {
-                            'content_type': 'text',
-                            'title': 'ใช่',
-                            "payload": "correct"
-                        }
-                        quick_replies.append(quick_reply)
-                        quick_reply = {
-                            'content_type': 'text',
-                            'title': 'ไม่ใช่',
-                            "payload": "wrong"
-                        }
-                        quick_replies.append(quick_reply)
-                        image_validation_text = random_image_validation_text(user_name, herb_name)
-                        messenger_send_api.send_quick_replies(recipient_id, image_validation_text, quick_replies)
-                    elif next_action['next_action'] == 'bot.validation.get_data.herb_photo':
-                        user_label_herb_name = next_action.get('tracker').get('slots').get('herb')
-                        thx_label_text = random_thx_label_text(user_name, herb_name)
-                        messenger_send_api.respond(recipient_id, thx_label_text)
-                    elif next_action['next_action'] == 'bot.utter.thankyou':
-                        messenger_send_api.respond(recipient_id, "ขอบคุณครับ ถ้ามีอะไรให้" + BOT_NAME + "ช่วยอีกก็บอกได้เลยนะครับ")
-                    elif next_action['next_action'] == 'bot.action.photo_to_name':
-                        searching_herb_name_text = random_searching_herb_name_text(user_name)
-                        messenger_send_api.respond(recipient_id, searching_herb_name_text)
-                        predicted_herb_name = call_herb_classification(image_url)
-                        print(predicted_herb_name)
-                        if predicted_herb_name:
-                            agent, next_action = nlu_start(recipient_id, 'พบสมุนไพร')
-                            print("พบสมุนไพร")
-                        else:
-                            agent, next_action = nlu_start(recipient_id, 'ไม่พบสมุนไพร')
-                            print("ไม่พบสมุนไพร")
-                    elif next_action['next_action'] == 'bot.utter.herb_name':
-                        found_herb_name_text = random_found_herb_name_text(user_name, herb_name)
-                        messenger_send_api.respond(recipient_id, found_herb_name_text)
-                    elif next_action['next_action'] == 'bot.utter.herb_name.not_found':
-                        not_found_herb_name_text = random_not_found_herb_name_text(user_name)
-                        messenger_send_api.respond(recipient_id, not_found_herb_name_text)
-                    elif next_action['next_action'] == 'bot.validation.herb_name':
-                        validate_herb_name_text = random_validate_herb_name_text(user_name, herb_name)
-                        messenger_send_api.respond(recipient_id, validate_herb_name_text)
-                    else:
-                        logger.debug("Action %s is unknown")
-                        messenger_send_api.respond(recipient_id, "ตอนนี้" + BOT_NAME + "งงไปหมดแล้วว่าต้องทำอะไร")
-                        break
-                    next_action = nlu_continue(agent, next_action)
+                    now_action = next_action['next_action']
+                    next_action = agent.continue_message_handling(executed_action=next_action['next_action'],sender_id=next_action['tracker']['sender_id'],events=[])
+                    # next_action = run_action(now_action,next_action)
+                    next_action = run_action(agent, herb_name, image_url, now_action, next_action, recipient_id, user_name)
+                    print(next_action)
+                    # next_action = nlu_continue(agent, next_action)
+                    # print("next")
+                    # print(next_action)
                     # messenger_send_api.debug_respond(recipient_id, next_action['next_action'])
                     logger.debug("(%s)(%s): %s", recipient_id, text, next_action)
                     messenger_send_api.send_sender_action(recipient_id, 'typing_off')
@@ -151,6 +90,84 @@ def process_incoming_message(payload):
                     #     logger.debug("(%s)(%s): %s", recipient_id, text, next_action)
 
 
+def run_action(agent, herb_name, image_url, now_action, next_action, recipient_id, user_name):
+    if now_action == 'bot.utter.greeting':
+        greeting_text = random_greeting_text(user_name)
+        messenger_send_api.respond(recipient_id, greeting_text)
+    elif now_action == 'bot.action.name_to_photo':
+        herb_object = get_herb_info_from_database(herb_name)
+        if herb_object == HERB_NOT_FOUND:
+            next_action = nlu_trigger(agent, recipient_id, "ไม่พบสมุนไพร")
+            # messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้ลูกสมุนไพรไม่รู้จักสมุนไพรชื่อ" + herb_name + "ครับ")
+            # break
+        else:
+            next_action = nlu_trigger(agent, recipient_id, "พบสมุนไพร")
+            searching_image_text = random_searching_image_text(user_name, herb_name)
+            response_result = messenger_send_api.respond(recipient_id, searching_image_text)
+    elif now_action == 'bot.utter.herb_photo':
+        herb_object = get_herb_info_from_database(herb_name)
+        image_path = get_image_path_from_herb(herb_object)
+        if image_path == IMAGE_NOT_FOUND:
+            image_not_found_text = random_image_not_found_text(user_name, herb_name)
+            messenger_send_api.respond(recipient_id, image_not_found_text)
+            # break
+        else:
+            image_found_text = random_image_found_text(user_name, herb_name)
+            messenger_send_api.respond(recipient_id, image_found_text)
+            send_api_response = messenger_send_api.send_image(recipient_id, image_path)
+            print(send_api_response)
+    elif now_action == 'bot.validation.herb_photo':
+        quick_replies = []
+        quick_reply = {
+            'content_type': 'text',
+            'title': 'ใช่',
+            "payload": "correct"
+        }
+        quick_replies.append(quick_reply)
+        quick_reply = {
+            'content_type': 'text',
+            'title': 'ไม่ใช่',
+            "payload": "wrong"
+        }
+        quick_replies.append(quick_reply)
+        image_validation_text = random_image_validation_text(user_name, herb_name)
+        messenger_send_api.send_quick_replies(recipient_id, image_validation_text, quick_replies)
+    elif now_action == 'bot.validation.get_data.herb_photo':
+        user_label_herb_name = next_action.get('tracker').get('slots').get('herb')
+        thx_label_text = random_thx_label_text(user_name, herb_name)
+        messenger_send_api.respond(recipient_id, thx_label_text)
+    elif now_action == 'bot.utter.thankyou':
+        messenger_send_api.respond(recipient_id, "ขอบคุณครับ ถ้ามีอะไรให้" + BOT_NAME + "ช่วยอีกก็บอกได้เลยนะครับ")
+    elif now_action == 'bot.action.photo_to_name':
+        searching_herb_name_text = random_searching_herb_name_text(user_name)
+        messenger_send_api.respond(recipient_id, searching_herb_name_text)
+        print("BEFORE CALL_HERB_CLASSIFICATION")
+        predicted_herb_name = call_herb_classification(image_url)
+        print("CALL_HERB_CLASSIFICATION HERE!")
+        print(predicted_herb_name)
+        if predicted_herb_name:
+            next_action = nlu_trigger(agent, recipient_id, 'พบสมุนไพร')
+            print("พบสมุนไพร")
+        else:
+            next_action = nlu_trigger(agent, recipient_id, 'ไม่พบสมุนไพร')
+            print("ไม่พบสมุนไพร")
+    elif now_action == 'bot.utter.herb_name':
+        found_herb_name_text = random_found_herb_name_text(user_name, herb_name)
+        messenger_send_api.respond(recipient_id, found_herb_name_text)
+    elif now_action == 'bot.utter.herb_name.not_found':
+        not_found_herb_name_text = random_not_found_herb_name_text(user_name)
+        messenger_send_api.respond(recipient_id, not_found_herb_name_text)
+    elif now_action == 'bot.validation.herb_name':
+        validate_herb_name_text = random_validate_herb_name_text(user_name, herb_name)
+        messenger_send_api.respond(recipient_id, validate_herb_name_text)
+    elif now_action == 'bot.ask.get_data':
+        messenger_send_api.respond(recipient_id, "ช่วยบอกน้อง" + BOT_NAME + "หน่อยได้ไหมครับ ว่าจริง ๆ แล้วมันสมุนไพรอะไร (เช่น \"มันคือมะนาว\")")
+    else:
+        logger.debug("Action %s is unknown")
+        messenger_send_api.respond(recipient_id, "ตอนนี้" + BOT_NAME + "งงไปหมดแล้วว่าต้องทำอะไร")
+    return next_action
+
+
 def call_herb_classification(image_url):
     data = {
         'url': image_url
@@ -161,6 +178,7 @@ def call_herb_classification(image_url):
             json=data,
         )
         response_json = response.json()
+        print(response_json)
         predicted_herb_tmp_name = response_json['results'][0]['label']
         map_herb_name = {
             'kokchang': 'กกช้าง',
@@ -186,14 +204,19 @@ def call_herb_classification(image_url):
         return predicted_herb_name
     except requests.exceptions.RequestException as e:
         logger.error(e)
-        return None
         # messenger_send_api.respond(recipient_id, "ขออภัยครับ ตอนนี้" + BOT_NAME + "คิดไม่ออกว่ารูปนี้คือสมุนไพรรูปอะไร ไว้ลองใหม่นะครับ")
+    return None
 
 
 def nlu_continue(agent, next_action):
     next_action = agent.continue_message_handling(executed_action=next_action['next_action'],
                                                   sender_id=next_action['tracker']['sender_id'],
                                                   events=[])
+    return next_action
+
+
+def nlu_trigger(agent, recipient_id, text):
+    next_action = agent.start_message_handling(text, sender_id=recipient_id)
     return next_action
 
 
@@ -216,6 +239,7 @@ def get_herb_info_from_database(herb_name):
     if len(matched_herb_list) == 0:
         return HERB_NOT_FOUND
     return matched_herb_list[0]
+
 
 def get_image_path_from_herb(matched_herb):
     if not matched_herb:
