@@ -1,71 +1,11 @@
-## Generated Story 1172085664628811733
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -1331324872084601854
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2568190212122856894
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3133309645887557974
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -3409713770381790477
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 1560744200013419092
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -345290651896588824
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 2829366287975399612
+## Generated Story 4377518325205836101
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story -917124729383046974
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 5819268250483179644
+## Generated Story 113260026377359203
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -73,13 +13,10 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story 8737437808798155780
+## Generated Story -4552525612162912837
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -92,7 +29,17 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story -1296259998480499335
+## Generated Story -7492763067516069114
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1452035425270293706
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -100,10 +47,55 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ใช่
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 6522456847620239611
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 2715470073639106965
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 7079429456710635664
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -9179857613090712697
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 4569012970848272407
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 333807444144092552
+* user.ไม่ใช่
+
+## Generated Story -5221685657328912556
+* user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -6540152897712859113
+## Generated Story -396571570855385532
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -118,10 +110,49 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story -7217398505707435816
+## Generated Story 825548597328347172
 * user.ใช่
 
-## Generated Story -5888917367821291533
+## Generated Story -6183620757667634307
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 7175998463523936562
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1686427289640379438
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -8640460284971664433
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 1881488711614669983
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8938828928513392722
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -133,81 +164,14 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
 
-## Generated Story -8178641569077787515
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 2568332587905422746
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -3755469446276622276
+## Generated Story 1433023005641782215
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story -4518775089044958380
-* user.ไม่ใช่
-
-## Generated Story -3098716387655672836
-* user.ไม่ใช่
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -3850776462238397780
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 4016753711989423635
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -4941759197239015862
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 6809920496215724100
+## Generated Story -2550423168253655898
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -219,1712 +183,25 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -7881552781075106906
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -1619916934736542035
-* user.ใช่
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -6547004596411112873
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -6624950201735572162
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -5340938883224923177
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 6066966559518757266
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 8009950591662293917
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 2580002134896616463
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 9113265621182675346
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 3817307163481305422
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 723497294510688805
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -4023026707902780272
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 5434743801564813643
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -8027342185417091105
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -6555357109243916920
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2515309933448053612
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1445857237320658044
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -4175367312398888072
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7430997344714819225
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1835132606785071107
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1408623203329413693
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 5945173189497433013
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1876594129846421260
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 835463221919934661
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2310884379146996119
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2605283849301953426
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6216623498644587354
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6667223257669769669
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4178907849144086493
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3268472569185965125
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1979189366685937320
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6984601730532174160
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1883097705076507581
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6376650385215806823
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -5239441956456177372
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2132252479780903067
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6038323413245170711
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1141438806076143201
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1007211681779916186
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3531315304987232337
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4421474751413638195
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2044914014845210790
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4894973294388258828
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2935938351895147027
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8878399068359473255
-* user.ไม่ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -250999153661986002
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -4910864625188167545
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1623263500953863801
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7111073378746124267
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1291370976691513680
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6133065482065055879
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -9153021872228488429
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7678065941072762119
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 3420526638651101042
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 5240520253299162905
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 6224895311498025661
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 3026204640904812442
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -3049497875834370980
-* user.ไม่ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 4251778296702899068
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 7726528540758166726
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -1914542553446802045
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 8750528355714738281
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -6472960890577214040
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 1775367238908292746
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -7530414614968576079
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 4434609710760822513
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -8260084203163054318
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 3132158073024925215
-* user.ทักทาย
-    - bot.utter.greeting
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -5321181425972724488
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -577531506554296204
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -2473346504688443188
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -7725003962796982542
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -1269655769251564166
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 6390065332768326794
-* user.ใช่
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -7677644130010924098
-* user.ไม่ใช่
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 2854389988938165554
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -3870477983136344914
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -8236658544241392275
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 1380757862103262113
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -3427683461727632387
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 3577107818381589348
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -2869436545868946347
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -5561398078058746325
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -1959323495114643782
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -7667024850643993043
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -3024515715569548994
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -8606349601969522559
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 657472299395568848
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -9018065986302766321
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 2062115608154711146
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 1009343112972506650
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 4625492509833993988
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 1430602882658438643
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 8288959851010034933
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -5102729526012885709
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -7732435922747837343
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 8055876083352829090
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -701748121458142824
-* user.ไม่ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 3039817107118060791
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 6226872054392597974
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -4351171053847506818
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -8694604171458881426
-* user.ทักทาย
-    - bot.utter.greeting
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 483009254419975951
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -4459753943687144040
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 83820393311239281
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -836885425941121451
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 1397106959525614867
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 7890306833085290284
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -3577149341780233384
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -8312569715815349548
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -738942322020972081
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -6160393495656542695
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -2683688558087400954
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 5997179676825813115
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 5134568964373651025
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 1850345863549347481
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 5050242936694229677
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -3772201747410216620
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 3935132580010057064
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 2998967341172478827
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 5214905637140187427
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 6425628959236643780
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -5058679226955891991
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -4400074697938566212
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -3241959094094233543
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 1538550198334368363
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -594477506989072000
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 3947405650510642712
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -5095655925866820655
-* user.ใช่
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story -2679078424247937586
+## Generated Story 6918428728529244400
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -6941023263129068262
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -1943,84 +220,7 @@
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story -3109757915888108161
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 5642281214436676645
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 5966006332431455224
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 3457515444981060788
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 2047823151809401052
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -2782914524361905116
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -4141432659288344551
+## Generated Story 2905875804294370303
 * user.ไม่ใช่
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
@@ -2028,7 +228,89 @@
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 7099526161212572661
+## Generated Story -7663431299918100014
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -5340514747320622100
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 3572792532092439860
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 7374795904104724653
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -1322129000593669105
+* user.ใช่
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -1597346985500506741
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -626840424713666078
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -2839346713960695814
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -2045,22 +327,19 @@
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 2260320798531306985
+## Generated Story 4135986632273115594
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story -3608425413258198998
+## Generated Story 4189548584933956232
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -2080,18 +359,18 @@
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story -5034032701785262493
-* user.ขอบคุณ
-    - bot.utter.thankyou
+## Generated Story -3290115822750816030
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 3529350997681897626
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
+## Generated Story -6979632734739904911
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -2105,44 +384,31 @@
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 7794176264306025777
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
+## Generated Story -8131837781383098338
+* user.ขอบคุณ
+    - bot.utter.thankyou
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 4451356461036257709
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
+## Generated Story 8793509622946954172
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.benefit
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story -6968238968099310710
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -6383304739922531900
+## Generated Story -8040498979702020762
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -2159,70 +425,342 @@
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 3860243778059103277
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+## Generated Story -4177436631049813593
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
 
-## Generated Story 3974123810520762061
+## Generated Story 3578304306999850787
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -1569777042952546982
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2529242657935686467
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 220028001728846343
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5745491451902533986
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5170158216449805634
+* user.ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -689821733788731167
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3853154501360538328
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -9218135775197201647
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7937206166148008544
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4945549091253121127
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 3307218450409494257
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 2875896605164883657
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7762958065967214515
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6780811660084488403
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6914936850440263612
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -424918674621852425
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -1502285374474569157
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8706277297262799969
 * user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3984771477287285132
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2878342040642039499
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
 
-## Generated Story 3164128463753614623
+## Generated Story -3634264573438164991
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -2235,106 +773,159 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
 
-## Generated Story -6233297211994725150
+## Generated Story 2363579977924704826
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 6030875686318256695
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -4816842561769167877
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 4812983404939582061
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 7073831576545444087
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
 
-## Generated Story 2010271672588278885
+## Generated Story 9056307726622414418
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 3114966155303229105
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7710223106530752673
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
 
-## Generated Story 3525457757041826234
+## Generated Story 3344019592886765697
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3444394621601037619
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1969215367543089546
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -2346,44 +937,11 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
 
-## Generated Story 3280253561941983017
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+## Generated Story 7139674166161686016
 * user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3529565612782001299
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
@@ -2393,121 +951,44 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
+
+## Generated Story 7657156099533055720
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8161720921286111417
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8661244268153969814
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1825294048154083988
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2713903060314983914
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+    - bot.validation.get_data.herb_photo
 
-## Generated Story 7030121166213093146
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2764048233703338172
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 786065004539499562
+## Generated Story 5406401034789277568
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 3555424778650800146
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -2518,32 +999,37 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-
-## Generated Story 805194765419811431
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.validation.get_data.herb_photo
 
-## Generated Story 2648707079289744692
+## Generated Story 3082349451041144326
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -4234449108201928850
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -2556,24 +1042,81 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
 
-## Generated Story -1049148838757761408
+## Generated Story -5365479847476715987
 * user.ขอบคุณ
     - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.validation.get_data.herb_photo
 
-## Generated Story -2159628797250244606
+## Generated Story -1573073527459090825
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 4369798307355926076
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -6933269404843564926
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -2581,22 +1124,199 @@
     - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.validation.get_data.herb_photo
 
-## Generated Story -603967833709985634
+## Generated Story 3744771369649584857
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 1902432876361520500
 * user.ทักทาย
     - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -8792391808911256408
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2876650583743345950
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1987194270292177800
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6281990463107413813
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 2949869202550742268
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7865954749796377480
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8035350441945409069
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5206012371406316726
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7101447972148995076
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1745746004766249765
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -2609,71 +1329,173 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story -4027877412129603113
+## Generated Story -2752071148157688184
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7814379904108820349
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 3386385203707771738
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 745611845554745093
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7634981554361534591
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story 8739574651064097797
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+## Generated Story -1953835891329641398
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+    - bot.action.name_to_detail
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story -8560394123116840169
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
+## Generated Story 5907751701152191763
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 2759765289683267864
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story 3059158744781960500
+## Generated Story 7573342749330703080
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5033430812271179993
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7110623557988318074
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -2682,6 +1504,119 @@
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -1624386943191098242
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 2088944847408075013
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 117618780616523380
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 8149607422665066267
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -4643714013036205965
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
 * user.ค้นหาสมุนไพรจากรูป
@@ -2697,58 +1632,7 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
 
-## Generated Story -2513902731228983445
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -6324083382345208614
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -1897359776082556729
+## Generated Story -5967531259348651002
 * user.ใช่
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
@@ -2763,12 +1647,9 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
 
-## Generated Story 1481627158469814850
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story 7468338260418371758
+* user.ขอบคุณ
+    - bot.utter.thankyou
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -2782,20 +1663,19 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
 
-## Generated Story 3445874800815584775
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
+## Generated Story -6274729498956745309
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+    - bot.validation.get_data.herb_name
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -2809,26 +1689,7 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
 
-## Generated Story -7477453052083064501
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 6314569007522103526
+## Generated Story -1492335124250258140
 * user.ไม่ใช่
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
@@ -2843,415 +1704,14 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
 
-## Generated Story -8837919149292769520
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 951282839122206766
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -4042293292624236999
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 9048537265513736721
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -2873062785231343493
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -348119502012180739
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2702838375146356422
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -5186499840391223406
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 4784497520047659136
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 8710179303897743443
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 1196919113713023996
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -72858874313431414
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2786193572103530573
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -6997966746679577599
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 5327305200485230506
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -2791825669790425052
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2008566453102846635
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -522509234182527892
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 7066424036806244369
+## Generated Story 3566504326816107195
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 3860604366201394880
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -5822667380364470422
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -6322230013302417713
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -3262,23 +1722,10 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
 
-## Generated Story 1632687141125728578
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
+## Generated Story -2909587066136350421
+* user.ทักทาย
+    - bot.utter.greeting
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -3286,10 +1733,53 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -5234045252085626443
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
 
-## Generated Story -3007969514937307007
+## Generated Story -4218739653385933123
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 392069456913319324
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
@@ -3302,107 +1792,19 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1693006732000666090
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2397752659050031028
-* user.ไม่ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1642307218002724533
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -4175090574701619615
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2216332350458726030
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
+    - bot.validation.get_data.herb_name
+
+## Generated Story 4752536502827022601
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2871027391281189200
-* user.ใช่
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -4847553853224996446
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -3413,33 +1815,8 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
 
-## Generated Story 917298957510630323
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4395552607390093497
+## Generated Story 3810325927716836546
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -3455,26 +1832,13 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 5508817551279025271
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
+    - bot.validation.get_data.herb_name
 
-## Generated Story -648739773183712293
+## Generated Story 4330440395156267423
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -3488,579 +1852,386 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -7757825659437777066
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -8655070472250029903
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
 
-## Generated Story -5302674993460760226
+## Generated Story -2916711505657644148
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 5520990737178183769
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 2098740025092187262
+* user.ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 2548802303388895120
+* user.ไม่ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -5161606310098411630
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 3882337996128159414
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 2725924158724171923
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 3409999233615273261
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 1887019357472498867
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -4178398605538852912
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 6508719636983250881
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -7248777971519516679
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 8009099533619968343
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -1886746296240726701
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -8112761902783299295
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 4721859908732223978
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 6766052795088377670
 * user.ทักทาย
     - bot.utter.greeting
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6707275440390070482
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3283619284416015511
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 9196561443873056341
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 9171128123756510924
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6930156435049541788
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3659904608515984160
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -1128957519301055270
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 7764836445930651031
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -3669302934853049402
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 5799295080852367421
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 5455725673347778425
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -8320365666438452302
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 5811392904531611059
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2991077072299682913
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 5691076037990204424
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -4687024808498780810
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2353604974376059956
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 4228422920083645282
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 8490719808617389297
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 7499002396345711031
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
     - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
 
-## Generated Story -2902146821776968510
+## Generated Story 1677772717252531184
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 266649154270980090
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 7670308574774146706
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 566250569123471950
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -3773267915497635030
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
+    - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
+    - bot.utter.benefit.not_found
+
+## Generated Story 3225849012434812744
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
 
-## Generated Story -9013997168675205450
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
+## Generated Story -7574225305106578883
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -5127093301999350623
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 8375012528730843285
+* user.ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 7957009000223169203
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ใช่
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story -1819675565306881332
-* user.ใช่
-* user.ใช่
+## Generated Story -5232206855244737707
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story 4497835529360327993
+## Generated Story 1486208844862516267
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story -2222399811261032745
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-
-## Generated Story 4326851534389484005
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ใช่
-
-## Generated Story -4574035051322361254
-* user.ไม่ใช่
-* user.ใช่
-
-## Generated Story -4617220987049664283
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+## Generated Story 8221798449443510887
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
@@ -4070,27 +2241,13 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ใช่
-
-## Generated Story 5418981765032177709
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ใช่
-
-## Generated Story -510166872866903085
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story 4164133070633351303
+## Generated Story -6473917341826579118
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -4100,102 +2257,43 @@
     - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
-* user.ใช่
-
-## Generated Story -6183104237262632271
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ใช่
-
-## Generated Story 4244296376344518677
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ใช่
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story -1561003892913759607
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ใช่
-
-## Generated Story 6946438635403619559
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ใช่
-
-## Generated Story 7248987893917000328
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ใช่
-
-## Generated Story -8547286328175683079
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-
-## Generated Story -4979480366913136597
+## Generated Story -5674913435772574300
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
-* user.ใช่
-
-## Generated Story -3707914492720242421
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story 4667326171615282344
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ใช่
-
-## Generated Story 2906523680631870006
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+## Generated Story -3422852097605907796
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 6096874117183956598
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -4206,210 +2304,65 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story 4477776846173201950
-* user.ขอบคุณ
-    - bot.utter.thankyou
+## Generated Story 1346563943537280334
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story -7931541006998058503
+## Generated Story -3541263532333414017
+* user.ทักทาย
+    - bot.utter.greeting
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 3454798261606760645
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 1982535841514476618
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story 4310847877121693242
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -715952877996214096
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -4484993045426451298
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 317174177820493164
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -4318668300787215740
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 2525366794912177498
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -6347025985542672138
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -2434656129956924217
-* user.ไม่ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -1312277780318749368
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 1765336504749044353
+## Generated Story 1472187039850070720
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -4418,97 +2371,52 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story -2886875773157082259
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -621815629476102923
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 2206612779388468540
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 4799972741160145825
+## Generated Story -4528159450935657556
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story 3791640972048321417
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
+## Generated Story -4372384209612143664
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -3948607897859927938
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -1255606569054395690
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -4519,298 +2427,38 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 
-## Generated Story -5015425645901346114
+## Generated Story -3417255996505316105
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
 
-## Generated Story -8379079430069403642
-* user.ไม่ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -4905311924193669888
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 3933666235775815256
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 3722173214688654869
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 2260499371187366001
+## Generated Story -1024006140567387464
+* user.ทักทาย
+    - bot.utter.greeting
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
 
-## Generated Story 6687405157074555253
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 8501028790231057397
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 6119126511342271102
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 3000150863500736274
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 4062611562202984185
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -651265164693406593
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 1282722491313381887
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -8934434719849116117
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -231577980188235043
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 1200876735638146357
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 7355295670232485732
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -7043003622168889336
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 1288501937353832722
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -1798925904149036918
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -3029021866459071461
+## Generated Story -4667903714734194393
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -4821,214 +2469,13 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -6849649054913146253
-* user.ไม่ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -159691351549382816
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 1629634187430019721
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -1235371906188941693
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 4415906201073616200
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 7175165173343408082
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -326778617255206667
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 2369193818697415103
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 4746638217430062507
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 2449420415482989424
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 3221344256263709669
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
 
-## Generated Story 6273085485353312370
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 5396882246315850589
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -6001854225437759644
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 1805942392449357956
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 8550092236933497386
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 4047238123268996255
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -2140009165496787782
+## Generated Story -4589808231589960140
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -5040,229 +2487,44 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -9071905346636995319
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -3191222184594788663
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 7367616438907926571
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -1200322333358298842
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -7506190563460779218
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -5269578413604857588
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -8811409386330501098
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -5148649647196394065
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 9052309119344468330
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 6098395960571605754
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 7027704297970938695
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 6845024984027080377
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 916966859272247024
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -4214143201405594223
-* user.ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 2317049719042569048
-* user.ไม่ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 2104451331916566591
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 887407568754731068
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
 
-## Generated Story 5251301396168755320
+## Generated Story 5483268766932419244
+* user.ไม่ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -6576260953264459602
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 9128563643465071752
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 4149119739514791305
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -5276,13 +2538,321 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -5090812568221291485
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -8678263414289130158
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -1721937505993848362
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 8107806674579082979
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 4883260737838955764
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 8809869986954989577
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
 
-## Generated Story 405544595270595063
+## Generated Story -3952629380912489108
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -1757329043346667849
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 7657999426170546876
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -2585913197104628553
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -8403809078326722022
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 8094555635188536839
+* user.ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 1483495897154888178
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3286464897752599716
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -5361286239748234436
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 6387359030807120616
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -33389007947222972
+* user.ทักทาย
+    - bot.utter.greeting
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3663516861749305790
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 3184616106881112797
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -132251013073913145
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3929896501308283687
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3816416732591909032
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -8327159843784408376
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 5899893805115900002
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -5293,13 +2863,397 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 1638642103155312511
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 8049794165708360898
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -9043018995852821773
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
 
-## Generated Story -6083490795081090554
+## Generated Story -7477390786902531195
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -7979963909730011046
+* user.ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 6592712200654962405
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 3399416286253914543
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 7250309918097749170
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -4384041190476732045
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 6817224979683464263
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 4891072925575267553
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -5650527907681586971
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 414701935040917111
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 714204902759029154
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 2389991590023204786
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -6450436693086157386
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 5057987457904856105
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -7832949234481812089
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -1999506846523019579
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 3342112928773190673
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 8880038443134734718
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 4683088922436061580
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 4980950656198991969
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -3183949093227674600
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 5641456589320308287
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -5485953159877962878
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -5758502096163562620
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -2560732142504914479
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -3757824888896571477
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ไม่ใช่
+
+## Generated Story 1220148246779672477
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ไม่ใช่
+
+## Generated Story -6715754247357519486
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -5312,93 +3266,23 @@
     - bot.validation.get_data.herb_name
 * user.ไม่ใช่
 
-## Generated Story 8426974177900337184
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
+## Generated Story 4366309340802861708
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ไม่ใช่
+
+## Generated Story -2641580372008545203
 * user.ใช่
-    - bot.utter.thankyou
 * user.ไม่ใช่
 
-## Generated Story 109811405805910534
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story -679798639334816011
+* user.ไม่ใช่
 * user.ไม่ใช่
 
-## Generated Story 7989110741744014496
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-* user.ไม่ใช่
-
-## Generated Story -5804593735042790241
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ไม่ใช่
-
-## Generated Story -3351855334363962580
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ไม่ใช่
-
-## Generated Story 1578832158804098016
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ไม่ใช่
-
-## Generated Story 7209641377390635879
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ไม่ใช่
-
-## Generated Story 1778692547583980685
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ไม่ใช่
-
-## Generated Story 1354215871966021538
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ไม่ใช่
-
-## Generated Story -8294065192468156461
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ไม่ใช่
-
-## Generated Story -5085125793330816545
+## Generated Story -1914963782305269986
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -5411,34 +3295,24 @@
     - bot.utter.thankyou
 * user.ไม่ใช่
 
-## Generated Story 8704569928509866411
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
+## Generated Story 5215834761635273987
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
 * user.ไม่ใช่
 
-## Generated Story -5544073276569443467
-* user.ใช่
+## Generated Story -330007258823310481
+* user.ขอบคุณ
+    - bot.utter.thankyou
 * user.ไม่ใช่
 
-## Generated Story -1401749639429315336
-* user.ไม่ใช่
-* user.ไม่ใช่
-
-## Generated Story -7521344991760907687
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ไม่ใช่
-
-## Generated Story 5679247683965443440
+## Generated Story 5912161952145969413
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -5454,7 +3328,74 @@
     - bot.validation.get_data.herb_photo
 * user.ไม่ใช่
 
-## Generated Story 2583219807367415923
+## Generated Story 4881326161346485359
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ไม่ใช่
+
+## Generated Story -3444277493163887139
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ไม่ใช่
+
+## Generated Story -8426822883425461363
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ไม่ใช่
+
+## Generated Story 8046073280191310356
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ไม่ใช่
+
+## Generated Story -6586160524086923981
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story -5145571464233887681
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ไม่ใช่
+
+## Generated Story 5707938901815336461
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story -1650937980394989618
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
@@ -5462,7 +3403,21 @@
     - bot.utter.benefit
 * user.ไม่ใช่
 
-## Generated Story -3934199750212997159
+## Generated Story 8545020042596313463
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ไม่ใช่
+
+## Generated Story -8703213340314253282
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ไม่ใช่
+
+## Generated Story -34579623574732450
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -5475,9 +3430,30 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-* user.ไม่ใช่
+* user.ขอบคุณ
+    - bot.utter.thankyou
 
-## Generated Story -3817878634965900529
+## Generated Story 298451248978423933
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -4935383754002648881
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 1758750880780455716
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -5491,6 +3467,30 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 2973003203436202439
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -5237417707662026116
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 4419789793679383390
+* user.ใช่
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -5269524711747838812
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -5501,1671 +3501,73 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
+* user.ขอบคุณ
+    - bot.utter.thankyou
 
-## Generated Story -8057776754144154141
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
+## Generated Story 694479919668531703
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -5264810538671138477
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -198319523038789968
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -313854517197786322
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -4174895459272088065
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+    - bot.validation.get_data.herb_name
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -5652234795993622096
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -5909230478805578027
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 8823766150893844169
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 4786724937188773034
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -725924915266811477
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 7507090932627460352
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -6674998929961478483
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 796551339601576849
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 497970147864104025
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -3716439445001577851
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -6710999614138218273
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -5618403182993179182
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -2754923551157455121
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 3937809975971294196
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 9083165499733426471
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story -904115601160395828
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 5484574057590900018
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 6879868684686319396
-* user.ใช่
-* user.ใช่
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 3932928521221153411
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ทักทาย
-    - bot.utter.greeting
-
-## Generated Story 823275037753440599
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -9168234385256719118
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8276851835827490630
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1715677185035650630
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1414038487808168654
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2277588807256137292
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2808260232341928436
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7561538675537528619
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6730391721376361403
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 767372883328391428
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2159385783394529287
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8268264771538667136
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6912401325246995390
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 660855604376028671
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1942623091801852958
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -9021567769796797839
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 201827834455964540
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2549389483747774869
-* user.ใช่
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2559413892096384230
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -5337442380252908784
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3866425158534482788
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8004254195438783297
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -5321350356346036866
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 9182563485633545983
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6488478867118690833
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -7705059568017435222
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7428629206238081230
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 8838120311665022894
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -5389364642841001624
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -690794479800518152
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 238887643707061580
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4940144535885299251
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3182275008857514209
-* user.ใช่
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1243469194862692593
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7267297425754452485
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3132174405335151918
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 2247146659921775489
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4073551198479155975
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3613955910629002701
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 927248203763038269
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 9219516464552215218
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 2586867133346246865
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -2054446861560020906
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 3343437980623020319
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 6620517122756136200
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -8808359772409193582
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 8910752324333542325
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -5525813114999810946
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -5136506717500847033
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -2351428622951193894
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -7236890354938952490
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 5105640964374455965
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 5124475759566045692
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -4627370690919008379
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -1615219253144801487
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -3916690167138602447
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -7677233087917973771
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story 572797158345023260
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -7923548964459963170
-* user.ใช่
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -3488057410822720059
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-
-## Generated Story -6040645595180705908
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
 * user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -812946050980536078
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 2917511595256697585
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
+## Generated Story 1534319172257633105
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
@@ -7174,11 +3576,9 @@
 * user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -4191745811316591623
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
+## Generated Story -5277232416572725174
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
@@ -7190,78 +3590,70 @@
     - bot.validation.get_data.herb_photo
 * user.ขอบคุณ
     - bot.utter.thankyou
+
+## Generated Story -8821989952892627530
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
 * user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -4800070220252699136
+## Generated Story 2807327286501942442
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
     - bot.utter.thankyou
 * user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -2091691403313459961
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story 3827145485601914122
 * user.ไม่ใช่
 * user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -7298449667820882822
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
+## Generated Story -4007254417638322896
+* user.ขอบคุณ
+    - bot.utter.thankyou
 * user.ขอบคุณ
     - bot.utter.thankyou
 
-## Generated Story -2488687222078915523
+## Generated Story -969697838965662773
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 1955273907503299472
 * user.ทักทาย
     - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -6508017653310057513
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 1317819381491885352
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -7275,133 +3667,8 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ขอบคุณ
-    - bot.utter.thankyou
 
-## Generated Story 8401243600181831779
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 8406280586528636335
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -1956005828200159281
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 8099324571015429931
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 2135847663108466361
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -8312906916858239103
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story 9211386277261630360
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+## Generated Story -236918282750371529
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -7409,17 +3676,12 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ขอบคุณ
+* user.ใช่
     - bot.utter.thankyou
-
-## Generated Story -645258000913322699
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
@@ -7429,6 +3691,18 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
+
+## Generated Story -5730969396070077515
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -7442,1235 +3716,8 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
 
-## Generated Story 6818206860013093380
-* user.ใช่
-* user.ใช่
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -3701217675255778102
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ขอบคุณ
-    - bot.utter.thankyou
-
-## Generated Story -2754609659591262290
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 4649254291670287057
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 2642057172761593012
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -8442039774198749690
-* user.ใช่
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -3488033447147478757
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -1758206255470308709
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 3246721033839726191
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -3578193239361027725
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 6703617897897095543
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -2020300367054621358
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 8813892279592258031
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 7035005874368154415
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 58993896858174483
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 6713808076392344874
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -7884105462415081177
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 5525998601202680256
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -7588182692145567555
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story 3914831582066859981
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -4995774001067753057
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -3005702671563986866
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-
-## Generated Story -6991487760719850516
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 5870879967763206378
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -3897995860588435034
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -686146786604384941
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 1147380579964389888
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -2191339325107502575
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -4740867630430028280
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -1637218735105565266
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -2070197895194051863
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 8162785904542969259
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -1454086034803682861
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 5238060455933209703
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -6256829968729369587
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -2352849364506891298
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 8732275019034555778
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story 2578914053014655770
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -3573098335529526164
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -284645448274365644
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -7650681226960814933
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -8104464459574420055
-* user.ใช่
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-
-## Generated Story -1693555883194751114
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -2803749185377949917
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 8345413672997371050
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 7489012670284813676
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -8951696452364724125
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -2468506958306360187
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -253645589480181265
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -2749067521591388313
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -2314216070683587861
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -3051303263658005967
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 4142860480822309955
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 2802271013873767231
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -4579692512340113625
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 4039457859213601473
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 1199632751905291620
-* user.ใช่
-* user.ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 813861960460377896
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 5693843588917629963
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 6894537637881753807
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 5934342483935005235
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story -8167241149958548611
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-
-## Generated Story 6860423832623956717
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
+## Generated Story 4998505320593380602
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -8685,272 +3732,13 @@
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6078431935359576537
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4749808676642584011
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
 
-## Generated Story -3870122370750487324
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1737790761756274202
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4994673211307695885
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3875745107416020535
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 8782154786614146363
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1005898959154009545
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6106848604322264458
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -6267567680195951701
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6901676883456814603
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+## Generated Story 8931417434756041906
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
@@ -8964,1762 +3752,17 @@
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -5787097582049091095
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 8590276543697490530
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2845714672341535010
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
 
-## Generated Story 6081657485433360831
-* user.ใช่
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -5625669676162635330
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -8588829492259751106
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 9073452772145061583
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -3348543691010380623
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -1540716079226113935
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -764344725289843181
-* user.ใช่
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -1427089947527071641
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -5907382058276215735
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
+## Generated Story -1081244325394002595
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -2257448751641229016
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 8517112866374978357
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 5877505082501040399
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -3767456383317899052
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 5565305733331193689
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -8621447192450517933
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 8721185481574701474
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 4857995147591151265
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 600986084104986415
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 4964458537304368484
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 8586106336575583886
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -4023277462780971073
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -4693018149308524541
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -60941807520114469
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 7712185637211303590
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 2208231085785215215
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -125718284504059135
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 3458474716464739103
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -2414678828495684986
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 1567860043243196667
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 4868406935818261766
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -876836799472290574
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 352549947454997193
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2916906622599379516
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 4545582991184357824
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -6076898807200067521
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 4884266316118046089
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -4311171135702596745
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -1086856846040538706
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 193008515565643550
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -7549470948724367036
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -3815157448129043622
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2626637085563324127
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 3035450501529166171
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 2320041940329546368
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -7946396798009595722
-* user.ใช่
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -6587974634895598517
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -7151816485406412463
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3068729102073424615
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 4724741327472242862
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -7174013272090721338
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 7913525804610845128
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2283708474760560636
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1636380578944591584
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -7351493357784934822
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 715043199938312476
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -119179747504313954
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3309254761441526717
-* user.ใช่
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6485021925638946244
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 6934937429048223591
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -7746445485658049448
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -94791806190095939
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -4249061043504792097
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 3280679987255643022
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story -2642578068279588408
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1546188781169093082
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-
-## Generated Story 1862954054352716946
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -10734,30 +3777,17 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story -4627120164779407274
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
+## Generated Story 4452290406280315271
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ไม่
     - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+    - bot.validation.get_data.herb_name
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -10772,64 +3802,7 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story 4713160731971299340
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -6900374585035478811
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 5674899115939153483
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story -1571485445870208656
 * user.ไม่ใช่
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
@@ -10845,24 +3818,12 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story 4087666535367511386
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+## Generated Story 5655301887162520619
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -10877,305 +3838,7 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story 4661174678553602783
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -4398980413321484285
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 6623794226090214589
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -3178741450282179520
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -6490469388559042446
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -3376989618827810864
-* user.ใช่
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 8827669161822625116
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 6482146506765267466
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -4200010790626044621
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -1164278911207815716
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story 6837794351042813241
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+## Generated Story -7790258830529887646
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
@@ -11195,12 +3858,115 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story -969076649292867318
+## Generated Story 7112825418418303241
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
     - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 7288000160711983543
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 9101813336379810071
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 3139445541555950177
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -7112051277509863723
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 9075344231786386527
 * user.ขอบคุณ
     - bot.utter.thankyou
 * user.ดูรูปสมุนไพร{"herb": null}
@@ -11217,19 +3983,12 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story -9157933028128729652
+## Generated Story 1903754604718726822
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
+    - bot.utter.herb_photo.not_found
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -11244,73 +4003,98 @@
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
 
-## Generated Story -4938697803287583285
+## Generated Story 7779752335900079947
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 2495593168568534200
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 754004648446178629
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ใช่
+
+## Generated Story 8369537929639861276
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.benefit
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ใช่
+
+## Generated Story -8831540530753064814
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-
-## Generated Story -8733641904776073680
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
 * user.ใช่
 
-## Generated Story 6593820973387568759
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
+## Generated Story 157302919845992332
 * user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
 * user.ใช่
 
-## Generated Story 9057719531114868233
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
+## Generated Story 6764413887769609095
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ใช่
+
+## Generated Story -437700951999273073
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -11325,54 +4109,39 @@
     - bot.validation.get_data.herb_name
 * user.ใช่
 
-## Generated Story 1632566975223903557
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
+## Generated Story -6741009319881893306
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
 * user.ใช่
 
-## Generated Story 3178704340378482867
+## Generated Story -9144139136009866606
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ใช่
+
+## Generated Story -6097544265382864366
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
+* user.ใช่
+
+## Generated Story -7311830374091005290
 * user.ไม่ใช่
 * user.ใช่
 
-## Generated Story 8611694630888961523
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
+## Generated Story -5843715211247657742
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
@@ -11381,7 +4150,20 @@
     - bot.utter.thankyou
 * user.ใช่
 
-## Generated Story -9155978335495988001
+## Generated Story -2006047207760565543
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ใช่
+
+## Generated Story -4381690655048459168
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ใช่
+
+## Generated Story 9011046034674238459
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -11392,24 +4174,9 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
 * user.ใช่
 
-## Generated Story -4664355407268869390
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ใช่
-
-## Generated Story 7041665455374191421
+## Generated Story 2974526107209860812
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -11421,143 +4188,21 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
 * user.ใช่
 
-## Generated Story -2182006563275418965
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ใช่
-
-## Generated Story -8961751767619351176
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
+## Generated Story -3240378653636377179
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ใช่
-
-## Generated Story -3101334231963957938
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ใช่
-
-## Generated Story 4769234756232685959
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ใช่
-
-## Generated Story -2066677961977083510
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ใช่
-
-## Generated Story 8765212153619633642
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ใช่
-
-## Generated Story -8934109388188873674
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ใช่
-
-## Generated Story 485600850672423343
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
 * user.ใช่
-* user.ใช่
 
-## Generated Story 1755657922239010409
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
+## Generated Story -3822826717334737222
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -11570,351 +4215,145 @@
     - bot.utter.thankyou
 * user.ใช่
 
-## Generated Story 416648566657337079
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ใช่
-
-## Generated Story 7210683572612964156
-* user.ใช่
-* user.ใช่
-* user.ใช่
-
-## Generated Story -5353773687577563224
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -1710554013535795293
-* user.ใช่
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -8622590405442292997
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -7962550157734178997
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+## Generated Story 3034937616885060615
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ใช่
 
-## Generated Story -4207486005443921242
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 5286158614580304783
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -6741544430169048693
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+## Generated Story 5968957293178298078
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ใช่
 
-## Generated Story -3892730260676825209
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+## Generated Story -4334163080061751373
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ใช่
 
-## Generated Story -4807756297468040276
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+## Generated Story -3794792834162401030
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 3537846815490017258
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -8580670498450615056
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -1397702590039310386
+* user.ใช่
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -7689456638361259460
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 5972115182891986423
 * user.ทักทาย
     - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
 
-## Generated Story 4933129992753086929
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story 8156550366923110514
 * user.ไม่ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ทักทาย
+    - bot.utter.greeting
 
-## Generated Story 5802215872026701793
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 3379289900320642157
+## Generated Story 747675027519068299
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -7545656089588060891
 * user.ขอบคุณ
     - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -9171720746770049202
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -8970495847608653790
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 2648244316556784416
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 4213634810784027482
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
 
-## Generated Story -2239510083883816430
+## Generated Story 402177739456037088
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 6235988390669099230
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -11926,11 +4365,10 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 752437147561374407
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -11941,77 +4379,52 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
+* user.ทักทาย
+    - bot.utter.greeting
 
-## Generated Story -6021896984812661182
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 5421543882564319939
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story -1243619198538804399
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
+## Generated Story -8998566418783522634
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ทักทาย
+    - bot.utter.greeting
 
-## Generated Story 3038982961809877444
+## Generated Story -6653482499161548987
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -1088435863306466040
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -1816720102733559308
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -3068343976503188073
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -12025,8 +4438,10 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 3674393569125240773
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -12037,39 +4452,87 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-
-## Generated Story 7838858735229648743
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+
+## Generated Story 2949488406328009879
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-
-## Generated Story 7750895590460594848
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
 * user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5635566744177278775
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7718655496117854309
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6899644900587883470
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -998840457149392814
+* user.ขอบคุณ
     - bot.utter.thankyou
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
@@ -12081,63 +4544,174 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
 
-## Generated Story -44271397320277079
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+## Generated Story 644478352381052448
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
     - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -140689304562069016
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6459486153617677332
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 9067557237341402247
 * user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5160298082230004318
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6752154228133349732
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story -8064013217527471537
+## Generated Story -5993888625309525414
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -569749898083908343
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5411822625492071062
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8710122014887540036
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
     - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 1664071925179201111
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -12148,14 +4722,8 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
 
-## Generated Story 4980288837951230513
+## Generated Story 7412265613215714343
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -12164,74 +4732,18 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 6457594669576787329
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
 
-## Generated Story -5338741833453910459
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -759169723685147882
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+## Generated Story -8662837661271080415
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -12244,14 +4756,6 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -3846935000187819701
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -12260,181 +4764,12 @@
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -5393517257005651330
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 4402908965879375451
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 6679511906367727938
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -2039450492897923052
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -5760734702708305700
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
+
+## Generated Story -3877666892688494113
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 4206587659721155747
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 8445727692944597170
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 183227871860669235
-* user.ใช่
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 2440862300112865818
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -12452,52 +4787,8 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
 
-## Generated Story -1802318061806245845
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -3743506061398457244
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 7777139072828072056
+## Generated Story -4158264722490518660
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -12505,15 +4796,6 @@
     - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
-* user.ใช่
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -3140196257179145290
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -12522,11 +4804,10 @@
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6347742467113926618
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -12542,31 +4823,7 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
 
-## Generated Story -2953253389913167428
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -513960487530102474
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story -1395738100293967906
 * user.ขอบคุณ
     - bot.utter.thankyou
 * user.ส่งรูปภาพ
@@ -12574,340 +4831,42 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
 
-## Generated Story -657244351982599821
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
+## Generated Story 5187199735844780972
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
 
-## Generated Story 7313014855470952306
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -6899054570485599337
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -8891309079545567813
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -1446339788392544117
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 2512350746591010140
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 149045854472721475
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -2873453044937708966
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -6008146871409978328
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -5457107596122608617
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -7778336226906014480
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -7477727360136381856
-* user.ใช่
+## Generated Story 6247801724613499498
 * user.ใช่
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
 
-## Generated Story 6830944949403442111
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 484143109051294801
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -211305229269775325
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story 8296534658388220378
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-
-## Generated Story -183576714963101630
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
+## Generated Story 9169895437770274726
 * user.ไม่ใช่
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
 
-## Generated Story 8820065196134669319
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
+## Generated Story -2409187377366265427
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
+    - bot.utter.herb_name.not_found
 
-## Generated Story 2547182002343695068
+## Generated Story 4917759157156505229
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -12916,6 +4875,1143 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 5652542388023711845
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -3782327057931224176
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 6120904044991376455
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -4438640217680545804
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -6353853687633919506
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -6822635042642390519
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 1688043969061278874
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -6410242433159460779
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -7563720429259155576
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 1192421632025524285
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -2054254470108756679
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 4635044330117043989
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 1755471703554931357
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -5225696851730908443
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 3123334140469417589
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -8421856607573062363
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -6140827012587698240
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -1179248144568530122
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -7918567235176667565
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 357479449296315528
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 5340782258573971872
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 7806599711145442641
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -4987752766781014479
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 3169678698610580013
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 463289874111856753
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -2046391920692205112
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -2200095168702606272
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -7841986621428617566
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 8070019794724896313
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 77741349359154850
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -7056139069105921215
+* user.ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 4054006364712160190
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -7716918750222676107
+* user.ไม่ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 4996406984931353605
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4018698922372090964
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -6025799354620949761
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 658056585294760604
+* user.ไม่ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7498002975817415194
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7858329461588282452
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7418676354364606047
+* user.ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 66933386286887333
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8877662101637974958
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5175029015098246403
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2753384207264260982
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -1510884995023002277
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 8435945917524132491
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8857456535964549024
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -6428470461670772755
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8931293029154025147
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 8590762927828265380
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7853232473378065375
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7803320634424547238
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5940052531500266360
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -992276817934318409
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 7269613143426567032
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -4905653342477153756
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -104350004063678613
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -9143157272177965070
+* user.ไม่ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -67849361228017318
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -7375830174765279922
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -5003990258735430429
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 577402266680863090
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -7633529415335438748
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 8102080688982950606
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -1926830206324220670
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 5919617690125958937
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -8211932549276832087
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 6370865469296211708
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 3911152231397043421
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -3733437668418276857
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 3855776899782710296
+* user.ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -1863619901205258949
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 1183490819908989206
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -2184774007373358362
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -12927,21 +6023,7 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story 214444686283751052
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 3118811992455972584
+## Generated Story 2705407666641775306
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -12949,152 +6031,13 @@
     - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
-* user.ใช่
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story -3898985703030922131
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 5971504405984357414
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 4762716839924180070
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_name.not_found
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 4027137667214274193
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.พบสมุนไพร
-    - bot.utter.detail
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 3141314361757224636
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -7905797194850798358
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story 1700900351918540045
-* user.ทักทาย
-    - bot.utter.greeting
+## Generated Story -6701816265900116858
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -13111,22 +6054,8 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story 9167325096039420612
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
+## Generated Story -608631373171647042
+* user.ขอบคุณ
     - bot.utter.thankyou
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
@@ -13134,29 +6063,23 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story -2874943955299474755
+## Generated Story 6753916911548386638
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
+* user.ใช่
+    - bot.utter.thankyou
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story 5604870495315244254
+## Generated Story -8803408916880022950
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -13165,6 +6088,34 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -515526892767811058
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -2871122946900527960
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -3489315959362185604
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
@@ -13175,34 +6126,39 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story -3842208468787381298
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
+## Generated Story -6445183135162229529
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story 577130707477363148
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
+## Generated Story 8827677910546946703
+* user.ใช่
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story 6223398340305443069
+## Generated Story -6725111946025812299
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 987669708368073023
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -13214,6 +6170,94 @@
 * user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 8722652511981650837
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 1290461491873261689
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 5343505095127408028
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 7055044529897709364
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -3104475967534298753
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 1638568109280099534
+* user.ไม่ใช่
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -7447910327577180266
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -13233,18 +6277,7 @@
 * user.ไม่พบสมุนไพร
     - bot.utter.detail.not_found
 
-## Generated Story -6438910556093690501
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
+## Generated Story 5938986507044071555
 * user.ค้นหาสมุนไพรจากรูป
     - bot.ask.photo
 * user.ส่งรูปภาพ
@@ -13252,212 +6285,28 @@
 * user.พบสมุนไพร
     - bot.utter.herb_name
     - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
+* user.พบสมุนไพร
+    - bot.utter.detail
 
-## Generated Story 7507980846928312917
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
+## Generated Story -4484285734185404627
 * user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -7893312692580323284
-* user.ใช่
-* user.ใช่
-* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_detail
-* user.ไม่พบสมุนไพร
-    - bot.utter.detail.not_found
-
-## Generated Story -1869254058879392848
-* user.ใช่
-* user.ใช่
-* user.ไม่ใช่
-
-## Generated Story 4117781363282593967
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
 * user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ไม่ใช่
-
-## Generated Story 4513013666563444048
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ใช่
-    - bot.utter.thankyou
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ใช่
-    - bot.utter.thankyou
-* user.ไม่ใช่
-
-## Generated Story 4273143213398252302
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ไม่ใช่
-
-## Generated Story -2492029486024250128
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ไม่ใช่
-
-## Generated Story -8066468617667205616
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ค้นหาสมุนไพรจากรูป
-    - bot.ask.photo
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ไม่ใช่
-
-## Generated Story -8449313595480779300
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
-* user.พบสมุนไพร
-    - bot.utter.benefit
-* user.ไม่ใช่
-
-## Generated Story 2261262078747510695
-* user.ทักทาย
-    - bot.utter.greeting
-* user.ส่งรูปภาพ
-    - bot.action.photo_to_name
-* user.พบสมุนไพร
-    - bot.utter.herb_name
-    - bot.validation.herb_name
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_name
-* user.ไม่ใช่
-
-## Generated Story 2913837217322745515
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ดูรูปสมุนไพร{"herb": null}
-    - slot{"herb": null}
-    - bot.ask.name_to_photo.herb_name
-* None
-    - bot.action.name_to_photo
-* user.พบสมุนไพร
-    - bot.utter.herb_photo
-    - bot.validation.herb_photo
-* user.ไม่
-    - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.validation.get_data.herb_photo
-* user.ไม่ใช่
-
-## Generated Story -3273886215105431784
-* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
-    - bot.action.name_to_photo
-* user.ไม่พบสมุนไพร
-    - bot.utter.herb_photo.not_found
-* user.ขอบคุณ
-    - bot.utter.thankyou
-* user.ไม่ใช่
-
-## Generated Story -3609987160237151159
+    - bot.utter.detail
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -13476,9 +6325,84 @@
     - bot.action.name_to_detail
 * user.พบสมุนไพร
     - bot.utter.detail
-* user.ไม่ใช่
 
-## Generated Story 1442723002384327140
+## Generated Story -1454925899758362689
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -5556176472588399221
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -5048590908970819549
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -4055847754742580242
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 7645190373146875580
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -13487,13 +6411,6340 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 5138233848391899022
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 1442954479640196023
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -7379452702254817777
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 6592173800532992663
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -3929737693976606537
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 7089171240440287983
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 3859726092065933320
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 9177345165627587755
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -5851768899871185788
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 1477883329159357400
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -9195215073754369125
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -1748985994509151775
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story 795630649200851498
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+
+## Generated Story -8934543822261360284
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -9062486266433407698
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3130782206503087877
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 210499103382734549
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6323424887345040329
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 2778076699732834526
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3157199547297065738
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -1062546893855105142
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8157077986069583298
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4252332628929105483
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2291633950102397226
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 2739105149327173060
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -6569934679128790332
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4261872876233532663
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2914024972499639745
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4897055247006983903
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 122611286583813493
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4974099834496449890
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4493957194416554691
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -941890050554134935
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2606079916032896334
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 7740842075747815330
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -448144535739082671
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 422813115358077676
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 5613659446116777919
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 3427671110117119682
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -1335640533092581044
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -6641627773548526012
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 7853270003202488919
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -5380590008106212840
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 3977749376406164712
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 1623350953629612671
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -8776039758208029788
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 723173363019594831
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 165875691606570984
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -878549277346404209
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 1405422599702597571
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -2707235853957361596
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -474625249662635841
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -551220661823822947
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -1859427772552314920
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5680215447131705507
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4342914907019119939
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -675809838227161890
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4932422199439710273
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7720923800643409468
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4761988371137242850
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5646284294610897437
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2623315447249157016
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 2861434482844211854
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1191706269739712895
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -2529215528626727116
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6333770927366990802
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 3802273679473789244
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 571727292893734740
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7043861257485657343
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1135189535360299292
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4052481503274961369
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3112598271644652358
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4118449645496747437
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 551517732801036132
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 6872174335231908119
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 6411399368986810020
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 968540369603623336
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -1830297905982793174
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 2188172365233910116
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 2605535398731146899
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -5925646093647399605
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -6397672284133725700
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 3328294859463217848
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 8118337069628478495
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -4138721599248364701
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 8930770760042091455
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -7486982879042291585
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 5225646908324417936
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -6443827843133382932
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 7582899663002601331
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -2333203473396616483
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 1216735317247539388
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 7549994299303543634
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 729548771079217684
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 119050298396514631
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 5706175214974381069
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -6390889492846884513
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -3234077806331226457
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 8934877531548116238
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -8315375080302348812
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 810545107423241937
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 8377525093607298643
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -2894662650390541316
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 3337161235475055256
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -6829728515548718914
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 3763623251027812911
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -2145363414218528655
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -2989515569763791717
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 6730155356313706894
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -1244342902575279125
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 1988228987768460251
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story -7700140885153459711
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 2030904419957731410
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+
+## Generated Story 6394261904625341483
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 4626904154913040598
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 1957884866544094736
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 8245380902424456476
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -4086887694582009242
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 5550078816750748164
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -7108862867676636974
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 7484957005426333646
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 4279453798887898848
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -8379157299701378120
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 5830852272020598121
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 8921111314807585874
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 4944820620461121176
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -4159306171116651207
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 1913030829894176857
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -978035612391016181
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -1927537129620324985
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -5926225847272341211
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story -6629699578713646938
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 1246991346453144728
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.พบสมุนไพร
+    - bot.utter.herb_feature
+    - bot.default.ask_more
+
+## Generated Story 5737987257887410420
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 7014648695626611955
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -8159771260776808475
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 3217985614791338242
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -6413067006679337134
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 6126684400803778395
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -733396674115657203
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 1095560304048235184
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -2929848336988841525
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -7101604281109455049
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 8231833925680278120
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 5191288185433875213
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -2858493860880482341
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -3325979014545449558
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 8568070284329698785
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 5337230580412562385
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -2330937043918279710
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -736104660392952660
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -7094092779231930346
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story -8701924592472054168
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+
+## Generated Story 627682653736247821
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 1172962440105833185
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3897417194147487602
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3467492664801428943
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 8063998183964338094
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 5841998327190654917
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -2213939726226732758
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 8555118671983515175
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -3810887814042967841
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -248318162448406918
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -5125492067107500022
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 8962823911144760575
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 932872354046365512
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -5562617835659975501
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -8066305153101880281
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -4151475508006313710
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story -2771858478695837421
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 892883485342046079
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 4367352977882622447
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 5766505512450774273
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+
+## Generated Story 3907011408047344064
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -6138884428698754162
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -3629480671020900992
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 3208473049659981539
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -6575168369217995482
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 4484262342052584200
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 3320276251682634388
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -2282307296259775237
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -1973251768795344097
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 8960465698979445365
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 7738282347207797683
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 6634720695320813020
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 5706830120741232887
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 5974027166146090443
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 565378878277116062
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 2330570839840347578
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 6541241539690872926
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 8182382703814146018
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -8286426740941089313
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story -4185280964709545341
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+
+## Generated Story 1283291286480062076
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story -7073201083607080206
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ไม่ใช่
+
+## Generated Story 5834424626925892777
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ไม่ใช่
+
+## Generated Story 5189482758146574826
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story -4933653164105043092
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ไม่ใช่
+
+## Generated Story -4909248457530280579
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ไม่ใช่
+
+## Generated Story 6589412073421453526
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ไม่ใช่
+
+## Generated Story 1240778240143018124
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ไม่ใช่
+
+## Generated Story 578769588332390913
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ไม่ใช่
+
+## Generated Story 7527712770817401822
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ไม่ใช่
+
+## Generated Story 5868561285634828090
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ไม่ใช่
+
+## Generated Story -2931036949360758682
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ไม่ใช่
+
+## Generated Story -9151673777604550644
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ไม่ใช่
+
+## Generated Story -2115652133139687262
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ไม่ใช่
+
+## Generated Story 7752730700823562677
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ไม่ใช่
+
+## Generated Story 3888458735886295414
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story -1859928219805634551
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story 8919877047765419838
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ไม่ใช่
+
+## Generated Story -8226118711710144336
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
 * user.ไม่ใช่
 
-## Generated Story -2259287209668761957
+## Generated Story -6380195313476590834
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ไม่ใช่
+
+## Generated Story -5553272140548300848
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -1234424590976172018
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 745915289741283678
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -7519024701096419843
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -7083549290515945007
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 7732508584985537272
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -3586587825791255813
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -6083363636283200901
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -3638024123969851048
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 1122815906727303287
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -7954983592566808197
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 847745974387445841
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 6015470023247203610
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -5442147331387660713
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -6030739280425670558
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 6721372474535352235
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 4935375669907504667
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 5917100051612242985
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -2361389357171002155
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story 777664249121753380
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ขอบคุณ
+    - bot.utter.thankyou
+
+## Generated Story -8704958266542105268
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -950476185711893241
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 4748208879313257297
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 8429248407380940784
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -429141762620547826
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 7246389437202326618
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 3264357329780921989
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 5690901635866260998
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 6541986395913659516
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 48634202355423975
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -6135136731940656448
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 6126623455353073839
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -5586469534536342405
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -6355543184248982521
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -1163452184416034710
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 5412499065091651703
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -7148220490625193774
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 8657949637927295497
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -4412710902571265276
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story 1258799805734226592
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+
+## Generated Story -4991277500871434305
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ใช่
+
+## Generated Story 144071416054687413
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ใช่
+
+## Generated Story -7957864601308700640
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ใช่
+
+## Generated Story -408151668060506573
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ใช่
+
+## Generated Story -2067450179497874061
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ใช่
+
+## Generated Story -6555446262288898338
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ใช่
+
+## Generated Story -6321504743386522891
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ใช่
+
+## Generated Story -5870206446005457130
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ใช่
+
+## Generated Story 3268080308027969481
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ใช่
+
+## Generated Story -512985807978998728
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+
+## Generated Story 711000710524482016
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ใช่
+
+## Generated Story 652207997819654902
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ใช่
+
+## Generated Story 5907786449202063689
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ใช่
+
+## Generated Story -3943697653568419730
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ใช่
+
+## Generated Story -4724949057019180775
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ใช่
+
+## Generated Story 7996334114572137591
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ใช่
+
+## Generated Story 3472023456724144705
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ใช่
+
+## Generated Story -7353035630983679568
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ใช่
+
+## Generated Story 3090153392327582350
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ใช่
+
+## Generated Story 5525475734987816814
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ใช่
+
+## Generated Story 6756878621286715350
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -6185923997726017078
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -3135144543567362590
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 8854005775324892778
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -3033213165077344978
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -4921974617431198022
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -4864018206050639049
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 7205043126525109421
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -5998414889737322066
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 4906318142355926889
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 8961305378208594677
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 4020295902626561707
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -4694480744195659546
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 897829405828655131
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 7150051931145133214
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -3239141404525653432
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -3678206364121823795
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 265500958817062851
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 6262385310846893112
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story 3224418869214978140
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ทักทาย
+    - bot.utter.greeting
+
+## Generated Story -3820184318565739563
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5337998827930919692
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7768242261026631020
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 8169424264574347705
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1377365943959499452
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -6089939988533534054
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4146092706545042809
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7338627797628124614
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7607438584494044717
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6841047152200196762
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 3570543709269428710
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
 * user.ดูรูปสมุนไพร{"herb": null}
     - slot{"herb": null}
     - bot.ask.name_to_photo.herb_name
@@ -13517,9 +12768,619 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
-* user.ไม่ใช่
 
-## Generated Story 9074543487181061519
+## Generated Story -4416428013994634526
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6412626711482090093
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 8763082925364073400
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3697945106722498466
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4442664193887997056
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1518970331520457202
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8248223745715390983
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -120402517089558622
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3075269573684391913
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 4786314737863967741
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -5140592998720544564
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 7887245636690578435
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 7986977160250042204
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 2561929436441274552
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 723503844748934792
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -2100961719136877544
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 8266358144632726733
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 8818776612469573796
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -1842372713882092404
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 23577086954959066
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -1703072347627000710
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -7560702801673068030
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 4212360893217519754
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -4698234947536019789
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 2405921717016301178
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -3706795864974064074
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 7876524843389122099
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 3894904597422417981
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -4513110700515269420
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -200550796651161608
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
 * user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
     - bot.action.name_to_benefit
@@ -13531,9 +13392,10 @@
     - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_name.not_found
-* user.ไม่ใช่
 
-## Generated Story 5120049849304458572
+## Generated Story -1281761982522136846
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
 * user.ส่งรูปภาพ
     - bot.action.photo_to_name
 * user.พบสมุนไพร
@@ -13541,10 +13403,6 @@
     - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
-* user.ใช่
-* user.ไม่ใช่
-
-## Generated Story 1259330004116730919
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -13553,14 +13411,492 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 7162010570082984722
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 2318279077734141596
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -3038553382276681566
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 6885120309139192594
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 2938250095482333228
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
-* user.ไม่ใช่
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
 
-## Generated Story 5110624977414967138
+## Generated Story -492115709575079923
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -3969259363806057135
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -8743181325371413726
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 3238505778982214256
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -1205461197077844459
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -8539444696445486589
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 1908716499383367223
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -5184337521877477027
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -8149607380060630009
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -2228850735769276284
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 485501646840329807
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -3663424180522504215
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story -6523478147701513189
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+
+## Generated Story 1092584504699314761
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 1056323683187848417
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6463954660639962347
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -4123470522108558919
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -3117391000341046844
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -8753525571037442030
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 3498253928281185949
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -13577,18 +13913,51 @@
     - bot.action.name_to_benefit
 * user.พบสมุนไพร
     - bot.utter.benefit
-* user.ไม่ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
 
-## Generated Story 3696994677814738314
-* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
-    - bot.action.name_to_benefit
+## Generated Story -6213503947655956612
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
 * user.ไม่พบสมุนไพร
-    - bot.utter.benefit.not_found
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
-* user.ไม่ใช่
+    - bot.utter.thankyou
 
-## Generated Story -8736000577029269951
+## Generated Story 5016357530025328814
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
@@ -13597,22 +13966,1150 @@
     - bot.validation.herb_photo
 * user.ใช่
     - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 601995940225422913
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.พบสมุนไพร
     - bot.utter.herb_photo
     - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
 * user.ใช่
     - bot.utter.thankyou
-* user.ไม่ใช่
 
-## Generated Story 1059285387611886988
+## Generated Story -1200887774189214648
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 853253119410194131
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7116500742660575004
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 440875029598169433
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 9147043340853593833
 * user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
     - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
     - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 5078308573564815163
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -7366838699895955383
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -1376877179110337418
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 6701957711139333913
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story 7440275597633567127
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+
+## Generated Story -5197983378047197940
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 2405744612013678948
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -1304063555224556906
+* user.ขอบคุณ
+    - bot.utter.thankyou
 * user.ไม่ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 6730242613603582073
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -7463689612442254443
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 7222427810357841362
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -5149532219410365096
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -7084151731239806684
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 7777664249900730207
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -8582092783533091191
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -1341074221593978271
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 778018449573030352
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -869720502280364541
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -4026351355625741883
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 4026605048000178662
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 567087884999716055
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -4780289906471217738
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -5961155243439151731
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -6577447324489856973
 * user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story -6362696120562364952
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+
+## Generated Story 5232145396505471220
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 9167763316622311338
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -2950890193488719711
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 5415309942585318768
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -6827815320319172783
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+    - bot.utter.benefit.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 7396518828615870099
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ไม่ใช่
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 1574584435714212231
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_photo.not_found
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 158578317879549667
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -5948616876376843838
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 8158868488510408507
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 6272649254812106894
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.สรรพคุณสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_benefit
+* user.พบสมุนไพร
+    - bot.utter.benefit
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -3545630617227230917
+* user.ไม่ใช่
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 8731138199517499317
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.พบสมุนไพร
+    - bot.utter.detail
+* user.ดูรูปสมุนไพร{"herb": null}
+    - slot{"herb": null}
+    - bot.ask.name_to_photo.herb_name
+* None
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 3931953182917935287
+* user.หาสมุนไพรจากสรรพคุณ
+    - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_feature.not_found
+    - bot.default.ask_more
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_photo
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -7321691162388641983
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 6608999988434471154
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 654612453854292783
+* user.ขอบคุณ
+    - bot.utter.thankyou
+* user.ทักทาย
+    - bot.utter.greeting
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 6698036745793196156
+* user.ค้นหาสมุนไพรจากรูป
+    - bot.ask.photo
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ใช่
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story 636492139351023233
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.ไม่พบสมุนไพร
+    - bot.utter.herb_name.not_found
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
+
+## Generated Story -4756255147851387899
+* user.ส่งรูปภาพ
+    - bot.action.photo_to_name
+* user.พบสมุนไพร
+    - bot.utter.herb_name
+    - bot.validation.herb_name
+* user.ไม่
+    - bot.ask.get_data
+* user.แจ้งข้อมูลสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.validation.get_data.herb_name
+* user.ดูรูปสมุนไพร{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - slot{"herb": "\u0e02\u0e21\u0e34\u0e49\u0e19\u0e0a\u0e31\u0e19"}
+    - bot.action.name_to_photo
+* user.พบสมุนไพร
+    - bot.utter.herb_photo
+    - bot.validation.herb_photo
+* user.ใช่
+    - bot.utter.thankyou
+* user.ดูข้อมูลทั่วไปของสมุนไพร{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - slot{"herb": "\u0e21\u0e30\u0e19\u0e32\u0e27"}
+    - bot.action.name_to_detail
+* user.ไม่พบสมุนไพร
+    - bot.utter.detail.not_found
 

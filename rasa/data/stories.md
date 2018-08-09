@@ -133,3 +133,17 @@
  - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
  - bot.utter.detail.not_found
+ 
+## แนะนำสมุนไพร_พบสมุนไพร
+* user.หาสมุนไพรจากสรรพคุณ {"feature":"ผิวแห้ง",feature:บำรุงผิว}
+ - bot.action.feature_to_herb
+* user.พบสมุนไพร
+ - bot.utter.herb_feature
+ - bot.default.ask_more
+
+## แนะนำสมุนไพร_พบสมุนไพร
+* user.หาสมุนไพรจากสรรพคุณ {"feature":"ผิวแห้ง",feature:บำรุงผิว}
+ - bot.action.feature_to_herb
+* user.ไม่พบสมุนไพร
+ - bot.utter.herb_feature.not_found
+ - bot.default.ask_more

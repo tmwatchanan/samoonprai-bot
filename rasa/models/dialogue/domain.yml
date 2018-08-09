@@ -22,6 +22,10 @@ action_names:
 - bot.utter.detail
 - bot.utter.detail.not_found
 - bot.ask.name_to_photo.herb_name
+- bot.action.feature_to_herb
+- bot.utter.herb_feature
+- bot.utter.herb_feature.not_found
+- bot.default.ask_more
 actions:
 - bot.utter.default
 - bot.utter.greeting
@@ -45,10 +49,15 @@ actions:
 - bot.utter.detail
 - bot.utter.detail.not_found
 - bot.ask.name_to_photo.herb_name
+- bot.action.feature_to_herb
+- bot.utter.herb_feature
+- bot.utter.herb_feature.not_found
+- bot.default.ask_more
 config:
   store_entities_as_slots: true
 entities:
 - herb
+- feature
 intents:
 - user.ใช่
 - user.ไม่ใช่
@@ -64,11 +73,18 @@ intents:
 - user.สรรพคุณสมุนไพร
 - user.ดูข้อมูลทั่วไปของสมุนไพร
 - user.ส่งรูปภาพ
+- user.หาสมุนไพรจากสรรพคุณ
 slots:
+  feature:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   herb:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
+  bot.action.feature_to_herb:
+  - text: สักครู่นะครับ เดียวผมจะช่วยค้นดูว่ามีสมุนไพรตัวไหนที่ช่วยเรื่อง {feature}
+      ได้บ้าง
   bot.action.name_to_benefit:
   - text: สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของ{herb}ให้นะครับ
   bot.action.name_to_detail:
@@ -83,6 +99,8 @@ templates:
   - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูรูปของสมุนไพรอะไร
   bot.ask.photo:
   - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
+  bot.default.ask_more:
+  - text: อยากรู้อะไรเพิ่มเติม ให้ผมช่วยได้นะครับ
   bot.utter.benefit:
   - text: สรรพคุณของ {herb} มีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
   bot.utter.benefit.not_found:
@@ -95,6 +113,10 @@ templates:
   - text: ขอโทษด้วยนะครับ ลูกไพรหา ข้อมูลของ{herb}ไม่เจอ
   bot.utter.greeting:
   - text: ลูกสมุนไพร สวัสดีครับ
+  bot.utter.herb_feature:
+  - text: แสดงข้อมูลสมุนไพรที่หาได้
+  bot.utter.herb_feature.not_found:
+  - text: ขอโทษครับ ตอนนี้ผมยังไม่สามารถหาสมุนไพรที่มีสรรพคุณแบบนี้ได้
   bot.utter.herb_name:
   - text: สมุนไพรตัวนี้ชื่อว่า ว่านหางจระเข้ ครับ
   bot.utter.herb_name.not_found:

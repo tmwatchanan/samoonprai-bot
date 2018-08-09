@@ -1,9 +1,11 @@
 slots:
   herb:
     type: text
-
+  feature:
+    type: text
 entities:
 - herb
+- feature
 
 intents:
 - user.ใช่
@@ -20,7 +22,7 @@ intents:
 - user.สรรพคุณสมุนไพร
 - user.ดูข้อมูลทั่วไปของสมุนไพร
 - user.ส่งรูปภาพ
-
+- user.หาสมุนไพรจากสรรพคุณ
 templates:
   bot.utter.greeting:
     - "ลูกสมุนไพร สวัสดีครับ"
@@ -71,6 +73,15 @@ templates:
   bot.ask.name_to_photo.herb_name:
     - "ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูรูปของสมุนไพรอะไร"
 
+  bot.action.feature_to_herb:
+    - "สักครู่นะครับ เดียวผมจะช่วยค้นดูว่ามีสมุนไพรตัวไหนที่ช่วยเรื่อง {feature} ได้บ้าง"
+  bot.utter.herb_feature:
+    - "แสดงข้อมูลสมุนไพรที่หาได้"
+  bot.utter.herb_feature.not_found:
+    - "ขอโทษครับ ตอนนี้ผมยังไม่สามารถหาสมุนไพรที่มีสรรพคุณแบบนี้ได้"
+  bot.default.ask_more:
+    - "อยากรู้อะไรเพิ่มเติม ให้ผมช่วยได้นะครับ"
+
 actions:
 - bot.utter.default
 - bot.utter.greeting
@@ -97,3 +108,8 @@ actions:
 - bot.utter.detail.not_found
 
 - bot.ask.name_to_photo.herb_name
+
+- bot.action.feature_to_herb
+- bot.utter.herb_feature
+- bot.utter.herb_feature.not_found
+- bot.default.ask_more

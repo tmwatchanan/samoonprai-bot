@@ -5,13 +5,22 @@
         "herb"
       ]
     },
-    "bot.utter.greeting": {
+    "bot.utter.detail": {
       "slots": []
     },
     "bot.utter.thankyou": {
       "slots": []
     },
+    "bot.validation.get_data.herb_photo": {
+      "slots": []
+    },
+    "bot.validation.get_data.herb_name": {
+      "slots": []
+    },
     "bot.utter.benefit.not_found": {
+      "slots": []
+    },
+    "bot.default.ask_more": {
       "slots": []
     },
     "bot.utter.benefit": {
@@ -20,13 +29,7 @@
     "bot.utter.herb_photo.not_found": {
       "slots": []
     },
-    "bot.utter.detail": {
-      "slots": []
-    },
-    "bot.validation.get_data.herb_name": {
-      "slots": []
-    },
-    "bot.validation.get_data.herb_photo": {
+    "bot.utter.greeting": {
       "slots": []
     },
     "bot.utter.herb_name.not_found": {
