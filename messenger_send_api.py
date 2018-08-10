@@ -145,3 +145,19 @@ def send_sender_action(recipient_id, sender_action):
     )
 
     return response.json()
+
+
+def send_generic_template(recipient_id, elements):
+    # https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic
+    attachment = {
+        'attachment' : {
+            'type': 'template',
+            'payload': {
+                'template_type': 'generic',
+                'elements': elements
+            }
+        }
+    }
+    print(attachment)
+    return send_response(recipient_id, add_payload=attachment)
+
