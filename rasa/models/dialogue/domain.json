@@ -37,15 +37,19 @@
     "prev_bot.validation.herb_photo",
     "prev_bot.validation.get_data.herb_photo",
     "prev_bot.action.name_to_benefit",
+    "prev_bot.ask.name_to_benefit.herb_name",
     "prev_bot.utter.benefit",
     "prev_bot.utter.benefit.not_found",
     "prev_bot.action.name_to_detail",
+    "prev_bot.ask.name_to_detail.herb_name",
     "prev_bot.utter.detail",
     "prev_bot.utter.detail.not_found",
     "prev_bot.ask.name_to_photo.herb_name",
     "prev_bot.action.feature_to_herb",
+    "prev_bot.ask.feature_to_herb.feature",
     "prev_bot.utter.herb_feature",
     "prev_bot.utter.herb_feature.not_found",
-    "prev_bot.default.ask_more"
+    "prev_bot.default.ask_more",
+    "prev_action_slot_reset"
   ]
 }

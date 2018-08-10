@@ -16,16 +16,20 @@ action_names:
 - bot.validation.herb_photo
 - bot.validation.get_data.herb_photo
 - bot.action.name_to_benefit
+- bot.ask.name_to_benefit.herb_name
 - bot.utter.benefit
 - bot.utter.benefit.not_found
 - bot.action.name_to_detail
+- bot.ask.name_to_detail.herb_name
 - bot.utter.detail
 - bot.utter.detail.not_found
 - bot.ask.name_to_photo.herb_name
 - bot.action.feature_to_herb
+- bot.ask.feature_to_herb.feature
 - bot.utter.herb_feature
 - bot.utter.herb_feature.not_found
 - bot.default.ask_more
+- action_slot_reset
 actions:
 - bot.utter.default
 - bot.utter.greeting
@@ -43,16 +47,20 @@ actions:
 - bot.validation.herb_photo
 - bot.validation.get_data.herb_photo
 - bot.action.name_to_benefit
+- bot.ask.name_to_benefit.herb_name
 - bot.utter.benefit
 - bot.utter.benefit.not_found
 - bot.action.name_to_detail
+- bot.ask.name_to_detail.herb_name
 - bot.utter.detail
 - bot.utter.detail.not_found
 - bot.ask.name_to_photo.herb_name
 - bot.action.feature_to_herb
+- bot.ask.feature_to_herb.feature
 - bot.utter.herb_feature
 - bot.utter.herb_feature.not_found
 - bot.default.ask_more
+- action_slot_reset
 config:
   store_entities_as_slots: true
 entities:
@@ -82,6 +90,8 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
+  action_slot_reset:
+  - text: Reset
   bot.action.feature_to_herb:
   - text: สักครู่นะครับ เดียวผมจะช่วยค้นดูว่ามีสมุนไพรตัวไหนที่ช่วยเรื่อง {feature}
       ได้บ้าง
@@ -93,8 +103,14 @@ templates:
   - text: สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.action.photo_to_name:
   - text: เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
+  bot.ask.feature_to_herb.feature:
+  - text: ช่วยบอกสรรพคุณของสมุนไพรที่อยากให้ลูกไพรหาให้หน่อยครับ
   bot.ask.get_data:
   - text: ช่วยบอกน้องลูกไพรได้ไหมครับ ว่าจริงๆแล้วมันคือสมุนไพรอะไร เช่น "มันคือ มะนาว"
+  bot.ask.name_to_benefit.herb_name:
+  - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูสรรพคุณของสมุนไพรตัวไหน
+  bot.ask.name_to_detail.herb_name:
+  - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูข้อมูลของสมุนไพรตัวไหน
   bot.ask.name_to_photo.herb_name:
   - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูรูปของสมุนไพรอะไร
   bot.ask.photo:

@@ -18,38 +18,20 @@ from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer,BinarySingleState
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
-
+from rasa_core.events import AllSlotsReset
+from rasa_core.events import Restarted
 logger = logging.getLogger(__name__)
 
-
-class RestaurantAPI(object):
-    def search(self, info):
-        return "papi's pizza place"
-
-
-class ActionSearchRestaurants(Action):
+class ActionRestarted(Action):
     def name(self):
-        return 'action_search_restaurants'
-
+        return 'action_restarted'
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("looking for restaurants")
-        restaurant_api = RestaurantAPI()
-        restaurants = restaurant_api.search(tracker.get_slot("cuisine"))
-        return [SlotSet("matches", restaurants)]
-
-
-class ActionSuggest(Action):
+        return[Restarted()]
+class ActionSlotReset(Action):
     def name(self):
-        return 'action_suggest'
-
+        return 'action_slot_reset'
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("here's what I found:")
-        dispatcher.utter_message(tracker.get_slot("matches"))
-        dispatcher.utter_message("is it ok for you? "
-                                 "hint: I'm not going to "
-                                 "find anything else :)")
-        return []
-
+        return[AllSlotsReset()]
 
 def train_dialogue(domain_file="domain.yml",
                    model_path="models/dialogue",

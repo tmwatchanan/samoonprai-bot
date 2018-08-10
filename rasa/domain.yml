@@ -55,12 +55,16 @@ templates:
 
   bot.action.name_to_benefit:
     - สักครู่นะครับ เดียวผมจะไปค้นหาสรรคุณของ{herb}ให้นะครับ
+  bot.ask.name_to_benefit.herb_name:
+    - "ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูสรรพคุณของสมุนไพรตัวไหน"
   bot.utter.benefit.not_found:
     - "ขอโทษด้วยนะครับ ลูกไพรหา สรรพคุณของ {herb} ไม่เจอ"
   bot.utter.benefit:
     - สรรพคุณของ {herb} มีดังนี้ครับ ....... ดูเพิ่มเติมที่ [link]
   bot.action.name_to_detail:
     - สักครู่นะครับ เดียวผมจะไปค้นหาข้อมูล{herb}ให้นะครับ
+  bot.ask.name_to_detail.herb_name:
+    - "ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูข้อมูลของสมุนไพรตัวไหน"
   bot.utter.detail:
     - "{herb} มีชื่อวิทยาศาสตร์คือ limeee"
   bot.utter.detail.not_found:
@@ -72,7 +76,8 @@ templates:
 
   bot.ask.name_to_photo.herb_name:
     - "ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูรูปของสมุนไพรอะไร"
-
+  bot.ask.feature_to_herb.feature:
+    - "ช่วยบอกสรรพคุณของสมุนไพรที่อยากให้ลูกไพรหาให้หน่อยครับ"
   bot.action.feature_to_herb:
     - "สักครู่นะครับ เดียวผมจะช่วยค้นดูว่ามีสมุนไพรตัวไหนที่ช่วยเรื่อง {feature} ได้บ้าง"
   bot.utter.herb_feature:
@@ -81,7 +86,8 @@ templates:
     - "ขอโทษครับ ตอนนี้ผมยังไม่สามารถหาสมุนไพรที่มีสรรพคุณแบบนี้ได้"
   bot.default.ask_more:
     - "อยากรู้อะไรเพิ่มเติม ให้ผมช่วยได้นะครับ"
-
+  action_slot_reset:
+    - "Reset"
 actions:
 - bot.utter.default
 - bot.utter.greeting
@@ -101,15 +107,20 @@ actions:
 - bot.validation.get_data.herb_photo
 
 - bot.action.name_to_benefit
+- bot.ask.name_to_benefit.herb_name
 - bot.utter.benefit
 - bot.utter.benefit.not_found
 - bot.action.name_to_detail
+- bot.ask.name_to_detail.herb_name
 - bot.utter.detail
 - bot.utter.detail.not_found
 
 - bot.ask.name_to_photo.herb_name
 
 - bot.action.feature_to_herb
+- bot.ask.feature_to_herb.feature
 - bot.utter.herb_feature
 - bot.utter.herb_feature.not_found
 - bot.default.ask_more
+
+- action_slot_reset
