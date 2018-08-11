@@ -26,6 +26,13 @@ def run_action(input_action):
         evts = events.deserialise_events([{"event":"reset_slots"}])
         next_action = agent.continue_message_handling(executed_action=next_action['next_action'],sender_id=next_action['tracker']['sender_id'],events=evts)
         return next_action
+    elif(next_action['next_action']=="bot.utter.herb_name"):
+        herb_name = "มะนาว"
+        evts = events.deserialise_events([{"event": "slot", "name": "herb", "value": herb_name}])
+        next_action = agent.continue_message_handling(executed_action=next_action['next_action'],
+                                                      sender_id=next_action['tracker']['sender_id'], events=evts)
+        return next_action
+
     else:
         next_action = agent.continue_message_handling(executed_action=next_action['next_action'],sender_id=next_action['tracker']['sender_id'], events=[])
         return next_action
