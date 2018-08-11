@@ -15,7 +15,7 @@
   },
   "rasa_core": "0.9.3",
   "max_histories": [
-    3,
+    5,
     5,
     null
   ],

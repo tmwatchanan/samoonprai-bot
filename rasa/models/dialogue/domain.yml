@@ -1,5 +1,6 @@
 action_factory: null
 action_names:
+- bot.ask.validate.herb
 - bot.utter.default
 - bot.utter.greeting
 - bot.ask.photo
@@ -31,6 +32,7 @@ action_names:
 - bot.default.ask_more
 - action_slot_reset
 actions:
+- bot.ask.validate.herb
 - bot.utter.default
 - bot.utter.greeting
 - bot.ask.photo
@@ -115,6 +117,8 @@ templates:
   - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูรูปของสมุนไพรอะไร
   bot.ask.photo:
   - text: ช่วยส่งรูปสมุนไพรให้หน่อยครับ
+  bot.ask.validate.herb:
+  - text: คุณหมายถึง {herbชื่อที่พบในระบบ} ใช่ไหมครับ
   bot.default.ask_more:
   - text: อยากรู้อะไรเพิ่มเติม ให้ผมช่วยได้นะครับ
   bot.utter.benefit:

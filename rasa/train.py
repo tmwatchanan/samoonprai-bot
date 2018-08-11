@@ -40,7 +40,7 @@ def train_dialogue(domain_file="domain.yml",
                               core_threshold=0.3,
                               nlu_threshold=0.3)
     agent = Agent(domain_file,
-                  policies=[MemoizationPolicy(max_history=3),KerasPolicy(),fallback])
+                  policies=[MemoizationPolicy(max_history=5),KerasPolicy(),fallback])
 
     training_data = agent.load_data(training_data_file)
     agent.train(

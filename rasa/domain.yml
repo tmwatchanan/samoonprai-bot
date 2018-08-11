@@ -88,7 +88,10 @@ templates:
     - "อยากรู้อะไรเพิ่มเติม ให้ผมช่วยได้นะครับ"
   action_slot_reset:
     - "Reset"
+  bot.ask.validate.herb:
+    - "คุณหมายถึง {herbชื่อที่พบในระบบ} ใช่ไหมครับ"
 actions:
+- bot.ask.validate.herb
 - bot.utter.default
 - bot.utter.greeting
 - bot.ask.photo
