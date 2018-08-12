@@ -40,14 +40,14 @@ def train_dialogue(domain_file="domain.yml",
                               core_threshold=0.3,
                               nlu_threshold=0.2)
     agent = Agent(domain_file,
-                  policies=[MemoizationPolicy(max_history=5),KerasPolicy(),fallback])
+                  policies=[MemoizationPolicy(max_history=7),KerasPolicy(),fallback])
 
     training_data = agent.load_data(training_data_file)
     agent.train(
             training_data,
-            epochs=400,
+            epochs=500,
             batch_size=100,
-            validation_split=0.2
+            validation_split=0.1
     )
 
     agent.persist(model_path)

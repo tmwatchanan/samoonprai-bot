@@ -71,6 +71,8 @@ entities:
 intents:
 - user.ใช่
 - user.ไม่ใช่
+- user.ไม่แน่ใจ
+- user.ไม่มีรูปสมุนไพร
 - user.ทักทาย
 - user.ขอบคุณ
 - user.พบสมุนไพร

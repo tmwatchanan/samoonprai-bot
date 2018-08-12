@@ -6,7 +6,6 @@
 * user.ขอบคุณ
   - bot.utter.thankyou
   - action_slot_reset
-
 ## default_ไม่แน่ใจ
 * user.ไม่แน่ใจ
  - bot.utter.thankyou
@@ -151,6 +150,8 @@
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
 * user.ใช่
+ - bot.action.name_to_photo
+* user.พบสมุนไพร
  - bot.utter.herb_photo
  - bot.validation.herb_photo
 * user.ใช่
@@ -162,6 +163,18 @@
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
 * user.ใช่
+ - bot.action.name_to_photo
+* user.ไม่มีรูปสมุนไพร
+ - bot.utter.herb_photo.not_found
+ - action_slot_reset
+## ขอดูรูปจากชื่อสมุนไพรไม่พบ
+* user.ดูรูปสมุนไพร {"herb":"ขมิ้นชัน"}
+ - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+ - bot.ask.validate.herb
+* user.ใช่
+ - bot.action.name_to_photo
+* user.พบสมุนไพร
  - bot.utter.herb_photo
  - bot.validation.herb_photo
 * user.ไม่
@@ -177,6 +190,7 @@
 * user.ไม่
  - bot.utter.herb_photo.not_found
  - action_slot_reset
+ 
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
@@ -309,20 +323,7 @@
 * {"feature": "ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
- - bot.ask.validate.herb
-* user.ไม่
  - bot.utter.herb_feature.not_found
- - bot.default.ask_more
- - action_slot_reset
-## แนะนำสมุนไพร_ไม่พบสมุนไพร
-* user.หาสมุนไพรจากสรรพคุณ {"feature": null}
- - bot.ask.feature_to_herb.feature
-* {"feature": "ผิวแห้ง"}
- - bot.action.feature_to_herb
-* user.ไม่พบสมุนไพร
- - bot.ask.validate.herb
-* user.ใช่
- - bot.utter.herb_feature
  - bot.default.ask_more
  - action_slot_reset
 ## แนะนำสมุนไพร_พบสมุนไพร
@@ -336,17 +337,6 @@
 * user.หาสมุนไพรจากสรรพคุณ {"feature":"ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
- - bot.ask.validate.herb
-* user.ไม่
  - bot.utter.herb_feature.not_found
- - bot.default.ask_more
- - action_slot_reset
-## แนะนำสมุนไพร_พบสมุนไพร
-* user.หาสมุนไพรจากสรรพคุณ {"feature":"ผิวแห้ง"}
- - bot.action.feature_to_herb
-* user.ไม่พบสมุนไพร
- - bot.ask.validate.herb
-* user.ใช่
- - bot.utter.herb_feature
  - bot.default.ask_more
  - action_slot_reset
