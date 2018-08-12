@@ -29,7 +29,7 @@ logger.addHandler(console_handler)
 app = Flask(__name__)
 app.config.update(
     CELERY_BROKER_URL='redis://localhost:6379/0',
-    CELERY_RESULT_BACKEND='redis://localhost:6379/0'
+    CELERY_RESULT_BACKEND='redis://localhost:6379/0',
 )
 
 def make_celery(app):
@@ -69,7 +69,7 @@ def listen():
 
     if request.method == 'POST':
         payload = request.get_json()
-        if not payload['object'] == 'page':
+        if not payload.get('object') == 'page':
             return
         process.apply_async(args=[payload])
         # process(payload)
