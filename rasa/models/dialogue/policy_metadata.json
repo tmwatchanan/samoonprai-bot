@@ -11,6 +11,9 @@
     },
     "bot.ask.feature_to_herb.feature": {
       "slots": []
+    },
+    "bot.utter.thankyou": {
+      "slots": []
     }
   },
   "rasa_core": "0.9.3",

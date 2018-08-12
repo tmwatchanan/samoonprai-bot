@@ -38,7 +38,7 @@ def train_dialogue(domain_file="domain.yml",
                    training_data_file="data/stories.md"):
     fallback = FallbackPolicy(fallback_action_name="bot.utter.default",
                               core_threshold=0.3,
-                              nlu_threshold=0.3)
+                              nlu_threshold=0.2)
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(max_history=5),KerasPolicy(),fallback])
 

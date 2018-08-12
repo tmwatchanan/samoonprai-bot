@@ -39,7 +39,7 @@ def run_action(input_action):
 
 def name_to_photo():
     if True:
-        return "พบสมุนไพร"
+        return input()
     else:
         return "ไม่พบสมุนไพร"
 if __name__ == '__main__':

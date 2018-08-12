@@ -7,6 +7,10 @@
   - bot.utter.thankyou
   - action_slot_reset
 
+## default_ไม่แน่ใจ
+* user.ไม่แน่ใจ
+ - bot.utter.thankyou
+ 
 ## ค้นหาชื่อจากรูป_ผิด
 * user.ค้นหาสมุนไพรจากรูป
  - bot.ask.photo
@@ -52,6 +56,15 @@
 * user.แจ้งข้อมูลสมุนไพร {"herb":"มะนาว"}
  - bot.validation.get_data.herb_name
  - action_slot_reset
+## ค้นหาชื่อจากรูป_ผิด
+* user.ส่งรูปภาพ
+ - bot.action.photo_to_name
+* user.พบสมุนไพร
+ - bot.utter.herb_name
+ - bot.validation.herb_name
+* user.ไม่แน่ใจ
+ - bot.utter.thankyou
+ - action_slot_reset
 ## ค้นหาชื่อจากรูป_ถูก
 * user.ส่งรูปภาพ
  - bot.action.photo_to_name
@@ -89,6 +102,17 @@
 * user.พบสมุนไพร
  - bot.utter.herb_photo
  - bot.validation.herb_photo
+* user.ไม่แน่ใจ
+ - bot.utter.thankyou
+ - action_slot_reset
+## ขอดูรูปจากชื่อสมุนไพร
+* user.ดูรูปสมุนไพร {"herb": null}
+ - bot.ask.name_to_photo.herb_name
+* {"herb": "มะนาว"}
+ - bot.action.name_to_photo
+* user.พบสมุนไพร
+ - bot.utter.herb_photo
+ - bot.validation.herb_photo
 * user.ใช่
  - bot.utter.thankyou
  - action_slot_reset
@@ -102,6 +126,15 @@
  - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร {"herb":"มะนาว"}
  - bot.validation.get_data.herb_photo
+ - action_slot_reset
+## ขอดูรูปจากชื่อสมุนไพร_ผิด
+* user.ดูรูปสมุนไพร {"herb":"ขมิ้นชัน"}
+ - bot.action.name_to_photo
+* user.พบสมุนไพร
+ - bot.utter.herb_photo
+ - bot.validation.herb_photo
+* user.ไม่แน่ใจ
+ - bot.utter.thankyou
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร_ถูก
 * user.ดูรูปสมุนไพร {"herb":"ขมิ้นชัน"}
@@ -169,6 +202,16 @@
  - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
+* user.ไม่แน่ใจ
+ - bot.utter.thankyou
+ - action_slot_reset
+## ข้อมูลทั่วไป
+* user.สรรพคุณสมุนไพร {"herb": null}
+ - bot.ask.name_to_benefit.herb_name
+* {"herb":"มะนาว"}
+ - bot.action.name_to_benefit
+* user.ไม่พบสมุนไพร
+ - bot.ask.validate.herb
 * user.ใช่
  - bot.utter.benefit
  - action_slot_reset
@@ -194,6 +237,7 @@
 * user.ไม่
  - bot.utter.benefit.not_found
  - action_slot_reset
+
 ## ข้อมูลทั่วไป_เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
