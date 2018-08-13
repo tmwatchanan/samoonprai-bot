@@ -164,7 +164,7 @@
  - bot.ask.validate.herb
 * user.ใช่
  - bot.action.name_to_photo
-* user.ไม่มีรูปสมุนไพร
+* user.ไม่พบสมุนไพร
  - bot.utter.herb_photo.not_found
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพรไม่พบ
