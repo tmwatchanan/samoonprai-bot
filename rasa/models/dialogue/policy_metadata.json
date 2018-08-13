@@ -9,16 +9,16 @@
     "action_slot_reset": {
       "slots": []
     },
-    "bot.ask.feature_to_herb.feature": {
+    "bot.utter.thankyou": {
       "slots": []
     },
-    "bot.utter.thankyou": {
+    "bot.ask.feature_to_herb.feature": {
       "slots": []
     }
   },
   "rasa_core": "0.9.3",
   "max_histories": [
-    7,
+    10,
     5,
     null
   ],
