@@ -8,8 +8,11 @@
   - action_slot_reset
 ## default_ไม่แน่ใจ
 * user.ไม่แน่ใจ
- - bot.utter.thankyou
- 
+## default_ไม่แน่ใจ
+* user.ใช่
+## default_ไม่แน่ใจ
+* user.ไม่ใช่
+
 ## ค้นหาชื่อจากรูป_ผิด
 * user.ค้นหาสมุนไพรจากรูป
  - bot.ask.photo
