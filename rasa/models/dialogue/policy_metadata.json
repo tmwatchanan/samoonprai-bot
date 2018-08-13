@@ -6,10 +6,10 @@
         "feature"
       ]
     },
-    "bot.ask.feature_to_herb.feature": {
+    "action_slot_reset": {
       "slots": []
     },
-    "action_slot_reset": {
+    "bot.ask.feature_to_herb.feature": {
       "slots": []
     }
   },
