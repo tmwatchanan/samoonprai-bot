@@ -92,6 +92,8 @@ templates:
     - "Reset"
   bot.ask.validate.herb:
     - "คุณหมายถึง {herbชื่อที่พบในระบบ} ใช่ไหมครับ"
+  bot.action.validate.herb:
+    - "Action เช็คชื่อสมุนไพร"
 actions:
 - bot.ask.validate.herb
 - bot.utter.default
@@ -129,3 +131,4 @@ actions:
 - bot.default.ask_more
 
 - action_slot_reset
+- bot.action.validate.herb

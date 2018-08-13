@@ -83,7 +83,9 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": "มะนาว"}
+* {"herb": " "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.พบสมุนไพร
  - bot.utter.herb_photo
@@ -96,7 +98,9 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": "มะนาว"}
+* {"herb": " "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.พบสมุนไพร
  - bot.utter.herb_photo
@@ -108,6 +112,8 @@
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
 * {"herb": " "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.พบสมุนไพร
  - bot.utter.herb_photo
@@ -117,6 +123,8 @@
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร_ผิด
 * user.ดูรูปสมุนไพร {"herb":" "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.พบสมุนไพร
  - bot.utter.herb_photo
@@ -128,6 +136,8 @@
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร_ผิด
 * user.ดูรูปสมุนไพร {"herb":" "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.พบสมุนไพร
  - bot.utter.herb_photo
@@ -137,6 +147,8 @@
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร_ถูก
 * user.ดูรูปสมุนไพร {"herb":" "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.พบสมุนไพร
  - bot.utter.herb_photo
@@ -146,7 +158,7 @@
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพรไม่พบ
 * user.ดูรูปสมุนไพร {"herb":" "}
- - bot.action.name_to_photo
+ - bot.action.validate.herb
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
 * user.ใช่
@@ -159,7 +171,7 @@
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพรไม่พบ
 * user.ดูรูปสมุนไพร {"herb":" "}
- - bot.action.name_to_photo
+ - bot.action.validate.herb
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
 * user.ใช่
@@ -169,25 +181,28 @@
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพรไม่พบ
 * user.ดูรูปสมุนไพร {"herb":" "}
- - bot.action.name_to_photo
+ - bot.action.validate.herb
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
-* user.ใช่
- - bot.action.name_to_photo
+* user.ไม่ใช่
+ - bot.utter.thankyou
+ - action_slot_reset
+## ขอดูรูปจากชื่อสมุนไพร
+* user.ดูรูปสมุนไพร {"herb": null}
+ - bot.ask.name_to_photo.herb_name
+* {"herb": " "}
+ - bot.action.validate.herb
 * user.พบสมุนไพร
- - bot.utter.herb_photo
- - bot.validation.herb_photo
-* user.ไม่
- - bot.ask.get_data
-* user.แจ้งข้อมูลสมุนไพร {"herb":" "}
- - bot.validation.get_data.herb_photo
+ - bot.action.name_to_photo
+* user.ไม่พบสมุนไพร
+ - bot.utter.herb_photo.not_found
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพรไม่พบ
-* user.ดูรูปสมุนไพร {"herb":"ขมิ้นชัน"}
+* user.ดูรูปสมุนไพร {"herb":" "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
  - bot.action.name_to_photo
 * user.ไม่พบสมุนไพร
- - bot.ask.validate.herb
-* user.ไม่
  - bot.utter.herb_photo.not_found
  - action_slot_reset
  

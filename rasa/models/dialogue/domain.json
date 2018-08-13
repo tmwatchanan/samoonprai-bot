@@ -53,6 +53,7 @@
     "prev_bot.utter.herb_feature",
     "prev_bot.utter.herb_feature.not_found",
     "prev_bot.default.ask_more",
-    "prev_action_slot_reset"
+    "prev_action_slot_reset",
+    "prev_bot.action.validate.herb"
   ]
 }

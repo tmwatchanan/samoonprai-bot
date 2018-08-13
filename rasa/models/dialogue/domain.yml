@@ -31,6 +31,7 @@ action_names:
 - bot.utter.herb_feature.not_found
 - bot.default.ask_more
 - action_slot_reset
+- bot.action.validate.herb
 actions:
 - bot.ask.validate.herb
 - bot.utter.default
@@ -63,6 +64,7 @@ actions:
 - bot.utter.herb_feature.not_found
 - bot.default.ask_more
 - action_slot_reset
+- bot.action.validate.herb
 config:
   store_entities_as_slots: true
 entities:
@@ -107,6 +109,8 @@ templates:
   - text: สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.action.photo_to_name:
   - text: เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
+  bot.action.validate.herb:
+  - text: Action เช็คชื่อสมุนไพร
   bot.ask.feature_to_herb.feature:
   - text: ช่วยบอกสรรพคุณของสมุนไพรที่อยากให้ลูกไพรหาให้หน่อยครับ
   bot.ask.get_data:
