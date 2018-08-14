@@ -320,9 +320,6 @@
 ## แนะนำสมุนไพร_พบสมุนไพร
 * user.หาสมุนไพรจากสรรพคุณ {"feature": null}
  - bot.ask.feature_to_herb.feature
-## แนะนำสมุนไพร_พบสมุนไพร
-* user.หาสมุนไพรจากสรรพคุณ
- - bot.ask.feature_to_herb.feature
 * {"feature": "ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.พบสมุนไพร

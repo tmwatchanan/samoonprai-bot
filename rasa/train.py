@@ -18,20 +18,7 @@ from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer,BinarySingleState
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
-from rasa_core.events import AllSlotsReset
-from rasa_core.events import Restarted
 logger = logging.getLogger(__name__)
-
-class ActionRestarted(Action):
-    def name(self):
-        return 'action_restarted'
-    def run(self, dispatcher, tracker, domain):
-        return[Restarted()]
-class ActionSlotReset(Action):
-    def name(self):
-        return 'action_slot_reset'
-    def run(self, dispatcher, tracker, domain):
-        return[AllSlotsReset()]
 
 def train_dialogue(domain_file="domain.yml",
                    model_path="models/dialogue",

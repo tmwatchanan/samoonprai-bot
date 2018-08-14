@@ -2,14 +2,11 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "herb",
-        "feature"
+        "feature",
+        "herb"
       ]
     },
     "action_slot_reset": {
-      "slots": []
-    },
-    "bot.ask.feature_to_herb.feature": {
       "slots": []
     }
   },
