@@ -32,6 +32,7 @@ action_names:
 - bot.default.ask_more
 - action_slot_reset
 - bot.action.validate.herb
+- bot.utter.default.about_bot
 actions:
 - bot.ask.validate.herb
 - bot.utter.default
@@ -65,6 +66,7 @@ actions:
 - bot.default.ask_more
 - action_slot_reset
 - bot.action.validate.herb
+- bot.utter.default.about_bot
 config:
   store_entities_as_slots: true
 entities:
@@ -133,6 +135,8 @@ templates:
   - text: ขอโทษด้วยนะครับ ลูกไพรหา สรรพคุณของ {herb} ไม่เจอ
   bot.utter.default:
   - text: ไม่เข้าใจ พิมพ์ใหม่ได้ไหมครับ
+  bot.utter.default.about_bot:
+  - text: เกี่ยวกับลูกไพร
   bot.utter.detail:
   - text: '{herb} มีชื่อวิทยาศาสตร์คือ limeee'
   bot.utter.detail.not_found:

@@ -2,10 +2,20 @@
 * user.ทักทาย
  - bot.utter.greeting
  - action_slot_reset
-## default thankyou
+## default_thankyou
 * user.ขอบคุณ
   - bot.utter.thankyou
   - action_slot_reset
+  
+##default_about_us
+* user.สมุนไพรคืออะไร
+
+##default_about_us
+* user.หน้าที่ของบอท
+
+##default_about_us
+* user.เกี่ยวกับบอท
+ - bot.utter.default.about_bot
 
 ## ค้นหาชื่อจากรูป_ผิด
 * user.ค้นหาสมุนไพรจากรูป

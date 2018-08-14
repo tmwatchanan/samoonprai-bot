@@ -2,9 +2,12 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "feature",
-        "herb"
+        "herb",
+        "feature"
       ]
+    },
+    "bot.utter.default.about_bot": {
+      "slots": []
     },
     "action_slot_reset": {
       "slots": []

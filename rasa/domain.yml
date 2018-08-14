@@ -94,6 +94,8 @@ templates:
     - "คุณหมายถึง {herbชื่อที่พบในระบบ} ใช่ไหมครับ"
   bot.action.validate.herb:
     - "Action เช็คชื่อสมุนไพร"
+  bot.utter.default.about_bot:
+    - "เกี่ยวกับลูกไพร"
 actions:
 - bot.ask.validate.herb
 - bot.utter.default
@@ -132,3 +134,4 @@ actions:
 
 - action_slot_reset
 - bot.action.validate.herb
+- bot.utter.default.about_bot
