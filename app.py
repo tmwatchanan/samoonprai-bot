@@ -9,8 +9,10 @@ from messenger_send_api import verify_webhook
 import controllers
 # Utilities
 import logging
+import os.path
 # Background Tasks
 from celery import Celery
+import redis
 
 # Logging
 logger = logging.getLogger('SAMOONPRAI')
@@ -31,6 +33,7 @@ app.config.update(
     CELERY_BROKER_URL='redis://localhost:6379/0',
     CELERY_RESULT_BACKEND='redis://localhost:6379/0',
 )
+r = redis.StrictRedis(host='localhost', port=6379, db=0)
 
 def make_celery(app):
     celery = Celery(
@@ -54,11 +57,6 @@ celery = make_celery(app)
 # def index():
 #     return '<h1>Samoonprai</h1>'
 
-
-@celery.task(name='add_together')
-def add_together(a, b):
-    print("HELLO = " + str(a+b))
-    return a + b
 
 @app.route("/webhook", methods=['GET', 'POST'])
 def listen():
