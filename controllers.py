@@ -34,6 +34,9 @@ logger = logging.getLogger('SAMOONPRAI')
 herb_json_array = None
 with open(os.path.join('herb_data', 'herb_data_labeled.json'), encoding="utf-8") as f:
     herb_json_array = json.load(f)
+herb_feature_json_array = None
+with open(os.path.join('herb_data', 'herb_features.json'), encoding="utf-8") as f:
+    herb_feature_json_array = json.load(f)
 
 
 def expand_herb_json_array(herb_json_array):
@@ -79,7 +82,7 @@ def process_incoming_message(payload):
                     logger.info(recipient_id + " sends " + "\"" + "an image in attachment" + "\"")
                 if text:
                     next_action = rasa_api_start(recipient_id, text)
-                    logger.info(recipient_id + " sends " + "\"" + text + "\"")
+                    # logger.info(recipient_id + " sends " + "\"" + text + "\"")
                 herb_name = next_action.get('tracker').get('slots').get('herb')
                 entities = next_action.get('tracker').get('latest_message').get('entities')
                 feature_list = get_feature_list_from_entities(entities)
@@ -94,8 +97,9 @@ def process_incoming_message(payload):
                 }
                 # messenger_send_api.debug_respond(recipient_id, recipient_id + " " + next_action['next_action'])
                 while next_action['next_action'] != 'action_listen':
-                    messenger_send_api.send_sender_action(recipient_id, 'typing_on')
-                    next_action, data_payload = run_action(next_action, data_payload)
+                    if next_action['next_action'] != 'action_slot_reset':
+                        messenger_send_api.send_sender_action(recipient_id, 'typing_on')
+                    next_action = run_action(next_action, data_payload)
                     # messenger_send_api.debug_respond(recipient_id, data_payload['user']['id'] + " " + next_action['next_action'])
                     messenger_send_api.send_sender_action(recipient_id, 'typing_off')
 
@@ -109,115 +113,102 @@ def run_action(now_action, data_payload):
     logger.info(data_payload['user']['id'] + " has action " + action)
 
     if action == 'bot.utter.greeting':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_bot_utter_greeting(data_payload)
+        next_action = action_bot_utter_greeting(now_action, data_payload)
     elif action == 'bot.ask.photo':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_bot_ask_photo(data_payload)
+        next_action = action_bot_ask_photo(now_action, data_payload)
     elif action == 'bot.ask.name_to_photo.herb_name':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_bot_ask_name_to_photo_herb_name(data_payload)
+        next_action = action_bot_ask_name_to_photo_herb_name(now_action, data_payload)
     elif action == 'bot.ask.get_data':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_bot_ask_get_data(data_payload)
+        action_bot_ask_get_data(data_payload)
     elif action == 'bot.ask.name_to_benefit.herb_name':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_ask_name_to_benefit_herb_name(data_payload)
+        action_ask_name_to_benefit_herb_name(data_payload)
     elif action == 'bot.ask.name_to_detail.herb_name':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_ask_name_to_detail_herb_name(data_payload)
+        action_ask_name_to_detail_herb_name(data_payload)
     elif action == 'bot.ask.validate.herb':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_ask_validate_herb(data_payload)
+        next_action = action_ask_validate_herb(now_action, data_payload)
     elif action == 'bot.ask.feature_to_herb.feature':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_ask_feature_to_herb_feature(data_payload)
+        action_ask_feature_to_herb_feature(data_payload)
     elif action == 'bot.action.validate.herb':
-        next_action = rasa_api_continue(now_action, events=[])
-        next_action, data_payload = action_action_validate_herb(data_payload)
+        next_action = action_action_validate_herb(now_action, data_payload)
     elif action == 'bot.action.name_to_photo':
-        next_action = rasa_api_continue(now_action, events=[])
-        next_action, data_payload = action_action_name_to_photo(data_payload)
+        next_action = action_action_name_to_photo(now_action, data_payload)
     elif action == 'bot.action.photo_to_name':
-        next_action = rasa_api_continue(now_action, events=[])
-        next_action, data_payload = action_action_photo_name(data_payload)
+        next_action = action_action_photo_name(now_action, data_payload)
     elif action == 'bot.action.name_to_benefit':
-        next_action = rasa_api_continue(now_action, events=[])
-        next_action, data_payload = action_action_name_to_benefit(data_payload)
+        next_action = action_action_name_to_benefit(now_action, data_payload)
     elif action == 'bot.action.name_to_detail':
-        next_action = rasa_api_continue(now_action, events=[])
-        next_action, data_payload = action_action_name_to_detail(data_payload)
+        next_action = action_action_name_to_detail(now_action, data_payload)
     elif action == 'bot.action.feature_to_herb':
-        next_action = rasa_api_continue(now_action, events=[])
-        next_action, data_payload = action_action_feature_to_herb(data_payload)
+        next_action = action_action_feature_to_herb(now_action, data_payload)
     elif action == 'bot.utter.herb_photo':
-        next_action = rasa_api_continue(now_action, events=get_event_slot_herb(data_payload['userChatHerbName']))
-        data_payload = action_utter_herb_photo(data_payload)
+        next_action = action_utter_herb_photo(now_action, data_payload)
     elif action == 'bot.utter.herb_photo.not_found':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_herb_photo_not_found(data_payload)
+        action_utter_herb_photo_not_found(data_payload)
     elif action == 'bot.utter.thankyou':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_thankyou(data_payload)
+        action_utter_thankyou(data_payload)
     elif action == 'bot.utter.herb_name':
-        next_action = rasa_api_continue(now_action, events=get_event_slot_herb(data_payload['userChatHerbName']))
-        data_payload = action_utter_herb_name(data_payload)
+        next_action = action_utter_herb_name(now_action, data_payload)
     elif action == 'bot.utter.herb_name.not_found':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_herb_name_not_found(data_payload)
+        action_utter_herb_name_not_found(data_payload)
     elif action == 'bot.utter.benefit':
-        next_action = rasa_api_continue(now_action, events=get_event_slot_herb(data_payload['userChatHerbName']))
-        data_payload = action_utter_benefit(data_payload)
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=data_payload['userChatHerbName']))
+        action_utter_benefit(data_payload)
     elif action == 'bot.utter.benefit.not_found':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_benefit_not_found(data_payload)
+        action_utter_benefit_not_found(data_payload)
     elif action == 'bot.utter.detail':
-        next_action = rasa_api_continue(now_action, events=get_event_slot_herb(data_payload['userChatHerbName']))
-        data_payload = action_utter_detail(data_payload)
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=data_payload['userChatHerbName']))
+        action_utter_detail(data_payload)
     elif action == 'bot.utter.detail.not_found':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_detail_not_found(data_payload)
+        next_action = action_utter_detail_not_found(data_payload)
     elif action == 'bot.utter.herb_feature':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_herb_feature(data_payload)
+        next_action = action_utter_herb_feature(now_action, data_payload)
     elif action == 'bot.utter.herb_feature.not_found':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_utter_herb_feature_not_found(data_payload)
+        action_utter_herb_feature_not_found(data_payload)
     elif action == 'bot.validation.herb_photo':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_validation_herb_photo(data_payload)
+        next_action = action_validation_herb_photo(now_action, data_payload)
     elif action == 'bot.validation.herb_name':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_validation_herb_name(data_payload)
+        next_action = action_validation_herb_name(now_action, data_payload)
     elif action == 'bot.validation.get_data.herb_name':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_validation_get_data_herb_name(action, data_payload)
+        next_action = action_validation_get_data_herb_name(now_action, data_payload)
     elif action == 'bot.validation.get_data.herb_photo':
-        next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_validation_get_data_herb_photo(action, data_payload)
+        next_action = action_validation_get_data_herb_photo(action, data_payload)
     elif action == 'bot.default.ask_more':
         next_action = rasa_api_continue(now_action, events=[])
-        data_payload = action_default_ask_more(data_payload)
+        action_default_ask_more(data_payload)
+    elif action == 'bot.utter.default.about_bot':
+        next_action = rasa_api_continue(now_action, events=[])
+        action_utter_default_about_bot(data_payload)
     elif action == 'action_slot_reset':
         next_action = rasa_api_continue(now_action, events=get_event_slot_reset())
-        data_payload['userChatHerbName'] = None
     else:
         logger.debug("Action %s is unknown")
         messenger_send_api.respond(data_payload['user']['id'], "ตอนนี้" + BOT_NAME + "งงไปหมดแล้วว่าต้องทำอะไร")
-    return next_action, data_payload
+    return next_action
+
+
+def action_utter_default_about_bot(data_payload):
+    about_bot_text = BOT_NAME + " ผู้ช่วยอัจฉริยะที่รอบรู้เรื่องสมุนไพรไทย ที่จะทำให้คนไทยเข้าใกล้และรู้จักสมุนไพรไทยมากยิ่งขึ้น ไม่ว่าจะให้ข้อมูลสมุนไพร ค้นหาสมุนไพร หรือต้องการให้แนะนำสมุนไพรเพื่อช่วยรักษาบรรเทาโรคก็สามารถบอก" + BOT_NAME + "มาได้เลย และยิ่งไปกว่านั้น" + BOT_NAME + "ยังสามารถจดจำรูปภาพของสมุนไพรไทยได้อีกด้วย"
+    messenger_send_api.respond(data_payload['user']['id'], about_bot_text)
 
 
 def action_default_ask_more(data_payload):
     ask_more_text = random_ask_more_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], ask_more_text)
-    return data_payload
 
 
 def action_utter_herb_feature_not_found(data_payload):
     herb_feature_not_found_text = random_herb_feature_not_found_text(data_payload['user']['name'],
                                                        data_payload.get('userChatFeatureList'))
     messenger_send_api.respond(data_payload['user']['id'], herb_feature_not_found_text)
-    return data_payload
 
 
 
@@ -225,30 +216,31 @@ def action_utter_herb_photo_not_found(data_payload):
     image_not_found_text = random_image_not_found_text(data_payload['user']['name'],
                                                        data_payload.get('userChatHerbName'))
     messenger_send_api.respond(data_payload['user']['id'], image_not_found_text)
-    return data_payload
 
 
-def action_utter_herb_feature(data_payload):
-    herb_object = data_payload['herbObject']
+def action_utter_herb_feature(now_action, data_payload):
+    herb_name = get_value_from_slot(now_action, 'herb')
+    herb_object = get_herb_info_from_database(herb_name)
     text = herb_object['thaiNameList'][0]
     if len(herb_object['thaiNameList']) > 1:
         text = text + "(" + ', '.join(herb_object['thaiNameList'][1:]) + ") "
-    text = "เป็นสมุนไพรที่มีสรรพคุณดังนี้" + "\n"
-    feature_list = []
+    text = text + "เป็นสมุนไพรที่มีสรรพคุณดังนี้" + "\n"
+    feature_list = get_value_from_slot(now_action, 'featureList')
+    feature_detail_list = []
     for herb_feature in herb_object['benefitList']:
-        for user_feature in data_payload['userChatFeatureList']:
+        for user_feature in feature_list:
             if user_feature in herb_feature:
-                feature_list.append(herb_feature)
+                feature_detail_list.append(herb_feature)
                 break
     for herb_feature in herb_object['propertyList']:
-        for user_feature in data_payload['userChatFeatureList']:
+        for user_feature in feature_list:
             if user_feature in herb_feature:
-                feature_list.append(herb_feature)
+                feature_detail_list.append(herb_feature)
                 break
     num_feature = 2
-    random_feature_list = random.sample(feature_list, num_feature if len(feature_list) >= num_feature else len(feature_list))
+    random_feature_list = random.sample(feature_detail_list, num_feature if len(feature_detail_list) >= num_feature else len(feature_detail_list))
     for feature in random_feature_list:
-        text = "• " + feature + "\n"
+        text = text +  "• " + feature + "\n"
     buttons = [
         {
             'type': 'web_url',
@@ -257,254 +249,253 @@ def action_utter_herb_feature(data_payload):
         }
     ]
     messenger_send_api.send_button(data_payload['user']['id'], text, buttons)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_action_feature_to_herb(data_payload):
+def action_action_feature_to_herb(now_action, data_payload):
     finding_feature_to_herb_text = random_finding_feature_to_herb_text(data_payload['user']['name'], data_payload.get('userChatFeatureList'))
     messenger_send_api.respond(data_payload['user']['id'], finding_feature_to_herb_text)
     feature_count_list = [0] * len(herb_json_array)
+    selected_feature_list = []
     for feature in data_payload['userChatFeatureList']:
+        selected_feature_list.append(find_most_similar_feature(feature))
+    messenger_send_api.respond(data_payload['user']['id'], "พี่น่าจะหมายถึงสรรพคุณเกี่ยวกับ" + ', '.join(selected_feature_list) + " หรือเปล่าครับ")
+    for feature in selected_feature_list:
         for idx, herb_object in enumerate(herb_json_array):
-            if feature in herb_object['benefitList']:
-                feature_count_list[idx] = feature_count_list[idx] + 1
-            if feature in herb_object['propertyList']:
-                feature_count_list[idx] = feature_count_list[idx] + 1
+            for benefit in herb_object['benefitList']:
+                if feature in benefit:
+                    feature_count_list[idx] = feature_count_list[idx] + 1
+            for property in herb_object['propertyList']:
+                if feature in property:
+                    feature_count_list[idx] = feature_count_list[idx] + 1
     m = max(feature_count_list)
     argmax = [i for i,j in enumerate(feature_count_list) if j == m]
-    herb_object = HERB_NOT_FOUND;
+    herb_object = HERB_NOT_FOUND
     if max(argmax) > 0:
         random_argmax = random.SystemRandom().choice(argmax)
         herb_object = herb_json_array[random_argmax]
-        data_payload['herbObject'] = herb_object
-    # feature_count_array = asarray(feature_count_list)
-    # argsort_feature_count_list = feature_count_array.argsort()[-1:]
-    # most_feature_count = argsort_feature_count_list[0]
-    # herb_object = herb_json_array[most_feature_count]
-    # data_payload['herbObject'] = herb_object
     next_action = None
     if herb_object == HERB_NOT_FOUND:
+        next_action = rasa_api_continue(now_action, events=[])
         next_action = rasa_api_start(data_payload['user']['id'], "ไม่พบสมุนไพร")
     else:
+        herb_name = herb_object['thaiNameList'][0]
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=herb_name, feature_list=selected_feature_list))
         next_action = rasa_api_start(data_payload['user']['id'], "พบสมุนไพร")
-    return next_action, data_payload
+    return next_action
+
 
 def action_ask_feature_to_herb_feature(data_payload):
     ask_feature_to_herb_text = random_ask_feature_to_herb_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], ask_feature_to_herb_text)
-    return data_payload
 
 
-def action_utter_detail_not_found(data_payload):
+def action_utter_detail_not_found(now_action, data_payload):
     detail_not_found_text = random_info_not_found_text(data_payload['user']['name'],
-                                                       data_payload.get('userChatHerbName'), info='ข้อมูล')
+                                                       get_value_from_slot(now_action, 'herb'), info='ข้อมูล')
     messenger_send_api.respond(data_payload['user']['id'], detail_not_found_text)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_validation_get_data_herb_photo(action, data_payload):
-    user_label_herb_photo = action.get('tracker').get('slots').get('herb')
-    data_payload['userLabelHerbPhoto'] = user_label_herb_photo
-    data_payload['user_label_herb_photo'] = user_label_herb_photo
+def action_validation_get_data_herb_photo(now_action, data_payload):
     thx_label_text = random_thx_label_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], thx_label_text)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_validation_get_data_herb_name(action, data_payload):
-    user_label_herb_name = action.get('tracker').get('slots').get('herb')
-    data_payload['userLabelHerbName'] = user_label_herb_name
-    data_payload['user_label_herb_name'] = user_label_herb_name
+def action_validation_get_data_herb_name(now_action, data_payload):
     thx_label_text = random_thx_label_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], thx_label_text)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_validation_herb_name(data_payload):
+def action_validation_herb_name(now_action, data_payload):
     quick_replies = [create_reply('ใช่'), create_reply('ไม่ใช่'), create_reply('ไม่แน่ใจ')]
     validation_herb_name_text = random_validation_herb_name_text(data_payload['user']['name'],
-                                                                 data_payload['predictedHerbName'])
+                                                                 get_value_from_slot(now_action, 'herb'))
     messenger_send_api.send_quick_replies(data_payload['user']['id'], validation_herb_name_text, quick_replies)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_validation_herb_photo(data_payload):
+def action_validation_herb_photo(now_action, data_payload):
     quick_replies = [create_reply('ใช่'), create_reply('ไม่ใช่'), create_reply('ไม่แน่ใจ')]
     validation_herb_photo_text = random_validation_herb_photo_text(data_payload['user']['name'],
-                                                                   data_payload.get('userChatHerbName'))
+                                                                   get_value_from_slot(now_action, 'herb'))
     messenger_send_api.send_quick_replies(data_payload['user']['id'], validation_herb_photo_text, quick_replies)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
 def action_utter_detail(data_payload):
-    detail_header_text = "ข้อมูลทั่วไปของ" + data_payload.get('userChatHerbName') + "ได้แก่" + '\n'
-    herb_object = data_payload['herbObject']
+    herb_name = data_payload.get('userChatHerbName')
+    herb_object = get_herb_info_from_database(herb_name)
+    detail_header_text = "ข้อมูลทั่วไปของ" + herb_name + "ได้แก่" + '\n'
     details = random.sample(herb_object['propertyList'], 2)
     if len(herb_object) > 1:
         detail_header_text = detail_header_text + \
                              '• ' + details[0] + '\n' + \
                              '• ' + details[1]
     messenger_send_api.respond(data_payload['user']['id'], detail_header_text)
-    return data_payload
 
 
 def action_utter_benefit_not_found(data_payload):
     benefit_not_found_text = random_info_not_found_text(data_payload['user']['name'],
                                                         data_payload.get('userChatHerbName'), info='สรรพคุณ')
     messenger_send_api.respond(data_payload['user']['id'], benefit_not_found_text)
-    return data_payload
 
 
 def action_utter_benefit(data_payload):
-    benefit_header_text = "สรรพคุณของ" + data_payload.get('userChatHerbName') + "ได้แก่" + '\n'
-    herb_object = data_payload['herbObject']
+    herb_name = data_payload.get('userChatHerbName')
+    herb_object = get_herb_info_from_database(herb_name)
+    benefit_header_text = "สรรพคุณของ" + herb_name + "ได้แก่" + '\n'
     benefits = random.sample(herb_object['benefitList'], 2)
     if len(herb_object) > 1:
         benefit_header_text = benefit_header_text + \
                               '• ' + benefits[0] + '\n' + \
                               '• ' + benefits[1]
     messenger_send_api.respond(data_payload['user']['id'], benefit_header_text)
-    return data_payload
 
 
 def action_utter_herb_name_not_found(data_payload):
     not_found_herb_name_text = random_not_found_herb_name_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], not_found_herb_name_text)
-    return data_payload
 
 
 def action_utter_thankyou(data_payload):
     messenger_send_api.respond(data_payload['user']['id'],
                                "ขอบคุณครับ ถ้ามีอะไรให้" + BOT_NAME + "ช่วยอีกก็บอกได้เลยนะครับ")
-    return data_payload
 
 
-def action_utter_herb_name(data_payload):
-    found_herb_name_text = random_found_herb_name_text(data_payload['user']['name'], data_payload['predictedHerbName'])
+def action_utter_herb_name(now_action, data_payload):
+    found_herb_name_text = random_found_herb_name_text(data_payload['user']['name'], get_value_from_slot(now_action, 'herb'))
     messenger_send_api.respond(data_payload['user']['id'], found_herb_name_text)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_utter_herb_photo(data_payload):
-    image_path = data_payload['herbImagePath']
+def action_utter_herb_photo(now_action, data_payload):
+    herb_name = get_value_from_slot(now_action, 'herb')
+    herb_object = get_herb_info_from_database(herb_name)
+    image_path = get_image_path_from_herb(herb_object)
     image_found_text = random_image_found_text(data_payload['user']['name'], data_payload.get('userChatHerbName'))
     messenger_send_api.respond(data_payload['user']['id'], image_found_text)
     messenger_send_api.send_image(data_payload['user']['id'], image_path)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_action_name_to_detail(data_payload):
+def action_action_name_to_detail(now_action, data_payload):
     info = 'ข้อมูลทั่วไป'
     name_to_info_text = random_name_to_info_text(data_payload['user']['name'], data_payload.get('userChatHerbName'),
                                                  info=info)
     messenger_send_api.respond(data_payload['user']['id'], name_to_info_text)
     herb_object = get_herb_info_from_database(data_payload.get('userChatHerbName'))
-    data_payload['herbObject'] = herb_object
     next_action = None
     if herb_object == HERB_NOT_FOUND:
+        next_action = rasa_api_continue(now_action, events=[])
         next_action = rasa_api_start(data_payload['user']['id'], "ไม่พบสมุนไพร")
     else:
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=data_payload.get('userChatHerbName')))
         next_action = rasa_api_start(data_payload['user']['id'], "พบสมุนไพร")
-    return next_action, data_payload
+    return next_action
 
 
-def action_action_name_to_benefit(data_payload):
+def action_action_name_to_benefit(now_action, data_payload):
     info = 'สรรพคุณ'
     name_to_info_text = random_name_to_info_text(data_payload['user']['name'], data_payload.get('userChatHerbName'),
                                                  info=info)
     messenger_send_api.respond(data_payload['user']['id'], name_to_info_text)
     herb_object = get_herb_info_from_database(data_payload.get('userChatHerbName'))
-    data_payload['herbObject'] = herb_object
     next_action = None
     if herb_object == HERB_NOT_FOUND:
+        next_action = rasa_api_continue(now_action, events=[])
         next_action = rasa_api_start(data_payload['user']['id'], "ไม่พบสมุนไพร")
     else:
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=data_payload.get('userChatHerbName')))
         next_action = rasa_api_start(data_payload['user']['id'], "พบสมุนไพร")
-    return next_action, data_payload
+    return next_action
 
 
-def action_action_photo_name(data_payload):
+def action_action_photo_name(now_action, data_payload):
     searching_herb_name_text = random_searching_herb_name_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], searching_herb_name_text)
     predicted_herb_name = call_herb_classification(data_payload.get('userChatImageUrl'))
     next_action = None
     if predicted_herb_name:
-        data_payload['predictedHerbName']= predicted_herb_name
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=predicted_herb_name))
         next_action = rasa_api_start(data_payload['user']['id'], "พบสมุนไพร")
     else:
+        next_action = rasa_api_continue(now_action, events=[])
         next_action = rasa_api_start(data_payload['user']['id'], "ไม่พบสมุนไพร")
-    return next_action, data_payload
+    return next_action
 
 
-def action_action_name_to_photo(data_payload):
-    matched_herb = get_herb_info_from_database(data_payload['suggestedHerbName'] if data_payload.get('suggestedHerbName') else data_payload['userChatHerbName'])
-    image_path = get_image_path_from_herb(matched_herb)
+def action_action_name_to_photo(now_action, data_payload):
+    herb_in_slot = get_value_from_slot(now_action, 'herb')
+    herb_object = get_herb_info_from_database(herb_in_slot)
+    image_path = get_image_path_from_herb(herb_object)
+    # image_path = get_image_path_from_herb(get_herb_info_from_database(data_payload['suggestedHerbName']))
+    next_action = None
     if image_path == IMAGE_NOT_FOUND:
+        next_action = rasa_api_continue(now_action, events=[])
         next_action = rasa_api_start(data_payload['user']['id'], "ไม่พบสมุนไพร")
     else:
         searching_image_text = random_searching_image_text(data_payload['user']['name'],
                                                            data_payload.get('userChatHerbName'))
         messenger_send_api.respond(data_payload['user']['id'], searching_image_text)
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=data_payload.get('userChatHerbName')))
         next_action = rasa_api_start(data_payload['user']['id'], "พบสมุนไพร")
-    data_payload['herbImagePath'] = image_path
-    return next_action, data_payload
+    return next_action
 
 
-def action_action_validate_herb(data_payload):
-    herb_object = get_herb_info_from_database(data_payload['userChatHerbName'])
-    next_action = None
+def action_action_validate_herb(now_action, data_payload):
+    herb_name = data_payload['userChatHerbName']
+    herb_object = get_herb_info_from_database(herb_name)
     if herb_object == HERB_NOT_FOUND:
+        next_action = rasa_api_continue(now_action, events=[])
         next_action = rasa_api_start(data_payload['user']['id'], "ไม่พบสมุนไพร")
     else:
-        data_payload['herbObject'] = herb_object
+        next_action = rasa_api_continue(now_action, events=get_event_slot(herb_name=herb_name))
         next_action = rasa_api_start(data_payload['user']['id'], "พบสมุนไพร")
-    return next_action, data_payload
+    return next_action
 
 
-def action_ask_validate_herb(data_payload):
+def action_ask_validate_herb(now_action, data_payload):
     idx_ex = find_most_similar_herb_index_from_expanded_list(data_payload.get('userChatHerbName'))
     suggested_herb_name = expanded_herb_json_array[idx_ex]['thaiName']
     suggest_herb_name_text = "พี่หมายถึง" + suggested_herb_name + "หรือเปล่าครับ"
     quick_replies = [create_reply('ใช่'), create_reply('ไม่ใช่')]
     messenger_send_api.send_quick_replies(data_payload['user']['id'], suggest_herb_name_text, quick_replies)
-    data_payload['suggestedHerbName'] = suggested_herb_name
-    data_payload['herbObject'] = get_herb_info_from_database(suggested_herb_name)
-    return data_payload
+    return rasa_api_continue(now_action, events=get_event_slot(herb_name=suggested_herb_name))
 
 
 def action_ask_name_to_detail_herb_name(data_payload):
     info = 'ข้อมูลทั่วไป'
     ask_name_to_info_herb_name_text = random_ask_name_to_info_herb_name_text(data_payload['user']['name'], info=info)
     messenger_send_api.respond(data_payload['user']['id'], ask_name_to_info_herb_name_text)
-    return data_payload
 
 
 def action_ask_name_to_benefit_herb_name(data_payload):
     info = 'สรรพคุณ'
     ask_name_to_info_herb_name_text = random_ask_name_to_info_herb_name_text(data_payload['user']['name'], info=info)
     messenger_send_api.respond(data_payload['user']['id'], ask_name_to_info_herb_name_text)
-    return data_payload
 
 
 def action_bot_ask_get_data(data_payload):
     messenger_send_api.respond(data_payload['user']['id'],
                                "ช่วยบอกน้อง" + BOT_NAME + "หน่อยได้ไหมครับ ว่าจริง ๆ แล้วมันสมุนไพรอะไร (เช่น \"มันคือมะนาว\")")
-    return data_payload
 
 
-def action_bot_ask_name_to_photo_herb_name(data_payload):
+def action_bot_ask_name_to_photo_herb_name(now_action, data_payload):
     ask_name_to_photo_herb_name_text = random_ask_name_to_photo_herb_name_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], ask_name_to_photo_herb_name_text)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_bot_ask_photo(data_payload):
+def action_bot_ask_photo(now_action, data_payload):
     ask_photo_text = random_ask_photo_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], ask_photo_text)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
-def action_bot_utter_greeting(data_payload):
+def action_bot_utter_greeting(now_action, data_payload):
     greeting_text = random_greeting_text(data_payload['user']['name'])
     messenger_send_api.respond(data_payload['user']['id'], greeting_text)
     carousel_elements = [
@@ -570,7 +561,7 @@ def action_bot_utter_greeting(data_payload):
         }
     ]
     messenger_send_api.send_generic_template(data_payload['user']['id'], carousel_elements)
-    return data_payload
+    return rasa_api_continue(now_action, events=[])
 
 
 def call_herb_classification(image_url):
@@ -642,10 +633,15 @@ def rasa_api_continue(next_action, events=[]):
     return next_action
 
 
-def get_event_slot_herb(herb_name):
+def get_event_slot(herb_name=None, feature_list=None):
     # evts = events.deserialise_events([{"event": "slot", "name": "herb", "value": herb_name}])
-    evts = [{"event": "slot", "name": "herb", "value": herb_name}]
+    evts = []
+    if herb_name:
+        evts.append({"event": "slot", "name": "herb", "value": herb_name})
+    if feature_list:
+        evts.append({"event": "slot", "name": "featureList", "value": feature_list})
     return evts
+
 
 
 def get_event_slot_reset():
@@ -669,6 +665,10 @@ def get_random_message():
     return random.choice(sample_responses)
 
 
+def get_value_from_slot(now_action, value):
+    return now_action.get('tracker').get('slots').get(value)
+
+
 def get_herb_info_from_database(herb_name):
     matched_herb_list = [x for x in herb_json_array if herb_name in set(x['thaiNameList'])]
     if len(matched_herb_list) == 0:
@@ -683,6 +683,15 @@ def find_most_similar_herb_index_from_expanded_list(herb_name):
     similarity_array = asarray(similarity_list)
     argsort_similarity_list = similarity_array.argsort()[-1:]
     return argsort_similarity_list[0]
+
+
+def find_most_similar_feature(text):
+    similarity_list = []
+    for feature in herb_feature_json_array:
+        similarity_list.append(fuzz.ratio(text, feature))
+    similarity_array = asarray(similarity_list)
+    argsort_similarity_list = similarity_array.argsort()[-1:]
+    return herb_feature_json_array[argsort_similarity_list[0]]
 
 
 def get_image_path_from_herb(matched_herb):
