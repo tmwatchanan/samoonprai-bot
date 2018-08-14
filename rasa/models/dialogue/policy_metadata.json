@@ -6,10 +6,10 @@
         "feature"
       ]
     },
-    "bot.utter.default.about_bot": {
+    "action_slot_reset": {
       "slots": []
     },
-    "action_slot_reset": {
+    "bot.utter.default.about_bot": {
       "slots": []
     }
   },

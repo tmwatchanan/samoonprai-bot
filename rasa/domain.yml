@@ -3,6 +3,8 @@ slots:
     type: text
   feature:
     type: text
+  feature_list:
+    type: list
 entities:
 - herb
 - feature
