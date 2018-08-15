@@ -114,6 +114,7 @@ templates:
     - "Thai Med"
   bot.action.source_website.mix:
     - "Mix"
+
 actions:
 - bot.ask.validate.herb
 - bot.utter.default

@@ -12,7 +12,7 @@
 
 ##default_about_us
 * user.หน้าที่ของบอท
-
+ - bot.utter.default.about_bot
 ##default_about_us
 * user.เกี่ยวกับบอท
  - bot.utter.default.about_bot
@@ -30,7 +30,19 @@
 * user.แจ้งข้อมูลสมุนไพร {"herb":" "}
  - bot.validation.get_data.herb_name
  - action_slot_reset
- 
+## ค้นหาชื่อจากรูป_ผิด
+* user.ค้นหาสมุนไพรจากรูป
+ - bot.ask.photo
+* user.ส่งรูปภาพ
+ - bot.action.photo_to_name
+* user.พบสมุนไพร
+ - bot.utter.herb_name
+ - bot.validation.herb_name
+* user.ไม่
+ - bot.ask.get_data
+* {"herb":" "}
+ - bot.validation.get_data.herb_name
+ - action_slot_reset
 ## ค้นหาชื่อจากรูป_ถูก
 * user.ค้นหาสมุนไพรจากรูป
  - bot.ask.photo
@@ -60,6 +72,17 @@
 * user.ไม่
  - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร {"herb":" "}
+ - bot.validation.get_data.herb_name
+ - action_slot_reset
+## ค้นหาชื่อจากรูป_ผิด
+* user.ส่งรูปภาพ
+ - bot.action.photo_to_name
+* user.พบสมุนไพร
+ - bot.utter.herb_name
+ - bot.validation.herb_name
+* user.ไม่
+ - bot.ask.get_data
+* {"herb":" "}
  - bot.validation.get_data.herb_name
  - action_slot_reset
 ## ค้นหาชื่อจากรูป_ผิด
@@ -100,6 +123,21 @@
 * user.ไม่
  - bot.ask.get_data
 * user.แจ้งข้อมูลสมุนไพร {"herb":" "}
+ - bot.validation.get_data.herb_photo
+ - action_slot_reset
+## ขอดูรูปจากชื่อสมุนไพร
+* user.ดูรูปสมุนไพร {"herb": null}
+ - bot.ask.name_to_photo.herb_name
+* {"herb": " "}
+ - bot.action.validate.herb
+* user.พบสมุนไพร
+ - bot.action.name_to_photo
+* user.พบสมุนไพร
+ - bot.utter.herb_photo
+ - bot.validation.herb_photo
+* user.ไม่
+ - bot.ask.get_data
+* {"herb":" "}
  - bot.validation.get_data.herb_photo
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร
@@ -192,7 +230,9 @@
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
 * user.ไม่ใช่
- - bot.utter.thankyou
+ - bot.ask.get_data
+* {"herb": " "}
+ - bot.validation.get_data.herb_photo
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
