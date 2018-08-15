@@ -1,4 +1,3 @@
 pipeline: "spacy_sklearn"
 path: "/models/nlu"
-data: ["/nludata/nlu.md","nludata/training_data.json"]
 language: "ay_model"
