@@ -359,3 +359,16 @@
  - bot.utter.herb_feature.not_found
  - bot.default.ask_more
  - action_slot_reset
+
+## แหล่งข้อมูล_สมุนไพร
+* user.แหล่งข้อมูลสมุนไพร
+ - bot.action.source_website
+## แหล่งข้อมูล_สมุนไพร
+* user.แหล่งข้อมูลสมุนไพร.thai_med
+ - bot.action.source_website.thai_med
+## แหล่งข้อมูล_สมุนไพร
+* user.แหล่งข้อมูลสมุนไพร.mix
+ - bot.action.source_website.mix
+## แหล่งข้อมูล_สมุนไพร
+* user.แหล่งข้อมูลสมุนไพร.thai_sci
+ - bot.action.source_website.thai_sci

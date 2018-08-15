@@ -6,10 +6,22 @@
         "feature"
       ]
     },
+    "bot.utter.default.about_bot": {
+      "slots": []
+    },
     "action_slot_reset": {
       "slots": []
     },
-    "bot.utter.default.about_bot": {
+    "bot.action.source_website.thai_sci": {
+      "slots": []
+    },
+    "bot.action.source_website.mix": {
+      "slots": []
+    },
+    "bot.action.source_website.thai_med": {
+      "slots": []
+    },
+    "bot.action.source_website": {
       "slots": []
     }
   },

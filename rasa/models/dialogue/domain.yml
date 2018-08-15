@@ -33,6 +33,10 @@ action_names:
 - action_slot_reset
 - bot.action.validate.herb
 - bot.utter.default.about_bot
+- bot.action.source_website
+- bot.action.source_website.mix
+- bot.action.source_website.thai_med
+- bot.action.source_website.thai_sci
 actions:
 - bot.ask.validate.herb
 - bot.utter.default
@@ -67,6 +71,10 @@ actions:
 - action_slot_reset
 - bot.action.validate.herb
 - bot.utter.default.about_bot
+- bot.action.source_website
+- bot.action.source_website.mix
+- bot.action.source_website.thai_med
+- bot.action.source_website.thai_sci
 config:
   store_entities_as_slots: true
 entities:
@@ -90,6 +98,10 @@ intents:
 - user.ดูข้อมูลทั่วไปของสมุนไพร
 - user.ส่งรูปภาพ
 - user.หาสมุนไพรจากสรรพคุณ
+- user.แหล่งข้อมูลสมุนไพร
+- user.แหล่งข้อมูลสมุนไพร.thai_sci
+- user.แหล่งข้อมูลสมุนไพร.thai_med
+- user.แหล่งข้อมูลสมุนไพร.mix
 slots:
   feature:
     initial_value: null
@@ -114,6 +126,14 @@ templates:
   - text: สักครู่นะครับ เดียวผมจะช่วยหารูปมาให้ดูครับ
   bot.action.photo_to_name:
   - text: เดี๋ยวรอสักครู่นะครับ ผมกำลังหาว่าคือสมุนไพรตัวไหน
+  bot.action.source_website:
+  - text: แหล่งข้อมูลสมุนไพร
+  bot.action.source_website.mix:
+  - text: Mix
+  bot.action.source_website.thai_med:
+  - text: Thai Med
+  bot.action.source_website.thai_sci:
+  - text: Thai Science
   bot.action.validate.herb:
   - text: Action เช็คชื่อสมุนไพร
   bot.ask.feature_to_herb.feature:
