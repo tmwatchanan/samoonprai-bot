@@ -109534,6 +109534,30 @@
         "text": "สวัสดีครับ"
       },
       {
+        "intent": "user.ทักทาย",
+        "text": "get started"
+      },
+      {
+        "intent": "user.ทักทาย",
+        "text": "get started"
+      },
+      {
+        "intent": "user.ทักทาย",
+        "text": "Get Started"
+      },
+      {
+        "intent": "user.ทักทาย",
+        "text": "get started"
+      },
+      {
+        "intent": "user.ทักทาย",
+        "text": "get started"
+      },
+      {
+        "intent": "user.ทักทาย",
+        "text": "Get Started"
+      },
+      {
         "intent": "user.ขอบคุณ",
         "text": "ขอบคุณ"
       },

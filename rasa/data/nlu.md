@@ -241,6 +241,12 @@
 - หวัดดี
 - ไง
 - สวัสดีครับ
+- get started
+- get started
+- Get Started
+- get started
+- get started
+- Get Started
 
 ## intent:user.ขอบคุณ
 - ขอบคุณ
