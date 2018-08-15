@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "feature",
-        "herb"
+        "herb",
+        "feature"
       ]
     },
     "action_slot_reset": {
@@ -15,10 +15,10 @@
     "bot.utter.default.about_bot": {
       "slots": []
     },
-    "bot.action.source_website.thai_med": {
+    "bot.action.source_website.mix": {
       "slots": []
     },
-    "bot.action.source_website": {
+    "bot.ask.menu": {
       "slots": []
     }
   },

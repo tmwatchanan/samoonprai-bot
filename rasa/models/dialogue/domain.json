@@ -1,5 +1,7 @@
 {
   "states": [
+    "intent_user.\u0e2a\u0e23\u0e23\u0e1e\u0e04\u0e38\u0e13",
+    "intent_user.\u0e2a\u0e21\u0e38\u0e19\u0e44\u0e1e\u0e23",
     "intent_user.\u0e43\u0e0a\u0e48",
     "intent_user.\u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48",
     "intent_user.\u0e44\u0e21\u0e48\u0e41\u0e19\u0e48\u0e43\u0e08",
@@ -65,6 +67,7 @@
     "prev_bot.action.source_website",
     "prev_bot.action.source_website.mix",
     "prev_bot.action.source_website.thai_med",
-    "prev_bot.action.source_website.thai_sci"
+    "prev_bot.action.source_website.thai_sci",
+    "prev_bot.ask.menu"
   ]
 }

@@ -13,6 +13,8 @@ entities:
 - feature
 
 intents:
+- user.สรรพคุณ
+- user.สมุนไพร
 - user.ใช่
 - user.ไม่ใช่
 - user.ไม่แน่ใจ
@@ -38,7 +40,8 @@ intents:
 templates:
   bot.utter.greeting:
     - "ลูกสมุนไพร สวัสดีครับ"
-
+  bot.ask.menu:
+    - "คุณ​ต้องการดูข้อมูลอะไรของ {herb} ครับ เช่น ดูรูป ดูสรรพคุณ หรือดูข้อมูลทั่วไป"
   bot.ask.photo:
     - ช่วยส่งรูปสมุนไพรให้หน่อยครับ
   bot.action.photo_to_name:
@@ -158,3 +161,4 @@ actions:
 - bot.action.source_website.mix
 - bot.action.source_website.thai_med
 - bot.action.source_website.thai_sci
+- bot.ask.menu

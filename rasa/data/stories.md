@@ -17,6 +17,11 @@
 * user.เกี่ยวกับบอท
  - bot.utter.default.about_bot
 
+## สมุนไพร
+* user.สมุนไพร {"herb":""}
+ - bot.ask.menu
+
+
 ## ค้นหาชื่อจากรูป_ผิด
 * user.ค้นหาสมุนไพรจากรูป
  - bot.ask.photo
@@ -40,7 +45,7 @@
  - bot.validation.herb_name
 * user.ไม่
  - bot.ask.get_data
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.validation.get_data.herb_name
  - action_slot_reset
 ## ค้นหาชื่อจากรูป_ถูก
@@ -82,7 +87,7 @@
  - bot.validation.herb_name
 * user.ไม่
  - bot.ask.get_data
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.validation.get_data.herb_name
  - action_slot_reset
 ## ค้นหาชื่อจากรูป_ผิด
@@ -113,7 +118,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": " "}
+* user.สมุนไพร {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -128,7 +133,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": " "}
+* user.สมุนไพร {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -143,7 +148,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": " "}
+* user.สมุนไพร {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -156,7 +161,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": " "}
+* user.สมุนไพร {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -231,13 +236,13 @@
  - bot.ask.validate.herb
 * user.ไม่ใช่
  - bot.ask.get_data
-* {"herb": " "}
+* user.สมุนไพร {"herb": " "}
  - bot.validation.get_data.herb_photo
  - action_slot_reset
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* {"herb": " "}
+* user.สมุนไพร {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -256,7 +261,7 @@
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_benefit
 * user.พบสมุนไพร
  - bot.utter.benefit
@@ -264,7 +269,7 @@
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -274,7 +279,7 @@
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -284,7 +289,7 @@
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -317,7 +322,7 @@
 ## ข้อมูลทั่วไป_เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
-* {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_detail
 * user.พบสมุนไพร
  - bot.utter.detail
@@ -325,8 +330,7 @@
 ## ข้อมูลทั่วไป_ไม่เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
-* {"herb":" "}
-* user.ดูข้อมูลทั่วไปของสมุนไพร {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -336,8 +340,7 @@
 ## ข้อมูลทั่วไป_ไม่เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
-* {"herb":" "}
-* user.ดูข้อมูลทั่วไปของสมุนไพร {"herb":" "}
+* user.สมุนไพร {"herb":" "}
  - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -370,7 +373,7 @@
 ## แนะนำสมุนไพร_พบสมุนไพร
 * user.หาสมุนไพรจากสรรพคุณ {"feature": null}
  - bot.ask.feature_to_herb.feature
-* {"feature": "ผิวแห้ง"}
+* user.สรรพคุณ {"feature": "ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.พบสมุนไพร
  - bot.utter.herb_feature
@@ -379,7 +382,7 @@
 ## แนะนำสมุนไพร_ไม่พบสมุนไพร
 * user.หาสมุนไพรจากสรรพคุณ {"feature": null}
  - bot.ask.feature_to_herb.feature
-* {"feature": "ผิวแห้ง"}
+* user.สรรพคุณ {"feature": "ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
  - bot.utter.herb_feature.not_found

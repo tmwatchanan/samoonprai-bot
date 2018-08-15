@@ -37,6 +37,7 @@ action_names:
 - bot.action.source_website.mix
 - bot.action.source_website.thai_med
 - bot.action.source_website.thai_sci
+- bot.ask.menu
 actions:
 - bot.ask.validate.herb
 - bot.utter.default
@@ -75,12 +76,15 @@ actions:
 - bot.action.source_website.mix
 - bot.action.source_website.thai_med
 - bot.action.source_website.thai_sci
+- bot.ask.menu
 config:
   store_entities_as_slots: true
 entities:
 - herb
 - feature
 intents:
+- user.สรรพคุณ
+- user.สมุนไพร
 - user.ใช่
 - user.ไม่ใช่
 - user.ไม่แน่ใจ
@@ -143,6 +147,8 @@ templates:
   - text: ช่วยบอกสรรพคุณของสมุนไพรที่อยากให้ลูกไพรหาให้หน่อยครับ
   bot.ask.get_data:
   - text: ช่วยบอกน้องลูกไพรได้ไหมครับ ว่าจริงๆแล้วมันคือสมุนไพรอะไร เช่น "มันคือ มะนาว"
+  bot.ask.menu:
+  - text: คุณ​ต้องการดูข้อมูลอะไรของ {herb} ครับ เช่น ดูรูป ดูสรรพคุณ หรือดูข้อมูลทั่วไป
   bot.ask.name_to_benefit.herb_name:
   - text: ช่วยบอกลูกไพรหน่อยครับ ว่าอยากดูสรรพคุณของสมุนไพรตัวไหน
   bot.ask.name_to_detail.herb_name:
