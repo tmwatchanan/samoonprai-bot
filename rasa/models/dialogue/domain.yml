@@ -109,6 +109,9 @@ slots:
   feature_list:
     initial_value: null
     type: rasa_core.slots.ListSlot
+  filePath:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   herb:
     initial_value: null
     type: rasa_core.slots.TextSlot
