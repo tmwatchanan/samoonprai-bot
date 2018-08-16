@@ -14,6 +14,12 @@ import logging
 import requests
 from fuzzywuzzy import fuzz
 from numpy import asarray
+from PIL import Image, ImageFont, ImageDraw
+from io import open as iopen
+from urllib.parse import unquote
+import urllib
+import pathlib
+import uuid
 
 # Disable warning messages
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -30,6 +36,9 @@ warnings.filterwarnings(action='ignore', category=DeprecationWarning)
 
 # Logging
 logger = logging.getLogger('SAMOONPRAI')
+
+SAVE_IMAGE_FROM_MSG_DIRECTORY = os.path.join(os.getcwd(), 'msg_images')
+image_type_list = ['jpg', 'jpeg', 'gif', 'png']
 
 # Load herb data
 herb_json_array = None
@@ -200,6 +209,51 @@ def run_action(now_action, data_payload):
         logger.debug("Action %s is unknown")
         messenger_send_api.respond(data_payload['user']['id'], "ตอนนี้" + BOT_NAME + "งงไปหมดแล้วว่าต้องทำอะไร")
     return next_action
+
+
+def download_image(file_url):
+    file_url = unquote(file_url)
+    try:
+        i = requests.get(file_url, timeout=20)
+    except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as err:
+        # return 'Server taking too long. Try again later'
+        return ''
+    else:
+        file_name_from_web = urllib.parse.urlsplit(file_url)[2].split('/')[-1]
+        image_type = i.headers['Content-Type'].split('/')[1]  # file_name.split('.')[1]
+        image_extension = "." + ("jpg" if image_type == "jpeg" else image_type)
+        image_file_name = str(uuid.uuid4().hex) + image_extension
+        image_file_path = os.path.join(SAVE_IMAGE_FROM_MSG_DIRECTORY, image_file_name)
+        # print(file_name, image_type)
+        if image_type in image_type_list and i.status_code == requests.codes.ok:
+            with iopen(image_file_path, 'wb') as file:
+                file.write(i.content)
+                return image_file_path
+        else:
+            return ''
+
+
+def write_label_to_image(image_url, label_text):
+    image_file_path = download_image(image_url)
+    filename_w_ext = os.path.basename(image_file_path)
+    filename, file_extension = os.path.splitext(filename_w_ext)
+    labeled_image_file_path = os.path.join(SAVE_IMAGE_FROM_MSG_DIRECTORY, filename + '-labeled' + file_extension)
+    photo = Image.open(image_file_path)
+    drawing = ImageDraw.Draw(photo) # make the image editable
+    font = ImageFont.truetype(os.path.join("assets", "SanamDeklen_chaya.ttf"), 40)
+    pos = (0, 0)
+    x = pos[0]
+    y = pos[1]
+    # black = (3, 8, 12)
+    fillcolor = "white"
+    shadowcolor = "black"
+    drawing.text((x-1, y-1), label_text, font=font, fill=shadowcolor)
+    drawing.text((x+1, y-1), label_text, font=font, fill=shadowcolor)
+    drawing.text((x-1, y+1), label_text, font=font, fill=shadowcolor)
+    drawing.text((x+1, y+1), label_text, font=font, fill=shadowcolor)
+    drawing.text(pos, label_text, font=font, fill=fillcolor)
+    photo.save(labeled_image_file_path)
+    return labeled_image_file_path
 
 
 def action_utter_default_about_bot(data_payload):
@@ -385,6 +439,8 @@ def action_utter_thankyou(data_payload):
 
 
 def action_utter_herb_name(now_action, data_payload):
+    labeled_image_file_path = write_label_to_image(data_payload['userChatImageUrl'], label_text=get_value_from_slot(now_action, 'herb'))
+    messenger_send_api.send_image(data_payload['user']['id'], labeled_image_file_path)
     found_herb_name_text = random_found_herb_name_text(data_payload['user']['name'], get_value_from_slot(now_action, 'herb'))
     messenger_send_api.respond(data_payload['user']['id'], found_herb_name_text)
     return rasa_api_continue(now_action, events=[])
