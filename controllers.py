@@ -71,6 +71,7 @@ IMAGE_API_URI = 'http://localhost:5001'
 RASA_SERVER_API_URI = 'http://localhost:5005'
 BOT_NAME = 'ลูกไพร'
 HERB_NOT_FOUND, IMAGE_NOT_FOUND, *_ = range(100)
+SAMOONPRAI_LOGO_FILE_PATH = os.path.join('assets', 'samoonprai-logo-1.png')
 
 
 def process_incoming_message(payload):
@@ -239,19 +240,31 @@ def write_label_to_image(image_url, label_text):
     filename, file_extension = os.path.splitext(filename_w_ext)
     labeled_image_file_path = os.path.join(SAVE_IMAGE_FROM_MSG_DIRECTORY, filename + '-labeled' + file_extension)
     photo = Image.open(image_file_path)
-    drawing = ImageDraw.Draw(photo) # make the image editable
-    font = ImageFont.truetype(os.path.join("assets", "SanamDeklen_chaya.ttf"), 40)
-    pos = (0, 0)
-    x = pos[0]
-    y = pos[1]
+    drawing = ImageDraw.Draw(photo)  # make the image editable
+    width, height = photo.size
+    font_size = round(height*0.2)
+    font = ImageFont.truetype(os.path.join("assets", "SanamDeklen_chaya.ttf"), font_size)
+    w, h = drawing.textsize(label_text, font=font)
+    text_pos = ((width-w)/2,(height-h)/2)
+    x = text_pos[0]
+    y = text_pos[1]
     # black = (3, 8, 12)
+    # Add text
     fillcolor = "white"
     shadowcolor = "black"
     drawing.text((x-1, y-1), label_text, font=font, fill=shadowcolor)
     drawing.text((x+1, y-1), label_text, font=font, fill=shadowcolor)
     drawing.text((x-1, y+1), label_text, font=font, fill=shadowcolor)
     drawing.text((x+1, y+1), label_text, font=font, fill=shadowcolor)
-    drawing.text(pos, label_text, font=font, fill=fillcolor)
+    drawing.text(text_pos, label_text, font=font, fill=fillcolor)
+    # Add logo
+    # logo_pos = (0, 0)
+    base_width = int(width*0.2)
+    logo = Image.open(SAMOONPRAI_LOGO_FILE_PATH)
+    wpercent = (base_width/float(logo.size[0]))
+    hsize = int((float(logo.size[1])*float(wpercent)))
+    logo = logo.resize((base_width,hsize), Image.ANTIALIAS)
+    photo.paste(logo, (0, 0), logo)
     photo.save(labeled_image_file_path)
     return labeled_image_file_path
 
@@ -439,10 +452,10 @@ def action_utter_thankyou(data_payload):
 
 
 def action_utter_herb_name(now_action, data_payload):
-    labeled_image_file_path = write_label_to_image(data_payload['userChatImageUrl'], label_text=get_value_from_slot(now_action, 'herb'))
-    messenger_send_api.send_image(data_payload['user']['id'], labeled_image_file_path)
     found_herb_name_text = random_found_herb_name_text(data_payload['user']['name'], get_value_from_slot(now_action, 'herb'))
     messenger_send_api.respond(data_payload['user']['id'], found_herb_name_text)
+    labeled_image_file_path = write_label_to_image(data_payload['userChatImageUrl'], label_text=get_value_from_slot(now_action, 'herb'))
+    messenger_send_api.send_image(data_payload['user']['id'], labeled_image_file_path)
     return rasa_api_continue(now_action, events=[])
 
 
