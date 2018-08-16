@@ -76,6 +76,7 @@ def listen():
         return "ok", 200
         # return "no", 403
 
+
 @celery.task(name='process')
 def process(payload):
     with app.app_context():
@@ -90,4 +91,4 @@ def process(payload):
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='127.0.0.1', port=5000, threaded=True, debug=True)
