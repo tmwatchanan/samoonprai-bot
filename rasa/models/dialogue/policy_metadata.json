@@ -2,23 +2,23 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "herb",
-        "feature"
+        "feature",
+        "herb"
       ]
     },
     "action_slot_reset": {
       "slots": []
     },
-    "bot.action.source_website.thai_sci": {
+    "bot.ask.menu": {
       "slots": []
     },
     "bot.utter.default.about_bot": {
       "slots": []
     },
-    "bot.action.source_website.mix": {
+    "bot.action.source_website.thai_med": {
       "slots": []
     },
-    "bot.ask.menu": {
+    "bot.action.source_website.thai_sci": {
       "slots": []
     }
   },

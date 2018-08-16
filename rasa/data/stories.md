@@ -118,7 +118,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* user.สมุนไพร {"herb": " "}
+* {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -133,7 +133,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* user.สมุนไพร {"herb": " "}
+* {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -148,7 +148,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* user.สมุนไพร {"herb": " "}
+* {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -161,7 +161,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* user.สมุนไพร {"herb": " "}
+* {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -242,7 +242,7 @@
 ## ขอดูรูปจากชื่อสมุนไพร
 * user.ดูรูปสมุนไพร {"herb": null}
  - bot.ask.name_to_photo.herb_name
-* user.สมุนไพร {"herb": " "}
+* {"herb": " "}
  - bot.action.validate.herb
 * user.พบสมุนไพร
  - bot.action.name_to_photo
@@ -261,7 +261,7 @@
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
-* user.สมุนไพร {"herb":" "}
+* {"herb":" "}
  - bot.action.name_to_benefit
 * user.พบสมุนไพร
  - bot.utter.benefit
@@ -279,7 +279,7 @@
 ## ข้อมูลทั่วไป
 * user.สรรพคุณสมุนไพร {"herb": null}
  - bot.ask.name_to_benefit.herb_name
-* user.สมุนไพร {"herb":" "}
+* {"herb":" "}
  - bot.action.name_to_benefit
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -322,7 +322,7 @@
 ## ข้อมูลทั่วไป_เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
-* user.สมุนไพร {"herb":" "}
+* {"herb":" "}
  - bot.action.name_to_detail
 * user.พบสมุนไพร
  - bot.utter.detail
@@ -330,7 +330,7 @@
 ## ข้อมูลทั่วไป_ไม่เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
-* user.สมุนไพร {"herb":" "}
+* {"herb":" "}
  - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -340,7 +340,7 @@
 ## ข้อมูลทั่วไป_ไม่เจอ
 * user.ดูข้อมูลทั่วไปของสมุนไพร {"herb": null}
  - bot.ask.name_to_detail.herb_name
-* user.สมุนไพร {"herb":" "}
+* {"herb":" "}
  - bot.action.name_to_detail
 * user.ไม่พบสมุนไพร
  - bot.ask.validate.herb
@@ -373,7 +373,7 @@
 ## แนะนำสมุนไพร_พบสมุนไพร
 * user.หาสมุนไพรจากสรรพคุณ {"feature": null}
  - bot.ask.feature_to_herb.feature
-* user.สรรพคุณ {"feature": "ผิวแห้ง"}
+* {"feature": "ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.พบสมุนไพร
  - bot.utter.herb_feature
@@ -382,7 +382,7 @@
 ## แนะนำสมุนไพร_ไม่พบสมุนไพร
 * user.หาสมุนไพรจากสรรพคุณ {"feature": null}
  - bot.ask.feature_to_herb.feature
-* user.สรรพคุณ {"feature": "ผิวแห้ง"}
+* {"feature": "ผิวแห้ง"}
  - bot.action.feature_to_herb
 * user.ไม่พบสมุนไพร
  - bot.utter.herb_feature.not_found
