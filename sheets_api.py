@@ -55,7 +55,7 @@ def append_image_label(file_path, label):
     credentials = service_account.Credentials.from_service_account_file(service_account_key_file)
     service = build('sheets', 'v4', credentials=credentials)
 
-    value_list = [[datetime.utcnow()], [file_path], [label]]
+    value_list = [1, [file_path], [label]]  #[datetime.utcnow()]
 
     resource = {
         "majorDimension": "ROWS",
