@@ -158,6 +158,21 @@ def send_generic_template(recipient_id, elements):
             }
         }
     }
-    print(attachment)
     return send_response(recipient_id, add_payload=attachment)
 
+
+def send_list_template(recipient_id, elements, buttons=None):
+    # https://developers.facebook.com/docs/messenger-platform/send-messages/template/list
+    attachment = {
+        'attachment' : {
+            'type': 'template',
+            'payload': {
+                'template_type': 'list',
+                "top_element_style": "compact",
+                'elements': elements
+            }
+        }
+    }
+    if buttons:
+        attachment['attachment']['payload']['buttons'] = buttons
+    return send_response(recipient_id, add_payload=attachment)
