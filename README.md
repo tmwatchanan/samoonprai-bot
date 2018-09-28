@@ -2,17 +2,21 @@
 A Bot application connected to (Facebook) Messenger Platform 
 
 ## Running Steps
-1. Run Redis server
-    2. For Windows, run the redis-server.exe
+1. Run Redis server (for Windows, run the redis-server.exe)
     
-        $ redis-server.exe redis.windows.conf
+    $  `redis-server.exe redis.windows.conf`
     
 1. Run Celery for handling background tasks
 
     $ `celery worker -A app.celery -F celery_log --loglevel=info`
     
 1. Run Flask server
+
     $ `app.py`
+
+1. Run Rasa API
+
+    $  `cd rasa && python -m rasa_core.server -d models/dialogue -u models/nlu/default/current -o out.log --port 5005`
 
 
 ## Steps to Reproduce the Project
