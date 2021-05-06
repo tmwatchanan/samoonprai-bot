@@ -31,7 +31,7 @@ enum34==1.1.6
 fakeredis==0.10.3
 fbmessenger==5.1.0
 Flask==1.0.2
-Flask-Cors==3.0.4
+Flask-Cors==3.0.9
 ftfy==4.4.3
 future==0.16.0
 fuzzywuzzy==0.16.0
